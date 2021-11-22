@@ -14,13 +14,20 @@ alias coms319='cd ~/git/classnotes/coms319'
 alias coms474='cd ~/git/classnotes/coms474'
 alias eng314='cd ~/git/classnotes/eng314'
 alias conia='iwctl station wlan0 connect "IASTATE"'
+alias conhome='iwctl station wlan0 connect CenturyLink1230_5G --passphrase tfcda7343cb3'
 alias getnet='iwctl station wlan0 get-networks'
 alias scannet='iwctl station wlan0 get-networks'
 alias initvim='nvim ~/.config/nvim/init.vim'
 alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
 alias snd=' amixer set Headphone playback 87; amixer set Speaker playback 0; amixer set Master playback 50'
 alias speaker='amixer set Headphone playback 0; amixer set Speaker playback 87; amixer set Master playback 50'
-alias conhome='iwctl station wlan0 connect CenturyLink1230_5G --passphrase tfcda7343cb3'
+savedotfiles() {
+  cd ~/git/dotfiles
+  ./pullfiles.sh
+  git add .
+  git commit -m "$1"
+  git push
+}
 connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
 }
