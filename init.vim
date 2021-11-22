@@ -1,5 +1,6 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
+
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -37,6 +38,8 @@ nnoremap - :set nospell<CR>
 nnoremap _ :set spell<CR>
 vnoremap <ESC> <ESC><ESC>
 inoremap kj <ESC>
+vnoremap y myy`y
+vnoremap Y myY`y
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
@@ -66,9 +69,9 @@ vnoremap < <gv
 vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
-tnoremap kj <C-\><C-n>
+tnoremap kj <C-\><C-n> :q<cr>
 
-nnoremap <expr> <C-n> g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
+nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
 
