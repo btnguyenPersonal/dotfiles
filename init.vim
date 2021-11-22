@@ -1,24 +1,28 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
-
+Plug 'voldikss/vim-floaterm'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
-Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 
 " Initialize plugin system
 call plug#end()
 
+nmap <SPACE> <leader>
+
+set termguicolors
 set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set scrolloff=8
-set sidescrolloff=8
 set signcolumn=no
 set foldcolumn=0
 set ignorecase
@@ -27,6 +31,8 @@ set clipboard+=unnamedplus
 set backspace=indent,eol,start
 set splitbelow
 set splitright
+hi Pmenu guibg=Black guifg=White
+hi PmenuSel guibg=Black guifg=LightGreen
 nnoremap - :set nospell<CR>
 nnoremap _ :set spell<CR>
 vnoremap <ESC> <ESC><ESC>
@@ -44,9 +50,8 @@ tmap <C-l> <C-\><C-n><C-w>l
 tmap <C-h> <C-\><C-n><C-w>h
 tmap <C-j> <C-\><C-n><C-w>j
 tmap <C-k> <C-\><C-n><C-w>k
-tmap <ESC><ESC> <C-\><C-n>
-tmap kj <C-\><C-n>
 map <F1> <NOP>
+nmap Y y$
 inoremap ( ()<left>
 inoremap () ()
 inoremap [ []<left>
@@ -61,10 +66,47 @@ vnoremap < <gv
 vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
+tnoremap kj <C-\><C-n>
 
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <expr> <C-n> g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
+
+let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
+let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+
+" Customise the Files command to use rg which respects .gitignore files
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#run(fzf#wrap('files', fzf#vim#with_preview({ 'dir': <q-args>, 'sink': 'e', 'source': 'rg --files --hidden' }), <bang>0))
+
+" Add an AllFiles variation that ignores .gitignore files
+command! -bang -nargs=? -complete=dir AllFiles
+    \ call fzf#run(fzf#wrap('allfiles', fzf#vim#with_preview({ 'dir': <q-args>, 'sink': 'e', 'source': 'rg --files --hidden --no-ignore' }), <bang>0))
+
+nnoremap <leader>f :Files<cr>
+nnoremap <leader>F :AllFiles<cr>
+nnoremap <leader>b :Buffers<cr>
+nnoremap <leader>h :History<cr>
+nnoremap <leader>r :Rg<cr>
+nnoremap <leader>R :Rg<space>
+nnoremap <leader>gb :GBranches<cr>
+
+let g:floaterm_keymap_toggle = '<F1>'
+let g:floaterm_keymap_next   = '<F2>'
+let g:floaterm_keymap_prev   = '<F3>'
+let g:floaterm_keymap_new    = '<F4>'
+
+let g:floaterm_gitcommit='floaterm'
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.8
+let g:floaterm_height=0.8
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
+
+augroup FloatermCustomisations
+    autocmd!
+    autocmd ColorScheme * highlight FloatermBorder guibg=none
+augroup END
 
 let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
@@ -88,8 +130,6 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 autocmd BufWritePre * :call TrimWhitespace()
-
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
 
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
@@ -116,12 +156,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
-inoremap <silent><expr> <C-space> coc#refresh()
-
-" Use `[g` and `]g` to navigate diagnostics
-"nmap <silent> [g <Plug>(coc-diagnostic-prev)
-"nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
