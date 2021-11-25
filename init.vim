@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
