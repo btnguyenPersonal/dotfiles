@@ -1,6 +1,7 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'sheerun/vim-polyglot'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -69,7 +70,16 @@ vnoremap < <gv
 vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
-tnoremap kj <C-\><C-n> :q<cr>
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" replace currently selected text with default register
+" without yanking it
+vnoremap <leader>p "_dp
+vnoremap <leader>P "_dP
+
+highlight Search guibg='Purple' guifg='White'
 
 nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
 vmap <C-_> <plug>NERDCommenterToggle
@@ -77,14 +87,6 @@ nmap <C-_> <plug>NERDCommenterToggle
 
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-
-" Customise the Files command to use rg which respects .gitignore files
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#run(fzf#wrap('files', fzf#vim#with_preview({ 'dir': <q-args>, 'sink': 'e', 'source': 'rg --files --hidden' }), <bang>0))
-
-" Add an AllFiles variation that ignores .gitignore files
-command! -bang -nargs=? -complete=dir AllFiles
-    \ call fzf#run(fzf#wrap('allfiles', fzf#vim#with_preview({ 'dir': <q-args>, 'sink': 'e', 'source': 'rg --files --hidden --no-ignore' }), <bang>0))
 
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :AllFiles<cr>

@@ -43,7 +43,7 @@ flashreader() {
 }
 
 wmname compiz
-export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;30:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
+export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
 export PS1="\[\e[1;36m\][\w]\[\e[m\]\[\e[1;31m\]⚡\[\e[m\]"
 stty werase \^H
 
