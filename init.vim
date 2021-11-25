@@ -81,6 +81,7 @@ vnoremap <leader>p "_dp
 vnoremap <leader>P "_dP
 
 highlight Search guibg='Purple' guifg='White'
+highlight Folded guibg='Green' guifg='White'
 
 nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
 vmap <C-_> <plug>NERDCommenterToggle
