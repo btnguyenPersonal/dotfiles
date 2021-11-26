@@ -39,6 +39,7 @@ hi PmenuSel guibg=Black guifg=LightGreen
 nnoremap - :set nospell<CR>
 nnoremap _ :set spell<CR>
 vnoremap <ESC> <ESC><ESC>
+tnoremap <ESC> <C-\><C-n>
 inoremap kj <ESC>
 vnoremap y myy`y
 vnoremap Y myY`y
@@ -55,8 +56,8 @@ tmap <C-l> <C-\><C-n><C-w>l
 tmap <C-h> <C-\><C-n><C-w>h
 tmap <C-j> <C-\><C-n><C-w>j
 tmap <C-k> <C-\><C-n><C-w>k
-map <F1> <NOP>
 nmap Y y$
+inoremap <BS> <C-w>
 inoremap ( ()<left>
 inoremap () ()
 inoremap [ []<left>
@@ -97,10 +98,11 @@ nnoremap <leader>h :History<cr>
 nnoremap <leader>r :Rg<cr>
 nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
+nnoremap <leader>w ofunction() {<cr>}<ESC>kf(a
 
 let g:floaterm_keymap_toggle = '<F1>'
-let g:floaterm_keymap_next   = '<F2>'
-let g:floaterm_keymap_prev   = '<F3>'
+let g:floaterm_keymap_prev   = '<F2>'
+let g:floaterm_keymap_next   = '<F3>'
 let g:floaterm_keymap_new    = '<F4>'
 
 let g:floaterm_gitcommit='floaterm'
