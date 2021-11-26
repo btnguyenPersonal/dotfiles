@@ -36,7 +36,6 @@ hi PmenuSel guibg=Black guifg=LightGreen
 nnoremap - :set nospell<CR>
 nnoremap _ :set spell<CR>
 vnoremap <ESC> <ESC><ESC>
-inoremap kj <ESC>
 vnoremap y myy`y
 vnoremap Y myY`y
 nnoremap ; :
@@ -97,7 +96,7 @@ nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
 nnoremap <leader>w ofunction() {<cr>}<ESC>kf(
 
-let g:floaterm_keymap_toggle = ','
+let g:floaterm_keymap_toggle = '<F1>'
 
 let g:floaterm_gitcommit='floaterm'
 let g:floaterm_autoinsert=1
