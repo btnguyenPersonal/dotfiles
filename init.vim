@@ -1,6 +1,7 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'voldikss/vim-floaterm'
@@ -84,7 +85,7 @@ vnoremap <leader>P "_dP
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
 
-nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
+nnoremap <leader>n :CHADopen<cr>
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
 
@@ -98,7 +99,7 @@ nnoremap <leader>h :History<cr>
 nnoremap <leader>r :Rg<cr>
 nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
-nnoremap <leader>w ofunction() {<cr>}<ESC>kf(a
+nnoremap <leader>w ofunction() {<cr>}<ESC>kf(
 
 let g:floaterm_keymap_toggle = '<F1>'
 let g:floaterm_keymap_prev   = '<F2>'
