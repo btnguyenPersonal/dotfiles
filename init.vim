@@ -40,7 +40,6 @@ hi PmenuSel guibg=Black guifg=LightGreen
 nnoremap - :set nospell<CR>
 nnoremap _ :set spell<CR>
 vnoremap <ESC> <ESC><ESC>
-tnoremap <ESC> <C-\><C-n>
 inoremap kj <ESC>
 vnoremap y myy`y
 vnoremap Y myY`y
@@ -101,10 +100,7 @@ nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
 nnoremap <leader>w ofunction() {<cr>}<ESC>kf(
 
-let g:floaterm_keymap_toggle = '<F1>'
-let g:floaterm_keymap_prev   = '<F2>'
-let g:floaterm_keymap_next   = '<F3>'
-let g:floaterm_keymap_new    = '<F4>'
+let g:floaterm_keymap_toggle = ','
 
 let g:floaterm_gitcommit='floaterm'
 let g:floaterm_autoinsert=1
@@ -186,16 +182,9 @@ endfunction
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Remap for rename current word
-nmap <F2> <Plug>(coc-rename)
-
 " Remap for format selected region
 xmap =  <Plug>(coc-format-selected)
 nmap =  <Plug>(coc-format-selected)
-
-" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-xmap <F4> <Plug>(coc-codeaction-selected)
-nmap <F4> <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)

@@ -104,4 +104,5 @@ amixer set Headphone playback 87
 amixer set Speaker playback 0
 amixer set Master playback 50
 xrdb ~/.Xresources
+setxkbmap
 exec dwm
