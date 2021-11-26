@@ -9,10 +9,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 
 " Initialize plugin system
@@ -57,7 +53,6 @@ tmap <C-h> <C-\><C-n><C-w>h
 tmap <C-j> <C-\><C-n><C-w>j
 tmap <C-k> <C-\><C-n><C-w>k
 nmap Y y$
-inoremap <BS> <C-w>
 inoremap ( ()<left>
 inoremap () ()
 inoremap [ []<left>
@@ -72,6 +67,8 @@ vnoremap < <gv
 vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
+inoremap <C-h> <C-w>
+
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
