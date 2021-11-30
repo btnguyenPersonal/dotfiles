@@ -16,25 +16,42 @@ call plug#end()
 
 nmap <SPACE> <leader>
 
+set wildmenu
+set wildmode=longest:full,full
+set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.snv/*,*/.DS_Store
 set termguicolors
+set expandtab
 set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
-set expandtab
+set nobackup
+set nowb
+set noswapfile
 set scrolloff=8
+set incsearch
+set hlsearch
+set lazyredraw
+set magic
+set showmatch
+set mat=2
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
 set signcolumn=no
 set foldcolumn=0
-set ignorecase
+set smartcase
 set number relativenumber
 set clipboard+=unnamedplus
-set backspace=indent,eol,start
 set splitbelow
 set splitright
+set history=500
+map 0 ^
 hi Pmenu guibg=Black guifg=White
 hi PmenuSel guibg=Black guifg=LightGreen
-nnoremap - :set nospell<CR>
-nnoremap _ :set spell<CR>
 vnoremap <ESC> <ESC><ESC>
 vnoremap y myy`y
 vnoremap Y myY`y
@@ -47,17 +64,8 @@ map <C-l> <C-w>l
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
-tmap <C-l> <C-\><C-n><C-w>l
-tmap <C-h> <C-\><C-n><C-w>h
-tmap <C-j> <C-\><C-n><C-w>j
-tmap <C-k> <C-\><C-n><C-w>k
+imap kj <ESC>
 nmap Y y$
-inoremap ( ()<left>
-inoremap () ()
-inoremap [ []<left>
-inoremap [] []
-inoremap { {}<left>
-inoremap {} {}
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
@@ -72,10 +80,14 @@ inoremap <C-h> <C-w>
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
+"need some way to find & replace faster
+"vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
 " replace currently selected text with default register
 " without yanking it
 vnoremap <leader>p "_dp
 vnoremap <leader>P "_dP
+
+nnoremap <leader><cr> :noh<cr>
 
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
@@ -87,6 +99,7 @@ nmap <C-_> <plug>NERDCommenterToggle
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
 
+nnoremap <leader>ss :setlocal spell<CR>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :AllFiles<cr>
 nnoremap <leader>b :Buffers<cr>
@@ -94,9 +107,31 @@ nnoremap <leader>h :History<cr>
 nnoremap <leader>r :Rg<cr>
 nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
-nnoremap <leader>w ofunction() {<cr>}<ESC>kf(
+nnoremap <leader>e ofunction() {<cr>}<ESC>kf(
+nnoremap <leader>w :w<cr>
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+nnoremap <leader>l :bnext<cr>
+nnoremap <leader>h :bprevious<cr>
+nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
+nnoremap <leader>q :e ~/buffer<cr>
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-let g:floaterm_keymap_toggle = '<F1>'
+vnoremap ,1 <esc>`>a)<esc>`<i(<esc>
+vnoremap ,2 <esc>`>a]<esc>`<i[<esc>
+vnoremap ,3 <esc>`>a}<esc>`<i{<esc>
+vnoremap ,, <esc>`>a"<esc>`<i"<esc>
+vnoremap ,q <esc>`>a'<esc>`<i'<esc>
+vnoremap ,e <esc>`>a`<esc>`<i`<esc>
+
+inoremap $1 ()<esc>i
+inoremap $2 []<esc>i
+inoremap $3 {}<esc>i
+inoremap $4 {<esc>o}<esc>O
+inoremap $q ''<esc>i
+inoremap $e ""<esc>i
+inoremap $t <><esc>i
+
+let g:floaterm_keymap_toggle = '<C-p>'
 
 let g:floaterm_gitcommit='floaterm'
 let g:floaterm_autoinsert=1
@@ -144,7 +179,7 @@ let g:coc_global_extensions = [
   \ ]
 set hidden
 set updatetime=300
-
+set autoread
 set shortmess+=c
 
 inoremap <silent><expr> <TAB>

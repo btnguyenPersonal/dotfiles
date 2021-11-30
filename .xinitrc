@@ -90,7 +90,6 @@ status () {
 updateStatus () {
   while :; do
     xsetroot -name "$(status)"
-    xset -r
     sleep 0.1
   done
 }
@@ -104,5 +103,4 @@ amixer set Headphone playback 87
 amixer set Speaker playback 0
 amixer set Master playback 50
 xrdb ~/.Xresources
-setxkbmap -option caps:swapescape
 exec dwm

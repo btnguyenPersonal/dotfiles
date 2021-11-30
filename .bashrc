@@ -19,8 +19,8 @@ alias getnet='iwctl station wlan0 get-networks'
 alias scannet='iwctl station wlan0 get-networks'
 alias initvim='nvim ~/.config/nvim/init.vim'
 alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
-alias snd=' amixer set Headphone playback 50; amixer set Speaker playback 0; amixer set Master 87'
-alias speaker='amixer set Headphone playback 0; amixer set Speaker playback 55; amixer set Master playback 87'
+alias snd='amixer set Headphone playback 50; amixer set Speaker playback 0; amixer set Master 87'
+alias asnd='amixer set Headphone playback 0; amixer set Speaker playback 55; amixer set Master playback 87'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 savedotfiles() {
   cd ~/git/dotfiles
