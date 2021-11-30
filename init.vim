@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'sheerun/vim-polyglot'
-Plug 'vim-airline/vim-airline'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -44,6 +43,7 @@ set whichwrap+=<,>,h,l
 set signcolumn=no
 set foldcolumn=0
 set smartcase
+set infercase
 set number relativenumber
 set clipboard+=unnamedplus
 set splitbelow
@@ -55,6 +55,8 @@ hi PmenuSel guibg=Black guifg=LightGreen
 vnoremap <ESC> <ESC><ESC>
 vnoremap y myy`y
 vnoremap Y myY`y
+vnoremap <C-a> <C-a>gv
+vnoremap <C-x> <C-x>gv
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
@@ -103,7 +105,7 @@ nnoremap <leader>ss :setlocal spell<CR>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :AllFiles<cr>
 nnoremap <leader>b :Buffers<cr>
-nnoremap <leader>h :History<cr>
+nnoremap <leader>k :History<cr>
 nnoremap <leader>r :Rg<cr>
 nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
@@ -145,22 +147,6 @@ augroup FloatermCustomisations
     autocmd ColorScheme * highlight FloatermBorder guibg=none
 augroup END
 
-let g:NERDTreeGitStatusWithFlags = 1
-"let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-"let g:NERDTreeGitStatusNodeColorization = 1
-"let g:NERDTreeColorMapCustom = {
-    "\ "Staged"    : "#0ee375",
-    "\ "Modified"  : "#d9bf91",
-    "\ "Renamed"   : "#51C9FC",
-    "\ "Untracked" : "#FCE77C",
-    "\ "Unmerged"  : "#FC51E6",
-    "\ "Dirty"     : "#FFBD61",
-    "\ "Clean"     : "#87939A",
-    "\ "Ignored"   : "#808080"
-    "\ }
-
-let g:NERDTreeIgnore = ['^node_modules$']
-
 fun! TrimWhitespace()
     let l:save = winsaveview()
     keeppatterns %s/\s\+$//e
@@ -192,6 +178,8 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+autocmd FileType text let b:coc_suggest_disable = 0
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
