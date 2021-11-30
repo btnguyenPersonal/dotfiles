@@ -1,7 +1,6 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'sheerun/vim-polyglot'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -9,6 +8,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'PhilRunninger/nerdtree-visual-selection'
 
 " Initialize plugin system
 call plug#end()
@@ -33,17 +36,12 @@ set hlsearch
 set lazyredraw
 set magic
 set showmatch
-set mat=2
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 set signcolumn=no
 set foldcolumn=0
-set smartcase
-set infercase
+set ignorecase
+set laststatus=0
 set number relativenumber
 set clipboard+=unnamedplus
 set splitbelow
@@ -94,14 +92,17 @@ nnoremap <leader><cr> :noh<cr>
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
 
-nnoremap <leader>n :CHADopen<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
+let g:nerdtree_vis_confirm_open = 0
+let g:nerdtree_vis_confirm_delete = 0
+let g:nerdtree_vis_confirm_copy = 0
+let g:nerdtree_vis_confirm_move = 0
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
 
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
-let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
-nnoremap <leader>ss :setlocal spell<CR>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :AllFiles<cr>
 nnoremap <leader>b :Buffers<cr>
@@ -116,6 +117,7 @@ nnoremap <leader>l :bnext<cr>
 nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 nnoremap <leader>q :e ~/buffer<cr>
+nnoremap <leader>s :%s///g<left><left><left>
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 vnoremap ,1 <esc>`>a)<esc>`<i(<esc>
