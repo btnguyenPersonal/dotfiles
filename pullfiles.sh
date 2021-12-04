@@ -7,5 +7,6 @@ cp /home/ben/.config/nvim/coc-settings.json ./nvim/coc-settings.json
 cp /bin/dwm/config.h ./dwm/config.h
 cp /bin/dwm/dwm.c ./dwm/dwm.c
 cp /bin/dwm/drw.c ./dwm/drw.c
+cp /bin/dwm/drw.h ./dwm/drw.h
 cp /bin/st/config.h ./st/config.h
 cp /bin/st/st.c ./st/st.c
