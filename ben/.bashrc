@@ -21,7 +21,7 @@ alias initvim='nvim ~/.config/nvim/init.vim'
 alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
 alias snd='amixer set Headphone playback 50; amixer set Speaker playback 0; amixer set Master 87'
 alias mute='amixer set Headphone playback 0; amixer set Speaker playback 0; amixer set Master 0'
-alias asnd='amixer set Headphone playback 0; amixer set Speaker playback 87; amixer set Master playback 87'
+alias asnd='amixer set Headphone playback 0; amixer set Speaker playback 80; amixer set Master playback 87'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 savedotfiles() {
   cd /home/ben/git/dotfiles

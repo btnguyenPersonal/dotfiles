@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int baralpha        = 204;
+static const unsigned int baralpha        = 240;
 static const unsigned int borderalpha     = OPAQUE;
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 8;        /* gap pixel between windows */
@@ -74,6 +74,7 @@ static const char *screenshotcmd[]  = { "scrot", "-e", "mv $f ~/Pictures/", NULL
 static const char *volupcmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5+" };
 static const char *voldowncmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5-" };
 static const char *spotifycmd[]  = { "spotify", NULL };
+static const char *poweroffcmd[]  = { "poweroff", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -84,6 +85,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_v, spawn,          {.v = spotifycmd } },
 	{ MODKEY|ShiftMask,             XK_b, spawn,          {.v = screenshotcmd } },
 	{ MODKEY|ShiftMask,             XK_n, spawn,          {.v = privatebrowsercmd } },
+	{ MODKEY|ShiftMask,             XK_Delete, spawn,          {.v = poweroffcmd } },
 	{ MODKEY,             XK_i, spawn,          {.v = voldowncmd  } },
 	{ MODKEY,             XK_o, spawn,          {.v = volupcmd} },
 	//{ MODKEY,                       XK_b,      togglebar,      {0} },
