@@ -84,7 +84,7 @@ getBattery () {
 }
 
 status () {
-  echo -n " M:$(amixer sget Master | grep Mono: | awk '{print $4}') H:$(amixer sget Headphone | grep "Front Left:" | awk '{print $5}') S:$(amixer sget Speaker | grep "Front Left:" | awk '{print $5}') | $(getCharging)$(getBattery) | $(date | awk '{print $1}') $(date '+%m-%d-%Y ')$(date '+%r' | awk '{print $1}' | sed s/:[0-9][0-9]$//) $(date '+%r' | awk '{print $2}') "
+  echo -n " M:$(amixer sget Master | grep Mono: | awk '{print $4}') H:$(amixer sget Headphone | grep "Front Left:" | awk '{print $5}') S:$(amixer sget Speaker | grep "Front Left:" | awk '{print $5}') | $(getCharging)$(getBattery) | $(date | awk '{print $1}') $(date '+%m/%d/%Y ')$(date '+%r' | awk '{print $1}' | sed s/:[0-9][0-9]$//) $(date '+%r' | awk '{print $2}') "
 }
 
 updateStatus () {
@@ -95,7 +95,6 @@ updateStatus () {
 }
 
 xrandr
-redshift -l 42:-93 &
 updateStatus &
 ~/.fehbg &
 compton -b

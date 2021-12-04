@@ -17,6 +17,7 @@ Plug 'PhilRunninger/nerdtree-visual-selection'
 call plug#end()
 
 nmap <SPACE> <leader>
+vmap <SPACE> <leader>
 
 set wildmenu
 set wildmode=longest:full,full
@@ -41,7 +42,6 @@ set whichwrap+=<,>,h,l
 set signcolumn=no
 set foldcolumn=0
 set ignorecase
-set laststatus=0
 set number relativenumber
 set clipboard+=unnamedplus
 set splitbelow
@@ -76,21 +76,13 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 inoremap <C-h> <C-w>
 
-" delete without yanking
-nnoremap <leader>d "_d
-vnoremap <leader>d "_d
-
-"need some way to find & replace faster
-"vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
-" replace currently selected text with default register
-" without yanking it
-vnoremap <leader>p "_dp
-vnoremap <leader>P "_dP
-
-nnoremap <leader><cr> :noh<cr>
 
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
+highlight CocUnusedHighlight guibg='none' guifg='Yellow'
+highlight CocHighlightText guibg='Green' guifg='White'
+highlight CocHighlightRead guibg='Green' guifg='White'
+highlight CocHighlightWrite guibg='Green' guifg='White'
 
 nnoremap <leader>n :NERDTreeToggle<cr>
 let g:nerdtree_vis_confirm_open = 0
@@ -112,12 +104,23 @@ nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
 nnoremap <leader>e ofunction() {<cr>}<ESC>kf(
 nnoremap <leader>w :w<cr>
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+nnoremap <leader>x :x<cr>
 nnoremap <leader>l :bnext<cr>
 nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
+nnoremap <leader>cc :cd /<cr>
 nnoremap <leader>q :e ~/buffer<cr>
 nnoremap <leader>s :%s///g<left><left><left>
+vnoremap <leader>s :s///g<left><left><left>
+nnoremap <leader>v :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>i :vsp ~/.config/nvim/init.vim<cr>
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+vnoremap <leader>p "_dp
+vnoremap <leader>P "_dP
+nnoremap <leader><cr> :noh<cr>
+nnoremap , @
+
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 vnoremap ,1 <esc>`>a)<esc>`<i(<esc>
@@ -135,7 +138,9 @@ inoremap $q ''<esc>i
 inoremap $e ""<esc>i
 inoremap $t <><esc>i
 
-let g:floaterm_keymap_toggle = '<C-p>'
+command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
+
+let g:floaterm_keymap_toggle = '<C-t>'
 
 let g:floaterm_gitcommit='floaterm'
 let g:floaterm_autoinsert=1
@@ -181,7 +186,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-autocmd FileType text let b:coc_suggest_disable = 0
+autocmd FileType text let b:coc_suggest_disable = 1
+autocmd FileType markdown let b:coc_suggest_disable = 1
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -210,7 +216,7 @@ nmap =  <Plug>(coc-format-selected)
 " Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>af  <Plug>(coc-fix-current)
 
 " Create mappings for function text object, requires document symbols feature of languageserver.
 xmap if <Plug>(coc-funcobj-i)
