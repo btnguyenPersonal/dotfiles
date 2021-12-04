@@ -24,8 +24,8 @@ alias mute='amixer set Headphone playback 0; amixer set Speaker playback 0; amix
 alias asnd='amixer set Headphone playback 0; amixer set Speaker playback 87; amixer set Master playback 87'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 savedotfiles() {
-  cd ~/git/dotfiles
-  ./pullfiles.sh
+  cd /home/ben/git/dotfiles
+  sudo ./pullfiles.sh
   git add .
   git commit -m "$1"
   git push

@@ -97,7 +97,7 @@ updateStatus () {
 xrandr
 updateStatus &
 ~/.fehbg &
-compton -b
+compton --no-fading-openclose &
 amixer set Headphone playback 87
 amixer set Speaker playback 0
 amixer set Master playback 50
