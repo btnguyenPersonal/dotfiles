@@ -4,9 +4,5 @@ cp ./ben/.bashrc /home/ben/.bashrc
 cp ./ben/.bash_profile /home/ben/.bash_profile
 cp ./nvim/init.vim /home/ben/.config/nvim/init.vim
 cp ./nvim/coc-settings.json /home/ben/.config/nvim/coc-settings.json
-cp ./dwm/config.h /bin/dwm/config.h
-cp ./dwm/dwm.c /bin/dwm/dwm.c
-cp ./dwm/drw.h /bin/dwm/drw.h
-cp ./dwm/drw.c /bin/dwm/drw.c
-cp ./st/config.h /bin/st/config.h
-cp ./st/st.c /bin/st/st.c
+cp -r ./dwm /bin
+cp -r ./st /bin
