@@ -109,7 +109,8 @@ nnoremap <leader>l :bnext<cr>
 nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 nnoremap <leader>cc :cd /<cr>
-nnoremap <leader>q :e ~/buffer<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>m :e ~/.buffer
 nnoremap <leader>s :%s///g<left><left><left>
 vnoremap <leader>s :s///g<left><left><left>
 nnoremap <leader>v :source ~/.config/nvim/init.vim<cr>
@@ -119,7 +120,7 @@ vnoremap <leader>d "_d
 vnoremap <leader>p "_dp
 vnoremap <leader>P "_dP
 nnoremap <leader><cr> :noh<cr>
-nnoremap , @
+nnoremap , @@
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
@@ -208,10 +209,6 @@ endfunction
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Remap for format selected region
-xmap =  <Plug>(coc-format-selected)
-nmap =  <Plug>(coc-format-selected)
 
 " Remap for do codeAction of current line
 nmap <leader>ac  <Plug>(coc-codeaction)

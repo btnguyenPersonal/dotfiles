@@ -66,7 +66,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browsercmd[]  = { "chromium", NULL };
 static const char *privatebrowsercmd[]  = { "chromium", "--incognito", NULL };
 static const char *pdfcmd[]  = { "evince", NULL };
@@ -74,7 +74,7 @@ static const char *screenshotcmd[]  = { "scrot", "-e", "mv $f ~/Pictures/", NULL
 static const char *volupcmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5+" };
 static const char *voldowncmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5-" };
 static const char *spotifycmd[]  = { "spotify", NULL };
-static const char *poweroffcmd[]  = { "poweroff", NULL };
+static const char *poweroffcmd[]  = { "sudo", "poweroff", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

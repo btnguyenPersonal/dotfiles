@@ -18,6 +18,7 @@ alias conhome='iwctl station wlan0 connect CenturyLink1230_5G --passphrase tfcda
 alias getnet='iwctl station wlan0 get-networks'
 alias scannet='iwctl station wlan0 get-networks'
 alias initvim='nvim ~/.config/nvim/init.vim'
+alias initala='nvim ~/.config/alacritty/alacritty.yml'
 alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
 alias snd='amixer set Headphone playback 50; amixer set Speaker playback 0; amixer set Master 87'
 alias mute='amixer set Headphone playback 0; amixer set Speaker playback 0; amixer set Master 0'
@@ -43,10 +44,8 @@ flashreader() {
   npm start
 }
 
-wmname compiz
 export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
-export PS1="\[\e[1;36m\][\w]\[\e[m\]\[\e[1;31m\]⚡\[\e[m\]"
-export PS2="\[\e[1;31m\] \[\e[m\]"
+export PS1="\[\e[1;36m\][\w]\[\e[m\]\[\e[1;31m\]$\[\e[m\] "
 stty werase \^H
 
 bind 'set show-all-if-ambiguous on'
