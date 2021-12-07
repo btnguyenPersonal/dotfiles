@@ -6,6 +6,6 @@
 
 if [ "$(tty)" = "/dev/tty1" ]; then
 
-startx > dev/null
+startx > /dev/null
 
 fi
