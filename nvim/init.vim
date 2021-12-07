@@ -36,7 +36,6 @@ set incsearch
 set hlsearch
 set lazyredraw
 set magic
-set showmatch
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 set signcolumn=no
@@ -107,7 +106,7 @@ nnoremap <leader>q :q!<cr>
 nnoremap <leader>m :e ~/.buffer
 nnoremap <leader>s :%s///g<left><left><left>
 vnoremap <leader>s :s///g<left><left><left>
-nnoremap <leader>v :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>v :vsp<cr>
 nnoremap <leader>i :vsp ~/.config/nvim/init.vim<cr>
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
@@ -125,13 +124,13 @@ vnoremap $" <esc>`>a"<esc>`<i"<esc>
 vnoremap $' <esc>`>a'<esc>`<i'<esc>
 vnoremap $` <esc>`>a`<esc>`<i`<esc>
 
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
+inoremap $1 ()<left>
+inoremap $2 []<left>
+inoremap $3 {}<left>
 inoremap $4 {<esc>o}<esc>O
-inoremap $' ''<esc>i
-inoremap $" ""<esc>i
-inoremap $< <><esc>i
+inoremap $' ''<left>
+inoremap $" ""<left>
+inoremap $< <><left>
 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
