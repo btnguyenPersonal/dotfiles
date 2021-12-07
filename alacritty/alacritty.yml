@@ -1,19 +1,16 @@
-size: 14.0
+font:
+  size: 9.0
+
 draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 
-# Colors
 colors:
-  # # Default colors
    primary:
-     #background: '0x1d1f21'
      background: '0x000000'
      foreground: '0xffffff'
-   # Colors the cursor will use if `custom_cursor_colors` is true
    cursor:
      text: '0x1d1f21'
      cursor: '0xc5c8c6'
-   # Normal colors
    normal:
      black:   '0x000000'
      red:     '0xcc6666'
@@ -23,7 +20,6 @@ colors:
      magenta: '0xb294bb'
      cyan:    '0x8abeb7'
      white:   '0xffffff'
-   # Bright colors
    bright:
      black:   '0x969896'
      red:     '0xde935f'
@@ -33,4 +29,5 @@ colors:
      magenta: '0xe0e0e0'
      cyan:    '0xa3685a'
      white:   '0xffffff'
+
 background_opacity: 0.8

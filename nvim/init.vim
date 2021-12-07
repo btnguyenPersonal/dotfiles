@@ -66,16 +66,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 imap kj <ESC>
 nmap Y y$
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-inoremap (<CR> (<CR>)<ESC>O
-inoremap (;<CR> (<CR>);<ESC>O
 vnoremap < <gv
 vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
 inoremap <C-h> <C-w>
-
 
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
@@ -102,14 +97,13 @@ nnoremap <leader>k :History<cr>
 nnoremap <leader>r :Rg<cr>
 nnoremap <leader>R :Rg<space>
 nnoremap <leader>gb :GBranches<cr>
-nnoremap <leader>e ofunction() {<cr>}<ESC>kf(
 nnoremap <leader>w :w<cr>
 nnoremap <leader>x :x<cr>
 nnoremap <leader>l :bnext<cr>
 nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 nnoremap <leader>cc :cd /<cr>
-nnoremap <leader>q :q<cr>
+nnoremap <leader>q :q!<cr>
 nnoremap <leader>m :e ~/.buffer
 nnoremap <leader>s :%s///g<left><left><left>
 vnoremap <leader>s :s///g<left><left><left>
@@ -124,20 +118,20 @@ nnoremap , @@
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-vnoremap ,1 <esc>`>a)<esc>`<i(<esc>
-vnoremap ,2 <esc>`>a]<esc>`<i[<esc>
-vnoremap ,3 <esc>`>a}<esc>`<i{<esc>
-vnoremap ,, <esc>`>a"<esc>`<i"<esc>
-vnoremap ,q <esc>`>a'<esc>`<i'<esc>
-vnoremap ,e <esc>`>a`<esc>`<i`<esc>
+vnoremap $1 <esc>`>a)<esc>`<i(<esc>
+vnoremap $2 <esc>`>a]<esc>`<i[<esc>
+vnoremap $3 <esc>`>a}<esc>`<i{<esc>
+vnoremap $" <esc>`>a"<esc>`<i"<esc>
+vnoremap $' <esc>`>a'<esc>`<i'<esc>
+vnoremap $` <esc>`>a`<esc>`<i`<esc>
 
 inoremap $1 ()<esc>i
 inoremap $2 []<esc>i
 inoremap $3 {}<esc>i
 inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
-inoremap $t <><esc>i
+inoremap $' ''<esc>i
+inoremap $" ""<esc>i
+inoremap $< <><esc>i
 
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
