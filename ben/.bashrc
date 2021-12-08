@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias ll='ls -alF --color=auto'
+alias ll='ls -ahlF --color=auto'
 alias zip='zip -r'
 alias al='alsamixer'
 alias coms342='cd ~/git/classnotes/coms342'
@@ -24,6 +24,7 @@ alias snd='amixer set Headphone playback 50; amixer set Speaker playback 0; amix
 alias mute='amixer set Headphone playback 0; amixer set Speaker playback 0; amixer set Master 0'
 alias asnd='amixer set Headphone playback 0; amixer set Speaker playback 80; amixer set Master playback 87'
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
 savedotfiles() {
   cd /home/ben/git/dotfiles
   git add .
