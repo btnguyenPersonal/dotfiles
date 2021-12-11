@@ -41,7 +41,10 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
+	{ "><>",      NULL },
 	{ "[M]",      monocle },
+	{ "TTT",      bstack },
+	{ "===",      bstackhoriz },
 };
 
 /* key definitions */
@@ -63,38 +66,41 @@ static const char *browsercmd[]  = { "chromium", NULL };
 static const char *privatebrowsercmd[]  = { "chromium", "--incognito", NULL };
 static const char *pdfcmd[]  = { "evince", NULL };
 static const char *screenshotcmd[]  = { "scrot", "-e", "mv $f ~/Pictures/", NULL };
-static const char *volupcmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5+" };
-static const char *voldowncmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5-" };
 static const char *spotifycmd[]  = { "spotify", NULL };
 static const char *poweroffcmd[]  = { "sudo", "poweroff", NULL };
+static const char *discordcmd[]  = { "discord", NULL };
+static const char *steamcmd[]  = { "steam", NULL };
+static const char *officecmd[]  = { "libreoffice", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,             XK_z, spawn,          {.v = browsercmd } },
-	{ MODKEY|ShiftMask,             XK_x, spawn,          {.v = pdfcmd } },
-	{ MODKEY|ShiftMask,             XK_v, spawn,          {.v = spotifycmd } },
-	{ MODKEY|ShiftMask,             XK_b, spawn,          {.v = screenshotcmd } },
-	{ MODKEY|ShiftMask,             XK_n, spawn,          {.v = privatebrowsercmd } },
-	{ MODKEY|ShiftMask,             XK_Delete, spawn,          {.v = poweroffcmd } },
-	{ MODKEY,             XK_i, spawn,          {.v = voldowncmd  } },
-	{ MODKEY,             XK_o, spawn,          {.v = volupcmd} },
-	//{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ MODKEY,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             XK_z, spawn,          {.v = browsercmd } },
+	{ MODKEY,             XK_x, spawn,          {.v = pdfcmd } },
+	{ MODKEY,             XK_v, spawn,          {.v = spotifycmd } },
+	{ MODKEY,             XK_b, spawn,          {.v = screenshotcmd } },
+	{ MODKEY,             XK_n, spawn,          {.v = privatebrowsercmd } },
+	{ MODKEY,             XK_m, spawn,          {.v = discordcmd } },
+	{ MODKEY,             XK_a, spawn,          {.v = steamcmd } },
+	{ MODKEY,             XK_s, spawn,          {.v = officecmd } },
+	{ MODKEY,             XK_Delete, spawn,          {.v = poweroffcmd } },
+	{ MODKEY,                       XK_d,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	//{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	//{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
+	{ MODKEY,                       XK_space, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	//{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	//{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	//{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
-	//{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY,             XK_c,      killclient,     {0} },
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[3]} },
+	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[4]} },
+	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_i,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	//{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },

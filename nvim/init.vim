@@ -46,7 +46,8 @@ set clipboard+=unnamedplus
 set splitbelow
 set splitright
 set history=500
-map 0 ^
+set mouse=a
+set nostartofline
 hi Pmenu guibg=Black guifg=White
 hi PmenuSel guibg=Black guifg=LightGreen
 vnoremap <ESC> <ESC><ESC>
@@ -63,13 +64,13 @@ map <C-l> <C-w>l
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
-imap kj <ESC>
 nmap Y y$
 vnoremap < <gv
 vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
 inoremap <C-h> <C-w>
+inoremap kj <ESC>
 
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
