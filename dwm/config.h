@@ -2,8 +2,12 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int gappih    = 14;       /* horiz inner gap between windows */
+static const unsigned int gappiv    = 14;       /* vert inner gap between windows */
+static const unsigned int gappoh    = 14;       /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov    = 14;       /* vert outer gap between windows and screen edge */
+static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -30,6 +34,7 @@ static const Rule rules[] = {
 	 */
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	{ "Alacritty",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ "Ranger",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
@@ -39,13 +44,25 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
+#define FORCE_VSPLIT 1  /* nrowgrid layout: force two clients to always split vertically */
+#include "vanitygaps.c"
+
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },
 	{ "[M]",      monocle },
+	{ "[@]",      spiral },
+	{ "[\\]",     dwindle },
+	{ "H[]",      deck },
 	{ "TTT",      bstack },
 	{ "===",      bstackhoriz },
+	{ "###",      nrowgrid },
+	{ "---",      horizgrid },
+	{ ":::",      gaplessgrid },
+	{ "|M|",      centeredmaster },
+	{ ">M>",      centeredfloatingmaster },
+	{ "><>",      NULL },    /* no layout function means floating behavior */
+	{ NULL,       NULL },
 };
 
 /* key definitions */
@@ -65,7 +82,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browsercmd[]  = { "chromium", NULL };
 static const char *privatebrowsercmd[]  = { "chromium", "--incognito", NULL };
-static const char *pdfcmd[]  = { "evince", NULL };
+static const char *pdfcmd[]  = { "zathura", NULL };
 static const char *screenshotcmd[]  = { "scrot", "-e", "mv $f ~/Pictures/", NULL };
 static const char *spotifycmd[]  = { "spotify", NULL };
 static const char *poweroffcmd[]  = { "sudo", "poweroff", NULL };
@@ -75,6 +92,22 @@ static const char *officecmd[]  = { "libreoffice", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY|Mod4Mask,              XK_u,      incrgaps,       {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_u,      incrgaps,       {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_i,      incrigaps,      {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_i,      incrigaps,      {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_o,      incrogaps,      {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_o,      incrogaps,      {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_6,      incrihgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_6,      incrihgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_7,      incrivgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_7,      incrivgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_8,      incrohgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_8,      incrohgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_9,      incrovgaps,     {.i = +1 } },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_9,      incrovgaps,     {.i = -1 } },
+	{ MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
+	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,             XK_z, spawn,          {.v = browsercmd } },
@@ -95,12 +128,17 @@ static Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_space, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[3]} },
-	{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[4]} },
-	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_i,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY,             					XK_c,      killclient,     {0} },
+	//{ MODKEY,                       XK_r,      setlayout,      {.v = &layouts[8]} }, //2row top split
+	//{ MODKEY|ShiftMask,             XK_r,      setlayout,      {.v = &layouts[9]} }, //2row bot split
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} }, //default
+	{ MODKEY,             					XK_y,      setlayout,      {.v = &layouts[1]} }, //monacle
+	//{ MODKEY,                       XK_y,      setlayout,      {.v = &layouts[2]} }, //fib
+	//{ MODKEY|ShiftMask,             XK_y,      setlayout,      {.v = &layouts[3]} }, //reversefib
+	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[4]} }, //stacked slaves
+	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[5]} }, //reverse default
+	//{ MODKEY,                       XK_i,      setlayout,      {.v = &layouts[6]} }, //reverse thin
+	{ MODKEY,             					XK_i,      setlayout,      {.v = &layouts[7]} }, //tiled
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
