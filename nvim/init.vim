@@ -9,9 +9,6 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'PhilRunninger/nerdtree-visual-selection'
 
 " Initialize plugin system
 call plug#end()
@@ -47,7 +44,7 @@ set splitbelow
 set splitright
 set history=500
 set mouse=a
-set nostartofline
+set linebreak
 hi Pmenu guibg=Black guifg=White
 hi PmenuSel guibg=Black guifg=LightGreen
 vnoremap <ESC> <ESC><ESC>
@@ -79,17 +76,13 @@ highlight CocHighlightText guibg='Green' guifg='White'
 highlight CocHighlightRead guibg='Green' guifg='White'
 highlight CocHighlightWrite guibg='Green' guifg='White'
 
-nnoremap <leader>n :NERDTreeToggle<cr>
-let g:nerdtree_vis_confirm_open = 0
-let g:nerdtree_vis_confirm_delete = 0
-let g:nerdtree_vis_confirm_copy = 0
-let g:nerdtree_vis_confirm_move = 0
 vmap <C-_> <plug>NERDCommenterToggle
 nmap <C-_> <plug>NERDCommenterToggle
 
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
+nnoremap <leader>a :silent !alacritty -e nvim <C-r>% &<cr>:q<cr>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :AllFiles<cr>
 nnoremap <leader>b :Buffers<cr>
@@ -104,18 +97,19 @@ nnoremap <leader>h :bprevious<cr>
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
 nnoremap <leader>cc :cd /<cr>
 nnoremap <leader>q :q!<cr>
-nnoremap <leader>m :e ~/.buffer
+nnoremap <leader>m :e ~/.buffer<cr>
 nnoremap <leader>s :%s///g<left><left><left>
 vnoremap <leader>s :s///g<left><left><left>
-nnoremap <leader>v :vsp<cr>
-nnoremap <leader>i :vsp ~/.config/nvim/init.vim<cr>
+nnoremap <leader>v :silent !alacritty -e nvim <C-r>% &<cr>
+nnoremap <leader>i :silent !alacritty -e nvim ~/.config/nvim/init.vim &<cr>
 nnoremap <leader>d "_d
-vnoremap <leader>d "_d
+vnoremap <leader>D "_D
 vnoremap <leader>p "_dp
 vnoremap <leader>P "_dP
 nnoremap <leader><cr> :noh<cr>
 nnoremap , @@
 
+autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 vnoremap $1 <esc>`>a)<esc>`<i(<esc>

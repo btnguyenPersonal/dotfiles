@@ -25,6 +25,26 @@ fi
 
 # start some nice programs
 
+#[{-\`},
+#{.o+\`},
+#{\`ooo/},
+#{\`+oooo:},
+#{\`+oooooo:},
+#{-+oooooo+:},
+#{\`/:-:++oooo+:},
+#{\`/++++/+++++++:},
+#{\`/++++++++++++++:},
+#{\`/+++ooooooooooooo/\`},
+#{./ooosssso++osssssso+\`},
+#{.oossssso-\`\`\`\`/ossssss+\`},
+#{-osssssso.      :ssssssso.},
+#{:osssssss/        osssso+++.},
+#{/ossssssss/        +ssssooo/-},
+#{\`/ossssso+/:-        -:/+osssso+-},
+#{\`+sso+:-\`                 \`.-/+oso:},
+#{\`++:.                           \`-/+/},
+#{.\`                                 \`/},]
+
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
   [ -x "$f" ] && . "$f"
@@ -33,7 +53,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 status () {
-  echo -n " $(amixer | grep 'Front Left:' | awk '{print $5}') $(date '+%m/%d/%Y ')$(date '+%r' | awk '{print $1}' | sed s/:[0-9][0-9]$//) $(date '+%r' | awk '{print $2}') "
+  echo -n " $(date '+%m/%d/%Y ')$(date '+%r' | awk '{print $1}' | sed s/:[0-9][0-9]$//) $(date '+%r' | awk '{print $2}') "
 }
 
 updateStatus () {
@@ -46,6 +66,6 @@ updateStatus () {
 xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 144 --right-of DVI-D-1
 updateStatus &
 ~/.fehbg &
-compton --no-fading-openclose &
+compton -I .1 -O .1 &
 xrdb ~/.Xresources
 exec dwm
