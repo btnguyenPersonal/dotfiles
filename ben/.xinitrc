@@ -68,4 +68,5 @@ updateStatus &
 ~/.fehbg &
 compton -I .1 -O .1 &
 xrdb ~/.Xresources
+wal -i "$(< "${HOME}/.cache/wal/wal")"
 exec dwm

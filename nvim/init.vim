@@ -100,7 +100,7 @@ nnoremap <leader>q :q!<cr>
 nnoremap <leader>m :e ~/.buffer<cr>
 nnoremap <leader>s :%s///g<left><left><left>
 vnoremap <leader>s :s///g<left><left><left>
-nnoremap <leader>v :silent !alacritty -e nvim <C-r>% &<cr>
+nnoremap <leader>v :vsp<cr>
 nnoremap <leader>i :silent !alacritty -e nvim ~/.config/nvim/init.vim &<cr>
 nnoremap <leader>d "_d
 vnoremap <leader>D "_D

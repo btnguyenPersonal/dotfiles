@@ -23,8 +23,10 @@ alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
 alias updategrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias zt='zathura'
 alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
+alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 savedotfiles() {
   cd /home/ben/git/dotfiles
+  sudo ./pullfiles.sh
   git add .
   git commit -m "$1"
   git push
@@ -45,9 +47,18 @@ flashreader() {
 
 export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
 export PATH=$PATH:/home/ben/.scripts
-export PROMPT='%B%F{green}[%~]%f%b%B%F{red}$%f%b '
+export PROMPT='%B[%~]$%b '
 
 set -o vi
+bindkey "^[[3~" delete-char
+bindkey "^[[F~" end-of-line
+bindkey "^[[H~" beginning-of-line
+bindkey "^[[3;5~" kill-word
+bindkey "^H" backward-kill-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
 
 bindkey "kj" vi-cmd-mode
 
@@ -70,9 +81,14 @@ function zle-line-finish
 {
     print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
 }
-
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
 zle -N zle-line-init
 zle -N zle-line-finish
 zle -N zle-keymap-select
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+cd
+cat /home/ben/.cache/wal/sequences
