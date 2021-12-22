@@ -1,6 +1,7 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'JiriChara/dragvisuals.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -16,19 +17,22 @@ call plug#end()
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 
+call matchadd('ColorColumn', '\%81v', 100)
 set wildmenu
-set wildmode=longest:full,full
-set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.snv/*,*/.DS_Store
+set wildmode=longest:longest,full
+set wildignorecase
+set noshowmode
 set termguicolors
 set expandtab
 set smarttab
 set cindent
+set copyindent
 set tabstop=2
 set shiftwidth=2
 set nobackup
 set nowb
-set noswapfile
-set scrolloff=8
+set directory=~/.vim/tmp
+set scrolloff=2
 set incsearch
 set hlsearch
 set lazyredraw
@@ -45,6 +49,11 @@ set splitright
 set history=500
 set mouse=a
 set linebreak
+set virtualedit=block
+set matchpairs+=<:>
+set title
+set titleold=
+set title titlestring=
 hi Pmenu guibg=Black guifg=White
 hi PmenuSel guibg=Black guifg=LightGreen
 vnoremap <ESC> <ESC><ESC>
@@ -53,10 +62,18 @@ vnoremap Y myY`y
 vnoremap <C-a> <C-a>gv
 vnoremap <C-x> <C-x>gv
 nnoremap ; :
-nnoremap : ;
 vnoremap ; :
-vnoremap : ;
+nnoremap v <C-V>
+nnoremap <C-V> v
+xnoremap v <C-V>
+xnoremap <C-V> v
+xmap <BS> x
 syntax on
+vmap <expr> <LEFT>  'DVB_Drag('left')
+vmap <expr> <RIGHT> 'DVB_Drag('right')
+vmap <expr> <DOWN>  'DVB_Drag('down')
+vmap <expr> <UP>    'DVB_Drag('up')
+vmap <expr> D DVB_Duplicate()
 map <C-l> <C-w>l
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -68,6 +85,17 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 inoremap <C-h> <C-w>
 inoremap kj <ESC>
+inoremap <C-a> <HOME>
+inoremap <C-e> <END>
+xnoremap <S-TAB> :s/\%V/0<C-V><TAB>/<CR>gvg<C-A>gv:retab<ESC>gvI<C-G>u<ESC>gv/ <CR>:s/\%V /./<CR>:nohl<CR>
+xnoremap <expr>  G   'G' . virtcol('.') . "\|"
+xnoremap <expr>  }   '}' . virtcol('.') . "\|"
+xnoremap <expr>  {   '{' . virtcol('.') . "\|"
+
+iab retrun return
+iab pritn print
+iab teh the
+iab liek like
 
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
@@ -82,7 +110,6 @@ nmap <C-_> <plug>NERDCommenterToggle
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
-nnoremap <leader>a :silent !alacritty -e nvim <C-r>% &<cr>:q<cr>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>F :AllFiles<cr>
 nnoremap <leader>b :Buffers<cr>
@@ -106,7 +133,7 @@ nnoremap <leader>d "_d
 vnoremap <leader>D "_D
 vnoremap <leader>p "_dp
 vnoremap <leader>P "_dP
-nnoremap <leader><cr> :noh<cr>
+nnoremap <cr> :noh<cr>
 nnoremap , @@
 
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
@@ -162,6 +189,7 @@ let g:coc_global_extensions = [
 set hidden
 set updatetime=300
 set autoread
+set autowrite
 set shortmess+=c
 
 inoremap <silent><expr> <TAB>

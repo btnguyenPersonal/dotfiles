@@ -24,6 +24,7 @@ alias updategrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias zt='zathura'
 alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
+alias p='sudo pacman'
 savedotfiles() {
   cd /home/ben/git/dotfiles
   sudo ./pullfiles.sh
@@ -47,13 +48,14 @@ flashreader() {
 
 export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
 export PATH=$PATH:/home/ben/.scripts
-export PROMPT='%B[%~]$%b '
+export PROMPT='%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b '
 
 set -o vi
 bindkey "^[[3~" delete-char
 bindkey "^[[F~" end-of-line
 bindkey "^[[H~" beginning-of-line
 bindkey "^[[3;5~" kill-word
+bindkey "^?" backward-delete-char
 bindkey "^H" backward-kill-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
@@ -90,5 +92,3 @@ zle -N zle-line-finish
 zle -N zle-keymap-select
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-cd
-cat /home/ben/.cache/wal/sequences
