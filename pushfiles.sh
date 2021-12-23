@@ -1,8 +1,8 @@
 #!/bin/bash
 cp ./ben/.xinitrc /home/ben/.xinitrc
-cp ./ben/.bashrc /home/ben/.bashrc
-cp ./ben/.bash_profile /home/ben/.bash_profile
+cp ./ben/.zshrc /home/ben/.zshrc
+cp ./ben/.zprofile /home/ben/.zprofile
 cp ./nvim/init.vim /home/ben/.config/nvim/init.vim
 cp ./alacritty/alacritty.yml /home/ben/.config/alacritty/alacritty.yml
 cp ./nvim/coc-settings.json /home/ben/.config/nvim/coc-settings.json
-cp -r ./dwm /bin
+cp ./tmux/.tmux.conf /home/ben/.tmux.conf
