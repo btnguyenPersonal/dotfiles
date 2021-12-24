@@ -13,7 +13,6 @@ vnoremap Y myY`y
 nnoremap ; :
 vnoremap ; :
 set timeoutlen=500
-set ttimeoutlen=0
 set wildmenu
 set wildmode=longest:longest,full
 set wildignorecase
