@@ -29,8 +29,6 @@ set cindent
 set copyindent
 set tabstop=2
 set shiftwidth=2
-set nobackup
-set nowb
 set directory=~/.vim/tmp
 set scrolloff=2
 set incsearch
@@ -52,8 +50,6 @@ set linebreak
 set virtualedit=block
 set matchpairs+=<:>
 set title
-set titleold=
-set title titlestring=
 hi Pmenu guibg=Black guifg=White
 hi PmenuSel guibg=Black guifg=LightGreen
 vnoremap <ESC> <ESC><ESC>
