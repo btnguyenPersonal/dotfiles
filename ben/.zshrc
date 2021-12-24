@@ -92,3 +92,4 @@ zle -N zle-line-finish
 zle -N zle-keymap-select
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -z $TMUX ]; then; tmux; fi
