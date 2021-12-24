@@ -103,8 +103,6 @@ nnoremap v <C-V>
 nnoremap <C-V> v
 xnoremap v <C-V>
 xnoremap <C-V> v
-" allows backspace in normal mode
-xmap <BS> x
 " syntax highlighting on
 syntax on
 " cool dragging for visual block

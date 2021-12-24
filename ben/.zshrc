@@ -50,7 +50,6 @@ export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1
 export PATH=$PATH:/home/ben/.scripts
 export PROMPT='%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b '
 
-set -o vi
 bindkey "^[[3~" delete-char
 bindkey "^[[F~" end-of-line
 bindkey "^[[H~" beginning-of-line
@@ -62,34 +61,12 @@ bindkey "^[[1;5D" backward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 
-bindkey "kj" vi-cmd-mode
-
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
-
-function zle-keymap-select zle-line-init
-{
-    # change cursor shape in iTerm2
-    case $KEYMAP in
-        vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
-        viins|main) print -n -- "\E]50;CursorShape=1\C-G";;  # line cursor
-    esac
-
-    zle reset-prompt
-    zle -R
-}
-
-function zle-line-finish
-{
-    print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
-}
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory
-zle -N zle-line-init
-zle -N zle-line-finish
-zle -N zle-keymap-select
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 if [ -z $TMUX ]; then; tmux; fi
