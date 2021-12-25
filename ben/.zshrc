@@ -1,7 +1,3 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -22,7 +18,7 @@ alias initala='nvim ~/.config/alacritty/alacritty.yml'
 alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
 alias updategrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias zt='zathura'
-alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
+alias sv='fzf --layout=reverse --height=9 | xargs -r vim'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 alias p='sudo pacman'
 savedotfiles() {
@@ -54,7 +50,6 @@ bindkey "^[[3~" delete-char
 bindkey "^[[F~" end-of-line
 bindkey "^[[H~" beginning-of-line
 bindkey "^[[3;5~" kill-word
-bindkey "^?" backward-delete-char
 bindkey "^H" backward-kill-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word

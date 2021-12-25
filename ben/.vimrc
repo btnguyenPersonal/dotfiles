@@ -1,58 +1,50 @@
+"settings
 syntax on
 color evening
-set number relativenumber
-set clipboard+=unnamedplus
-nmap <SPACE> <leader>
-vmap <SPACE> <leader>
-inoremap <C-h> <C-w>
-inoremap kj <ESC>
-nnoremap <leader>w :w<cr>
-nnoremap <leader>x :x<cr>
-vnoremap y myy`y
-vnoremap Y myY`y
-nnoremap ; :
-vnoremap ; :
-set timeoutlen=500
-set wildmenu
-set wildmode=longest:longest,full
-set wildignorecase
+set nu rnu
+set is
+set nocompatible
+filetype plugin indent on
+filetype off
 set hidden
+set clipboard=unnamedplus
+set autoindent
+set ignorecase
 set expandtab
-set copyindent
-set tabstop=2
-set shiftwidth=2
-set scrolloff=8
-set hlsearch
+set tabstop=4
+set shiftwidth=4
 set backspace=eol,start,indent
-set matchpairs+=<:>
+set incsearch
+set hlsearch
+set matchpairs=(:),{:},[:],<:>,':',":"
 set laststatus=0
+set modelines=0
 set virtualedit=block
-vnoremap <C-a> <C-a>gv
-vnoremap <C-x> <C-x>gv
-nnoremap v <C-V>
-xnoremap v <C-V>
-nnoremap <C-V> v
-xnoremap <C-V> v
-map <C-l> <C-w>l
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-nmap Y y$
-nmap <cr> :noh<cr>
-vnoremap < <gv
-vnoremap > >gv
+set lazyredraw
+"keybinds
+inoremap kj <ESC>
+inoremap <C-h> <C-w>
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {{ {
+inoremap {} {}
+vnoremap y myy`y
+nnoremap Y y$
 nnoremap n nzzzv
 nnoremap N Nzzzv
+nnoremap v <C-v>
+nnoremap v <C-v>
+nnoremap <C-v> v
 inoremap <C-a> <HOME>
 inoremap <C-e> <END>
-nnoremap <leader>e :e<space>
-nnoremap <leader>l :bnext<cr>
-nnoremap <leader>h :bprevious<cr>
-nnoremap <leader>q :q!<cr>
+nmap <cr> :noh<cr>
+"leader binds
+nmap <SPACE> <leader>
+vmap <SPACE> <leader>
+nnoremap <leader>a mggg=G`gzz
 nnoremap <leader>s :%s//g<left><left>
 vnoremap <leader>s :s//g<left><left>
-nnoremap <leader>v :vsp<cr>
-nnoremap <leader>d "_d
-vnoremap <leader>D "_D
-vnoremap <leader>p "_dp
-vnoremap <leader>P "_dP
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q!<cr>
+nnoremap <leader>x :x<cr>
+autocmd BufWritePre * %s/\s\+$//e
