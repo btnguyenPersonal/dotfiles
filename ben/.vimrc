@@ -1,26 +1,24 @@
-syntax on
-color evening
-set nu rnu
 set nocompatible
-filetype plugin indent on
-filetype off
-set path+=**
-set timeoutlen=200
-set hidden
-set clipboard=unnamedplus
-set expandtab
-set smarttab
-set cindent
-set copyindent
-set ignorecase
-set tabstop=2
-set shiftwidth=2
-set backspace=eol,start,indent
-set matchpairs=(:),{:},[:],<:>,':',":"
-set laststatus=0
-set modelines=0
 set virtualedit=block
-inoremap <C-h> <C-w>
-inoremap <C-a> <HOME>
-inoremap <C-e> <END>
+set modelines=0
+set laststatus=0
+set matchpairs=(:),{:},[:],<:>,':',":"
+set backspace=eol,start,indent
+set shiftwidth=2
+set tabstop=2
+set ignorecase
+set copyindent
+set cindent
+set smarttab
+set expandtab
+set clipboard=unnamedplus
+set hidden
+set timeoutlen=200
+set path+=**
+set nu rnu
+color evening
+syntax on
+filetype off
+filetype plugin indent on
 autocmd BufWritePre * %s/\s\+$//e
+inoremap <C-h> <C-w>
