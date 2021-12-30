@@ -1,12 +1,12 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+" markdown preview
+Plug 'iamcco/markdown-preview.nvim'
 " cool visual dragging plugin
 Plug 'JiriChara/dragvisuals.vim'
 " moar languages
 Plug 'sheerun/vim-polyglot'
-" terminal in vim so never have to :q
-Plug 'voldikss/vim-floaterm'
 " fzf so i can find files
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -169,20 +169,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " force save, actually doesn't really work idk why
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-" floaterm stuff
-let g:floaterm_keymap_toggle = '<C-t>'
-let g:floaterm_gitcommit='floaterm'
-let g:floaterm_autoinsert=1
-let g:floaterm_width=0.95
-let g:floaterm_height=0.95
-let g:floaterm_wintitle=0
-let g:floaterm_autoclose=1
-
-augroup FloatermCustomisations
-    autocmd!
-    autocmd ColorScheme * highlight FloatermBorder guibg=none
-augroup END
-
 " trim whitespace on save
 fun! TrimWhitespace()
     let l:save = winsaveview()
@@ -237,3 +223,6 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+let g:mkdp_auto_start = 1
+let g:mkdp_browser = 'surf'
