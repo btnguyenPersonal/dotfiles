@@ -71,6 +71,7 @@ set smartcase
 set number relativenumber
 " copy paste integration with OS
 set clipboard+=unnamedplus
+set timeoutlen=200
 " where :sp and :vsp will split to
 set splitbelow
 set splitright
@@ -84,25 +85,10 @@ set linebreak
 set virtualedit=block
 " changes the title of the terminal
 set title
+set gdefault
 " coc autosuggestions colors
 hi Pmenu guibg=White guifg=Black
 hi PmenuSel guibg=LightGreen guifg=Black
-" always exit visual mode in one ESC
-vnoremap <ESC> <ESC><ESC>
-" keep cursor in one place when copying
-vnoremap y myy`y
-vnoremap Y myY`y
-" keep selection when using increment or decrement
-vnoremap <C-a> <C-a>gv
-vnoremap <C-x> <C-x>gv
-" easier cmd button
-nnoremap ; :
-vnoremap ; :
-" swap block and regular selection
-nnoremap v <C-V>
-nnoremap <C-V> v
-xnoremap v <C-V>
-xnoremap <C-V> v
 " syntax highlighting on
 syntax on
 " cool dragging for visual block
@@ -111,28 +97,11 @@ vmap <expr> <RIGHT> 'DVB_Drag('right')
 vmap <expr> <DOWN>  'DVB_Drag('down')
 vmap <expr> <UP>    'DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
-" easier window switching
-map <C-l> <C-w>l
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-" make Y act like D and C
-nmap Y y$
-" keep selection when changing indentation
-vnoremap < <gv
-vnoremap > >gv
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
 " allow ctrl backspace in insert mode
 inoremap <C-h> <C-w>
-" easy shortcut to get out of insert
-inoremap kj <ESC>
-" emacs home and end shortcuts
-inoremap <C-a> <HOME>
-inoremap <C-e> <END>
-" add numberings
-xnoremap <S-TAB> :s/\%V/0<C-V><TAB>/<CR>gvg<C-A>gv:retab<ESC>gvI<C-G>u<ESC>gv/ <CR>:s/\%V /./<CR>:nohl<CR>
 " easier visual block moving around
 xnoremap <expr>  G   'G' . virtcol('.') . "\|"
 xnoremap <expr>  }   '}' . virtcol('.') . "\|"
@@ -140,8 +109,6 @@ xnoremap <expr>  {   '{' . virtcol('.') . "\|"
 " press enter to remove current highlighting useful after searching and don't
 " want the highlighting to happen anymore
 nnoremap <cr> :noh<cr>
-" easy macro (i do all my macros on the w tag)
-nnoremap , @w
 " pressing enter doesn't accept coc autosuggestions
 inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
 " tab will accept an autosuggestion
@@ -178,6 +145,8 @@ let $FZF_DEFAULT_OPTS = '--layout=reverse'
 " leader commands
 
 " search files
+nnoremap <leader>s :%s//<left>
+vnoremap <leader>s :s//<left>
 nnoremap <leader>f :Files<cr>
 " search through open buffers
 nnoremap <leader>b :Buffers<cr>
@@ -189,33 +158,6 @@ nnoremap <leader>r :Rg<cr>
 nnoremap <leader>R :Rg<space>
 " look at branches
 nnoremap <leader>gb :GBranches<cr>
-" easy save
-nnoremap <leader>w :w<cr>
-" easy save & exit
-nnoremap <leader>x :x<cr>
-" easy switch buffers
-nnoremap <leader>l :bnext<cr>
-nnoremap <leader>h :bprevious<cr>
-" change directory to current directory
-nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
-" change directory to home directory
-nnoremap <leader>cc :cd ~<cr>
-" easy quit
-nnoremap <leader>q :q!<cr>
-" open buffer for messing around
-nnoremap <leader>m :vsp ~/.buffer<cr>
-" easy substitute commands
-nnoremap <leader>s :%s//g<left><left>
-vnoremap <leader>s :s//g<left><left>
-" split current file
-nnoremap <leader>v :vsp<cr>
-" split and open init.vim
-nnoremap <leader>i :vsp ~/.config/nvim/init.vim<cr>
-" delete and paste without copying to clipboard
-nnoremap <leader>d "_d
-vnoremap <leader>D "_D
-vnoremap <leader>p "_dp
-vnoremap <leader>P "_dP
 
 " no idea
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
