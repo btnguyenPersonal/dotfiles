@@ -14,7 +14,7 @@ set expandtab
 set clipboard=unnamedplus
 set hidden
 set timeoutlen=200
-set path+=**
+set path+=.,**
 set nu rnu
 color evening
 syntax on

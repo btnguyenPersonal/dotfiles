@@ -5,11 +5,10 @@ alias ls='ls --color=auto'
 alias ll='ls -ahlF --color=auto'
 alias zip='zip -r'
 alias al='alsamixer'
-alias coms352='cd ~/git/classnotesS2021/coms352'
-alias coms363='cd ~/git/classnotesS2021/coms363'
-alias coms402='cd ~/git/classnotesS2021/coms402'
-alias coms417='cd ~/git/classnotesS2021/coms417'
-alias coms472='cd ~/git/classnotesS2021/coms472'
+alias coms342='cd ~/git/classnotes/coms342'
+alias coms319='cd ~/git/classnotes/coms319'
+alias coms474='cd ~/git/classnotes/coms474'
+alias eng314='cd ~/git/classnotes/eng314'
 alias conia='iwctl station wlan0 connect "IASTATE"'
 alias conhome='iwctl station wlan0 connect CenturyLink1230_5G --passphrase tfcda7343cb3'
 alias getnet='iwctl station wlan0 get-networks'
@@ -22,17 +21,15 @@ alias zt='zathura'
 alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 alias p='sudo pacman'
-alias updatedotfiles='cd ~/git/dotfiles;git pull;./pushfiles.sh;cd ~'
-dtf() {
-  cd ~/git/dotfiles
-  ./pullfiles.sh
+topdf() {
+  pandoc -f markdown -t pdf -o "$1".pdf *.md
+}
+savedotfiles() {
+  cd /home/ben/git/dotfiles
+  sudo ./pullfiles.sh
   git add .
   git commit -m "$1"
   git push
-  cd ~
-}
-topdf() {
-  pandoc -f markdown -t pdf -o "$1".pdf *.md
 }
 connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
