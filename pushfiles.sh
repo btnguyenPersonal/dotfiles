@@ -1,4 +1,6 @@
 #!/bin/bash
+cd ~/git/dotfiles
+git pull
 cp ./ben/.xinitrc /home/ben/.xinitrc
 cp ./ben/.zshrc /home/ben/.zshrc
 cp ./ben/.zprofile /home/ben/.zprofile
