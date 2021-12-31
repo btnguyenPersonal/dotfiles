@@ -21,6 +21,7 @@ alias zt='zathura'
 alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 alias p='sudo pacman'
+alias mario='games/sm64-port/build/us_pc/sm64.us'
 topdf() {
   pandoc -f markdown -t pdf -o "$1".pdf *.md
 }
