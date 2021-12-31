@@ -29,6 +29,7 @@ dtf() {
   git add .
   git commit -m "$1"
   git push
+  cd ~
 }
 topdf() {
   pandoc -f markdown -t pdf -o "$1".pdf *.md
