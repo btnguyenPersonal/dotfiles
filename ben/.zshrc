@@ -34,13 +34,6 @@ dtf() {
 topdf() {
   pandoc -f markdown -t pdf -o "$1".pdf *.md
 }
-savedotfiles() {
-  cd /home/ben/git/dotfiles
-  sudo ./pullfiles.sh
-  git add .
-  git commit -m "$1"
-  git push
-}
 connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
 }
