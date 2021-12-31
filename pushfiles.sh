@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/git/dotfiles
+git fetch
 git pull
 cp ./ben/.xinitrc /home/ben/.xinitrc
 cp ./ben/.zshrc /home/ben/.zshrc
