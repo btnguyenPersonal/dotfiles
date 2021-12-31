@@ -22,7 +22,7 @@ alias zt='zathura'
 alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 alias p='sudo pacman'
-alias updatedotfiles='cd ~/git/dotfiles;git pull;./pushfiles.sh;cd ~'
+alias updatedotfiles='cd ~/git/dotfiles>/dev/null;git pull>/dev/null;./pushfiles.sh;cd ~'
 dtf() {
   cd ~/git/dotfiles
   ./pullfiles.sh
