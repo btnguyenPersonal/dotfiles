@@ -145,8 +145,6 @@ let $FZF_DEFAULT_OPTS = '--layout=reverse'
 " leader commands
 
 " search files
-nnoremap <leader>s :%s//<left>
-vnoremap <leader>s :s//<left>
 nnoremap <leader>f :Files<cr>
 " search through open buffers
 nnoremap <leader>b :Buffers<cr>
