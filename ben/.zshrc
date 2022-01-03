@@ -89,4 +89,5 @@ SAVEHIST=1000
 setopt appendhistory
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 if [ -z $TMUX ]; then; tmux; fi
