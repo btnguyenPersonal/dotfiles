@@ -105,9 +105,6 @@ inoremap <C-h> <C-w>
 xnoremap <expr>  G   'G' . virtcol('.') . "\|"
 xnoremap <expr>  }   '}' . virtcol('.') . "\|"
 xnoremap <expr>  {   '{' . virtcol('.') . "\|"
-" press enter to remove current highlighting useful after searching and don't
-" want the highlighting to happen anymore
-nnoremap <cr> :noh<cr>
 " pressing enter doesn't accept coc autosuggestions
 inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
 " tab will accept an autosuggestion
