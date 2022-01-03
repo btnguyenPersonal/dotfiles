@@ -60,7 +60,7 @@ set backspace=eol,start,indent
 set matchpairs+=<:>
 " statusline
 set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
-set laststatus=2
+set laststatus=0
 " i have no idea
 set whichwrap+=<,>,h,l
 " fuck sign column and fold column
