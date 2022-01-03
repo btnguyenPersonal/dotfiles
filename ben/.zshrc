@@ -23,6 +23,11 @@ alias sv='fzf --layout=reverse --height=9 | xargs -r nvim'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 alias p='sudo pacman'
 alias mario='games/sm64-port/build/us_pc/sm64.us'
+_fix_cursor() {
+   echo -ne '\e[5 q'
+}
+
+precmd_functions+=(_fix_cursor)
 topdf() {
   pandoc -f markdown -t pdf -o "$1".pdf *.md
 }
