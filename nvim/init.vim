@@ -17,6 +17,8 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-abolish'
 
 " Initialize plugin system
 call plug#end()
@@ -71,7 +73,7 @@ set foldcolumn=0
 set ignorecase
 set smartcase
 " line numbers on the side
-set relativenumber
+set number
 " copy paste integration with OS
 set clipboard+=unnamedplus
 " where :sp and :vsp will split to
