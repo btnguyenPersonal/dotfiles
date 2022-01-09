@@ -62,7 +62,6 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
 set laststatus=0
 " i have no idea
 set whichwrap+=<,>,h,l
