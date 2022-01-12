@@ -86,10 +86,9 @@ set mouse=a
 " intuitive visual block
 set virtualedit=block
 " changes the title of the terminal
-set title
-" coc autosuggestions colors
-hi Pmenu guibg=White guifg=Black
-hi PmenuSel guibg=LightGreen guifg=Black
+set title titlestring=%<%F%=%l/%L-%P titlelen=70
+" spell check
+set spell
 " syntax highlighting on
 syntax on
 " cool dragging for visual block
@@ -108,28 +107,18 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 " allow ctrl backspace in insert mode
 inoremap <C-h> <C-w>
+inoremap {<cr> {<cr>}<esc>O
 " easier visual block moving around
 xnoremap <expr>  G   'G' . virtcol('.') . "\|"
 xnoremap <expr>  }   '}' . virtcol('.') . "\|"
 xnoremap <expr>  {   '{' . virtcol('.') . "\|"
-" pressing enter doesn't accept coc autosuggestions
-inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
-" tab will accept an autosuggestion
-inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
-" c-n and c-p will cycle through the suggestions
-inoremap <silent><expr> <c-n>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "" :
-      \ coc#refresh()
-inoremap <silent><expr><c-p> pumvisible() ? "\<C-p>" : ""
 
+" coc autosuggestions colors
+hi Pmenu guibg=White guifg=Black
+hi PmenuSel guibg=LightGreen guifg=Black
 " more readable colors
 highlight Search guibg='Purple' guifg='White'
 highlight Folded guibg='none' guifg='Green'
-highlight CocUnusedHighlight guibg='none' guifg='Yellow'
-highlight CocHighlightText guibg='Green' guifg='White'
-highlight CocHighlightRead guibg='Green' guifg='White'
-highlight CocHighlightWrite guibg='Green' guifg='White'
 
 " fzf layout
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
@@ -149,9 +138,6 @@ nnoremap <leader>R :Rg<space>
 " look at branches
 nnoremap <leader>gb :GBranches<cr>
 
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
 " trim whitespace on save
 fun! TrimWhitespace()
     let l:save = winsaveview()
@@ -160,17 +146,37 @@ fun! TrimWhitespace()
 endfun
 autocmd BufWritePre * :call TrimWhitespace()
 
-" coc extentions
+highlight CocUnusedHighlight guibg='none' guifg='Yellow'
+highlight CocHighlightText guibg='Green' guifg='White'
+highlight CocHighlightRead guibg='Green' guifg='White'
+highlight CocHighlightWrite guibg='Green' guifg='White'
+
+" pressing enter doesn't accept coc autosuggestions
+inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
+" tab will accept an autosuggestion
+inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
+" c-n and c-p will cycle through the suggestions
+inoremap <silent><expr> <c-n>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "" :
+      \ coc#refresh()
+inoremap <silent><expr><c-p> pumvisible() ? "\<C-p>" : ""
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" coc extensions
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-json',
+  \ 'coc-css',
+  \ 'coc-highlight',
   \ ]
 
 " remove suggestions for text and markdown files
-autocmd FileType text let b:coc_suggest_disable = 1
-autocmd FileType markdown let b:coc_suggest_disable = 1
+autocmd FileType markdown,text let b:coc_suggest_disable = 1
 
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
