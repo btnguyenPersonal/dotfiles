@@ -1,3 +1,9 @@
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  :exe '!curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+              \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  au VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
@@ -13,12 +19,14 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 " coc so i can have IDE like behavior
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
+Plug 'tomasiser/vim-code-dark'
 
 " Initialize plugin system
 call plug#end()
@@ -56,7 +64,8 @@ set incsearch
 set nohls
 " less redrawing when running macros (much faster)
 set lazyredraw
-" funny comment
+set nobackup
+set nowritebackup
 " backspace can break lines
 set backspace=eol,start,indent
 " adds <> as matching pairs
@@ -67,7 +76,7 @@ set laststatus=2
 " i have no idea
 set whichwrap+=<,>,h,l
 " fuck sign column and fold column
-set signcolumn=no
+set signcolumn=number
 set foldcolumn=0
 " searches are not case-sensitive anymore
 set ignorecase
@@ -98,8 +107,8 @@ vmap <expr> <DOWN>  'DVB_Drag('down')
 vmap <expr> <UP>    'DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
 " ex command completion with c-n and c-p
-cnoremap <C-n> <Up>
-cnoremap <C-p> <Down>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 " ex command current file mapping
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
@@ -113,13 +122,6 @@ xnoremap <expr>  G   'G' . virtcol('.') . "\|"
 xnoremap <expr>  }   '}' . virtcol('.') . "\|"
 xnoremap <expr>  {   '{' . virtcol('.') . "\|"
 
-" coc autosuggestions colors
-hi Pmenu guibg=White guifg=Black
-hi PmenuSel guibg=LightGreen guifg=Black
-" more readable colors
-highlight Search guibg='Purple' guifg='White'
-highlight Folded guibg='none' guifg='Green'
-
 " fzf layout
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
@@ -132,11 +134,11 @@ nnoremap <leader>b :Buffers<cr>
 " search through what files have been edited last with nvim
 nnoremap <leader>k :History<cr>
 " grep instances of text in all files at directory
-nnoremap <leader>r :Rg<cr>
-" above but allows regex
-nnoremap <leader>R :Rg<space>
+nnoremap <leader>g :Rg<cr>
+" rename current word
+nmap <leader>r <Plug>(coc-rename)
 " look at branches
-nnoremap <leader>gb :GBranches<cr>
+nnoremap <leader>j :GBranches<cr>
 
 " trim whitespace on save
 fun! TrimWhitespace()
@@ -145,11 +147,6 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 autocmd BufWritePre * :call TrimWhitespace()
-
-highlight CocUnusedHighlight guibg='none' guifg='Yellow'
-highlight CocHighlightText guibg='Green' guifg='White'
-highlight CocHighlightRead guibg='Green' guifg='White'
-highlight CocHighlightWrite guibg='Green' guifg='White'
 
 " pressing enter doesn't accept coc autosuggestions
 inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
@@ -167,16 +164,23 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " coc extensions
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-vimlsp',
   \ 'coc-css',
   \ 'coc-highlight',
   \ ]
 
 " remove suggestions for text and markdown files
-autocmd FileType markdown,text let b:coc_suggest_disable = 1
+autocmd FileType c,c++,markdown,text let b:coc_suggest_disable = 1
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
@@ -184,3 +188,18 @@ au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 let g:mkdp_auto_start = 1
 let g:mkdp_browser = 'surf'
+
+colorscheme codedark
+
+" coc autosuggestions colors
+hi Pmenu guibg=White guifg=Black
+hi PmenuSel guibg=LightGreen guifg=Black
+" more readable colors
+highlight Search guibg='Purple' guifg='White'
+highlight Folded guibg='none' guifg='Green'
+
+highlight CocUnusedHighlight guibg='none' guifg='Yellow'
+highlight CocHighlightText guibg='Green' guifg='White'
+highlight CocHighlightRead guibg='Green' guifg='White'
+highlight CocHighlightWrite guibg='Green' guifg='White'
+
