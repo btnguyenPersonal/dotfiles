@@ -31,7 +31,7 @@ vmap <SPACE> <leader>
 call matchadd('ColorColumn', '\%81v', 100)
 " autocorrect on tab for commands
 set wildmenu
-set wildmode=longest:longest,full
+set wildmode=full
 set wildignorecase
 " colors independent of what terminal you are using
 set termguicolors
@@ -62,7 +62,8 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set laststatus=0
+set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
+set laststatus=2
 " i have no idea
 set whichwrap+=<,>,h,l
 " fuck sign column and fold column
@@ -153,10 +154,6 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 autocmd BufWritePre * :call TrimWhitespace()
-
-" let you j and k into wrapped lines
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " coc extentions
 let g:coc_global_extensions = [
