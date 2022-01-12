@@ -98,6 +98,11 @@ vmap <expr> <RIGHT> 'DVB_Drag('right')
 vmap <expr> <DOWN>  'DVB_Drag('down')
 vmap <expr> <UP>    'DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
+" ex command completion with c-n and c-p
+cnoremap <C-n> <Up>
+cnoremap <C-p> <Down>
+" ex command current file mapping
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
