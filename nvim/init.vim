@@ -53,7 +53,7 @@ set directory=~/.vim/tmp
 set scrolloff=1
 " search will update with ever char pressed
 set incsearch
-set hlsearch
+set nohls
 " less redrawing when running macros (much faster)
 set lazyredraw
 " funny comment
