@@ -114,8 +114,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
-" remember to take out when get used to ctrl stuff
-inoremap <bs> <nop>
+nnoremap Q <NOP>
 " braces macro
 inoremap {<cr> {<cr>}<esc>O
 " easier visual block moving around
@@ -195,11 +194,11 @@ let g:mkdp_browser = 'surf'
 colorscheme codedark
 
 " coc autosuggestions colors
-hi Pmenu guibg=White guifg=Black
-hi PmenuSel guibg=LightGreen guifg=Black
+" hi Pmenu guibg=White guifg=Black
+" hi PmenuSel guibg=LightGreen guifg=Black
 " more readable colors
-highlight Search guibg='Purple' guifg='White'
-highlight Folded guibg='none' guifg='Green'
+" highlight Search guibg='Purple' guifg='White'
+" highlight Folded guibg='none' guifg='Green'
 
 highlight CocUnusedHighlight guibg='none' guifg='Yellow'
 highlight CocHighlightText guibg='Green' guifg='White'
