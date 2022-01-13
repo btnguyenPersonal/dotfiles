@@ -193,4 +193,3 @@ highlight CocUnusedHighlight guibg='none' guifg='Yellow'
 highlight CocHighlightText guibg='Green' guifg='White'
 highlight CocHighlightRead guibg='Green' guifg='White'
 highlight CocHighlightWrite guibg='Green' guifg='White'
-
