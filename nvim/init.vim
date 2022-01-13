@@ -1,6 +1,6 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   :exe '!curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-              \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   au VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -114,8 +114,9 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
-" allow ctrl backspace in insert mode
-inoremap <C-h> <C-w>
+" remember to take out when get used to ctrl stuff
+inoremap <bs> <nop>
+" braces macro
 inoremap {<cr> {<cr>}<esc>O
 " easier visual block moving around
 xnoremap <expr>  G   'G' . virtcol('.') . "\|"
@@ -137,14 +138,16 @@ nnoremap <leader>k :History<cr>
 nnoremap <leader>g :Rg<cr>
 " rename current word
 nmap <leader>r <Plug>(coc-rename)
+" format file command
+nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>
 " look at branches
 nnoremap <leader>j :GBranches<cr>
 
 " trim whitespace on save
 fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
 endfun
 autocmd BufWritePre * :call TrimWhitespace()
 
@@ -164,14 +167,14 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " coc extensions
 let g:coc_global_extensions = [
-  \ 'coc-tsserver',
-  \ 'coc-eslint',
-  \ 'coc-json',
-  \ 'coc-html',
-  \ 'coc-vimlsp',
-  \ 'coc-css',
-  \ 'coc-highlight',
-  \ ]
+      \ 'coc-tsserver',
+      \ 'coc-eslint',
+      \ 'coc-json',
+      \ 'coc-html',
+      \ 'coc-vimlsp',
+      \ 'coc-css',
+      \ 'coc-highlight',
+      \ ]
 
 " remove suggestions for text and markdown files
 autocmd FileType c,c++,markdown,text let b:coc_suggest_disable = 1
