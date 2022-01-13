@@ -114,6 +114,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
+" turns off ex mode
 nnoremap Q <NOP>
 " braces macro
 inoremap {<cr> {<cr>}<esc>O
@@ -136,7 +137,8 @@ nnoremap <leader>k :History<cr>
 " grep instances of text in all files at directory
 nnoremap <leader>g :Rg<cr>
 " rename current word
-nmap <leader>r <Plug>(coc-rename)
+nnoremap <leader>r gd[{V%:s///g<left><left>
+nnoremap <leader>R gD:%s///g<left><left>
 " format file command
 nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>
 " look at branches
@@ -178,27 +180,14 @@ let g:coc_global_extensions = [
 " remove suggestions for text and markdown files
 autocmd FileType c,c++,markdown,text let b:coc_suggest_disable = 1
 
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 let g:mkdp_auto_start = 1
-let g:mkdp_browser = 'surf'
+let g:mkdp_browserw= 'surf'
 
 colorscheme codedark
-
-" coc autosuggestions colors
-" hi Pmenu guibg=White guifg=Black
-" hi PmenuSel guibg=LightGreen guifg=Black
-" more readable colors
-" highlight Search guibg='Purple' guifg='White'
-" highlight Folded guibg='none' guifg='Green'
 
 highlight CocUnusedHighlight guibg='none' guifg='Yellow'
 highlight CocHighlightText guibg='Green' guifg='White'
