@@ -50,6 +50,8 @@ set autoread
 " no tabs only spaces
 set expandtab
 set smarttab
+" can use c-a on letters
+set nrformats+=alpha
 " indentation stuff
 set cindent
 set copyindent
