@@ -175,6 +175,7 @@ let g:coc_global_extensions = [
       \ 'coc-vimlsp',
       \ 'coc-css',
       \ 'coc-highlight',
+      \ 'coc-snippets',
       \ ]
 
 " remove suggestions for text and markdown files
@@ -193,3 +194,5 @@ highlight CocUnusedHighlight guibg='none' guifg='Yellow'
 highlight CocHighlightText guibg='Green' guifg='White'
 highlight CocHighlightRead guibg='Green' guifg='White'
 highlight CocHighlightWrite guibg='Green' guifg='White'
+
+iab forl for (int i = 0; i < count; i++) {
