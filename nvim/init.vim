@@ -8,7 +8,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " markdown preview
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for': ['markdown','vim-plug']}
 " parenthesis stuff
 Plug 'tpope/vim-surround'
 " cool visual dragging plugin
@@ -197,7 +197,7 @@ autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 let g:mkdp_auto_start = 1
-let g:mkdp_browserw= 'surf'
+let g:mkdp_browser= 'surf'
 
 colorscheme codedark
 
