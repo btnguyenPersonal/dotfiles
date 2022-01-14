@@ -142,7 +142,7 @@ nnoremap <leader>g :Rg<cr>
 nnoremap <leader>r gd[{V%:s///g<left><left>
 nnoremap <leader>R gD:%s///g<left><left>
 " format file command
-nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>
+nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>zz
 " look at branches
 nnoremap <leader>j :GBranches<cr>
 
@@ -197,4 +197,30 @@ highlight CocHighlightText guibg='Green' guifg='White'
 highlight CocHighlightRead guibg='Green' guifg='White'
 highlight CocHighlightWrite guibg='Green' guifg='White'
 
-iab forl for (int i = 0; i < count; i++) {
+" easy for loop macro
+iab aforl for (int a = 0; a < count; a++) {
+iab bforl for (int b = 0; b < count; b++) {
+iab cforl for (int c = 0; c < count; c++) {
+iab dforl for (int d = 0; d < count; d++) {
+iab eforl for (int e = 0; e < count; e++) {
+iab fforl for (int f = 0; f < count; f++) {
+iab gforl for (int g = 0; g < count; g++) {
+iab hforl for (int h = 0; h < count; h++) {
+iab iforl for (int i = 0; i < count; i++) {
+iab jforl for (int j = 0; j < count; j++) {
+iab kforl for (int k = 0; k < count; k++) {
+iab lforl for (int l = 0; l < count; l++) {
+iab mforl for (int m = 0; m < count; m++) {
+iab nforl for (int n = 0; n < count; n++) {
+iab oforl for (int o = 0; o < count; o++) {
+iab pforl for (int p = 0; p < count; p++) {
+iab qforl for (int q = 0; q < count; q++) {
+iab rforl for (int r = 0; r < count; r++) {
+iab sforl for (int s = 0; s < count; s++) {
+iab tforl for (int t = 0; t < count; t++) {
+iab uforl for (int u = 0; u < count; u++) {
+iab vforl for (int v = 0; v < count; v++) {
+iab wforl for (int w = 0; w < count; w++) {
+iab xforl for (int x = 0; x < count; x++) {
+iab yforl for (int y = 0; y < count; y++) {
+iab zforl for (int z = 0; z < count; z++) {
