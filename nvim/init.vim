@@ -139,6 +139,8 @@ let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yof
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
 " leader commands
+" save command
+nnoremap <leader>w :wa<cr>
 " search files
 nnoremap <leader>f :Files<cr>
 " search through open buffers
