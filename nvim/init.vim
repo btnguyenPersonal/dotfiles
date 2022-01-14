@@ -41,6 +41,9 @@ call matchadd('ColorColumn', '\%81v', 100)
 set wildmenu
 set wildmode=full
 set wildignorecase
+set ruler
+" auto load changes in vim when a file changes
+set autoread
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
@@ -108,6 +111,12 @@ vmap <expr> <RIGHT> 'DVB_Drag('right')
 vmap <expr> <DOWN>  'DVB_Drag('down')
 vmap <expr> <UP>    'DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
+vnoremap < <gv
+vnoremap > >gv
+" emacs cmd line edit
+cnoremap <C-a>      <Home>
+cnoremap <C-e>      <End>
+cnoremap <C-k>      <C-u>
 " ex command completion with c-n and c-p
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
@@ -181,7 +190,7 @@ let g:coc_global_extensions = [
       \ ]
 
 " remove suggestions for text and markdown files
-autocmd FileType c,c++,markdown,text let b:coc_suggest_disable = 1
+autocmd FileType markdown,text let b:coc_suggest_disable = 1
 
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"

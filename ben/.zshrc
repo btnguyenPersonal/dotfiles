@@ -86,6 +86,8 @@ autoload -Uz compinit && compinit
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
 setopt appendhistory
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
