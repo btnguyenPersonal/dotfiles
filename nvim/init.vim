@@ -63,7 +63,7 @@ set shiftwidth=2
 " where to store .swp files
 set directory=~/.vim/tmp
 " context around scrolling
-set scrolloff=1
+set scrolloff=6
 " search will update with ever char pressed
 set incsearch
 set nohls
