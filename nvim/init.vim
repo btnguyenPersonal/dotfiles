@@ -114,8 +114,6 @@ set history=500
 set mouse=a
 " intuitive visual block
 set virtualedit=block
-" changes the title of the terminal
-set title titlestring=%<%F%=%l/%L-%P titlelen=70
 " spell check
 set spell
 " syntax highlighting on
