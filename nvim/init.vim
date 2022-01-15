@@ -30,9 +30,13 @@ Plug 'tpope/vim-abolish'
 Plug 'tomasiser/vim-code-dark'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
+
+" have to put this here so doesn't override my highlighting
+colorscheme codedark
 
 " space as leader
 nmap <SPACE> <leader>
@@ -127,6 +131,12 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" easier window switching
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " turns off ex mode
 nnoremap Q <NOP>
 " braces macro
@@ -211,20 +221,22 @@ let g:rainbow_active = 1
 let g:mkdp_auto_start = 1
 let g:mkdp_browser= 'surf'
 
-colorscheme codedark
-
+" coc highlighting for vars and stuff
 highlight CocUnusedHighlight guibg='none' guifg='Yellow'
 highlight CocHighlightText guibg='Green' guifg='White'
 highlight CocHighlightRead guibg='Green' guifg='White'
 highlight CocHighlightWrite guibg='Green' guifg='White'
 
+" git gutter colors
 highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
+" highlights all of the line numbers for the git gutters
 au VimEnter * :GitGutterLineNrHighlightsEnable
 
 " easy for loop macro
+" there has to be a better way to do this smh
 iab aforl for (int a = 0; a < count; a++) {
 iab bforl for (int b = 0; b < count; b++) {
 iab cforl for (int c = 0; c < count; c++) {

@@ -18,6 +18,5 @@ set path+=.,**
 set nu rnu
 color evening
 syntax on
-filetype off
 filetype plugin indent on
 autocmd BufWritePre * %s/\s\+$//e
