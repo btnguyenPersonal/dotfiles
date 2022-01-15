@@ -84,7 +84,7 @@ set laststatus=2
 " i have no idea
 set whichwrap+=<,>,h,l
 " fuck sign column and fold column
-set signcolumn=number
+set signcolumn=yes
 " searches are not case-sensitive anymore
 set ignorecase
 set smartcase
@@ -217,6 +217,12 @@ highlight CocUnusedHighlight guibg='none' guifg='Yellow'
 highlight CocHighlightText guibg='Green' guifg='White'
 highlight CocHighlightRead guibg='Green' guifg='White'
 highlight CocHighlightWrite guibg='Green' guifg='White'
+
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
+au VimEnter * :GitGutterLineNrHighlightsEnable
 
 " easy for loop macro
 iab aforl for (int a = 0; a < count; a++) {
