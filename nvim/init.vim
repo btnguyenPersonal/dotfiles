@@ -207,6 +207,11 @@ let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ ]
 
+" show markdown syntax
+let g:vim_json_syntax_conceal = 0
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_conceal_code_blocks = 0
+
 " remove suggestions for text and markdown files
 autocmd FileType markdown,text let b:coc_suggest_disable = 1
 
