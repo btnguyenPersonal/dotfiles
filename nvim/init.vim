@@ -19,17 +19,27 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+" c++ highlighting with ccls
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+" parenthesis highlighting
 Plug 'luochen1990/rainbow'
-" coc so i can have IDE like behavior
+" IDE features
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" commenting code
 Plug 'tpope/vim-commentary'
+" plugins work with . command
 Plug 'tpope/vim-repeat'
+" better defaults
 Plug 'tpope/vim-unimpaired'
+" allow swapping with sub commands
 Plug 'tpope/vim-abolish'
+" vscode-like appearance
 Plug 'tomasiser/vim-code-dark'
+" indentation markers
 Plug 'Yggdroot/indentLine'
+" git gutters
 Plug 'airblade/vim-gitgutter'
+" git integration
 Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
@@ -49,13 +59,12 @@ set wildmenu
 set wildmode=full
 set wildignorecase
 set ruler
-" auto load changes in vim when a file changes
-set autoread
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
 set updatetime=300
 set shortmess+=c
+" auto load changes in vim when a file changes
 set autoread
 " no tabs only spaces
 set expandtab
@@ -131,7 +140,6 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " when searching always keep next instance centered
 nnoremap n nzzzv
 nnoremap N Nzzzv
-
 " easier window switching
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
