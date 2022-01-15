@@ -6,10 +6,13 @@
  - omg `/` commands are so op
  - use `\V` and `\C` in searches
  - use `it` `ib` and `iB` for everything omg
+    - actually doing well in this one
  - `ge` is pretty useful
  - make a *global mark* before going off to a bunch of dif files
  - also make a habit of making a `g` mark before `gg=G`
+    - automated this
  - always try to use `*` or `/` or `<C-r><C-w>` to sub way easier
+    - making progress on this one
 #### insert mode
  - use the capslock as ctrl feature in insert mode
  - stop using backspace, use `<C-e>` `<C-w>` `<C-h>`
