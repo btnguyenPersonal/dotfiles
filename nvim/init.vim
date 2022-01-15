@@ -20,6 +20,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'luochen1990/rainbow'
 " coc so i can have IDE like behavior
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-commentary'
@@ -27,6 +28,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 Plug 'tomasiser/vim-code-dark'
+Plug 'Yggdroot/indentLine'
+Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
@@ -82,7 +85,6 @@ set laststatus=2
 set whichwrap+=<,>,h,l
 " fuck sign column and fold column
 set signcolumn=number
-set foldcolumn=0
 " searches are not case-sensitive anymore
 set ignorecase
 set smartcase
@@ -137,6 +139,10 @@ xnoremap <expr>  {   '{' . virtcol('.') . "\|"
 " fzf layout
 let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
+
+" git gutter next chunk
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
 " save command
@@ -198,6 +204,10 @@ autocmd FileType markdown,text let b:coc_suggest_disable = 1
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+" have rainbow parenthesis
+let g:rainbow_active = 1
+
+" have markdown preview auto open in surf
 let g:mkdp_auto_start = 1
 let g:mkdp_browser= 'surf'
 
