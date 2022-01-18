@@ -11,8 +11,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for': ['markdown','vim-plug']}
 " parenthesis stuff
 Plug 'tpope/vim-surround'
-" cool visual dragging plugin
-Plug 'JiriChara/dragvisuals.vim'
 " moar languages
 Plug 'sheerun/vim-polyglot'
 " fzf so i can find files
