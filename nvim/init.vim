@@ -162,7 +162,7 @@ nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
 " save command
-nnoremap <leader>w :wa<cr>
+nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>
 " search files
 nnoremap <leader>f :Files<cr>
 " search through open buffers
