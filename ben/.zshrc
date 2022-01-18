@@ -57,7 +57,7 @@ connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
 }
 savenotes() {
-  cd ~/git/classnotes
+  cd ~/git/classnotesS2021
   git add .
   git commit -m "$1"
   git push
