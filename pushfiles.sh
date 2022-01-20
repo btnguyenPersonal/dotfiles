@@ -2,6 +2,7 @@
 cd ~/git/dotfiles
 git fetch
 git pull
+git diff
 cp -v ./ben/.xinitrc /home/ben/.xinitrc
 cp -v ./ben/.zshrc /home/ben/.zshrc
 cp -v ./ben/.zprofile /home/ben/.zprofile
