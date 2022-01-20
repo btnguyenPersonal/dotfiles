@@ -17,6 +17,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " c++ highlighting with ccls
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 " parenthesis highlighting
@@ -39,6 +40,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " indentation plugin
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nvim-lua/completion-nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -116,7 +118,7 @@ set mouse=a
 " intuitive visual block
 set virtualedit=block
 " spell check
-set spell
+" set spell
 " syntax highlighting on
 syntax on
 " cool dragging for visual block
@@ -198,9 +200,6 @@ inoremap <silent><expr> <c-n>
       \ <SID>check_back_space() ? "" :
       \ coc#refresh()
 inoremap <silent><expr><c-p> pumvisible() ? "\<C-p>" : ""
-
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " coc extensions
 let g:coc_global_extensions = [
