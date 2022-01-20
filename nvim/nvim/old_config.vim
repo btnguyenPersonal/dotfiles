@@ -40,7 +40,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " indentation plugin
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'nvim-lua/completion-nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -219,6 +218,9 @@ autocmd FileType markdown,text let b:coc_suggest_disable = 1
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" highlight variable on hold
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " have rainbow parenthesis
 let g:rainbow_active = 1
