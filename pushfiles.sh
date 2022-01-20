@@ -12,6 +12,6 @@ if [ $(hostname) = 'benGreenLaptop' ]; then
 else
   sed 's/size: 8/size: 12/' ./alacritty/alacritty.yml > /home/ben/.config/alacritty/alacritty.yml;
 fi
-echo "./alacritty/alacritty.yml -> /home/ben/.config/alacritty/alacritty.yml"
+echo "'./alacritty/alacritty.yml -> /home/ben/.config/alacritty/alacritty.yml'"
 cp -v ./nvim/coc-settings.json /home/ben/.config/nvim/coc-settings.json
 cp -v ./tmux/.tmux.conf /home/ben/.tmux.conf
