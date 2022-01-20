@@ -61,7 +61,6 @@ set wildignorecase
 set ruler
 " extra characters for trailing spaces
 set list
-
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
@@ -121,12 +120,6 @@ set virtualedit=block
 " set spell
 " syntax highlighting on
 syntax on
-" cool dragging for visual block
-vmap <expr> <LEFT>  'DVB_Drag('left')
-vmap <expr> <RIGHT> 'DVB_Drag('right')
-vmap <expr> <DOWN>  'DVB_Drag('down')
-vmap <expr> <UP>    'DVB_Drag('up')
-vmap <expr> D DVB_Duplicate()
 vnoremap < <gv
 vnoremap > >gv
 " emacs cmd line edit
