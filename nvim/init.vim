@@ -33,12 +33,12 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 " vscode-like appearance
 Plug 'tomasiser/vim-code-dark'
-" indentation markers
-Plug 'Yggdroot/indentLine'
 " git gutters
 Plug 'airblade/vim-gitgutter'
 " git integration
 Plug 'tpope/vim-fugitive'
+" indentation plugin
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -57,6 +57,9 @@ set wildmenu
 set wildmode=full
 set wildignorecase
 set ruler
+" extra characters for trailing spaces
+set list
+
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
@@ -210,11 +213,6 @@ let g:coc_global_extensions = [
       \ 'coc-highlight',
       \ 'coc-snippets',
       \ ]
-
-" show markdown syntax
-let g:vim_json_syntax_conceal = 0
-let g:vim_markdown_conceal = 0
-let g:vim_markdown_conceal_code_blocks = 0
 
 " remove suggestions for text and markdown files
 autocmd FileType markdown,text let b:coc_suggest_disable = 1
