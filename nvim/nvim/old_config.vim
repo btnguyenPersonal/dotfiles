@@ -17,6 +17,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+" code context support
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " c++ highlighting with ccls
 Plug 'jackguo380/vim-lsp-cxx-highlight'
@@ -105,6 +106,7 @@ set ignorecase
 set smartcase
 " line numbers on the side
 set number
+set relativenumber
 " copy paste integration with OS
 set clipboard+=unnamedplus
 " where :sp and :vsp will split to
@@ -165,6 +167,12 @@ nmap [h <Plug>(GitGutterPrevHunk)
 " leader commands
 " save command
 nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>
+" git mergetool
+nnoremap <leader>m :Git mergetool<cr>
+" git addtool
+nnoremap <leader>a :q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr>
+" git difftool
+nnoremap <leader>g :Git difftool --name-status<cr>:vert Gdiff :0<cr>
 " search files
 nnoremap <leader>f :Files<cr>
 " search through open buffers
@@ -172,7 +180,7 @@ nnoremap <leader>b :Buffers<cr>
 " search through what files have been edited last with nvim
 nnoremap <leader>k :History<cr>
 " grep instances of text in all files at directory
-nnoremap <leader>g :Rg<cr>
+nnoremap <leader>F :Rg<cr>
 " rename current word
 nnoremap <leader>r gd[{V%:s///g<left><left>
 nnoremap <leader>R gD:%s///g<left><left>
@@ -228,6 +236,10 @@ let g:rainbow_active = 1
 " have markdown preview auto open in surf
 let g:mkdp_auto_start = 1
 let g:mkdp_browser= 'surf'
+
+highlight DiffAdd guibg=#006400
+" highlight DiffChange guibg=#5A6600
+highlight DiffChange guibg=#666600
 
 " coc highlighting for vars and stuff
 highlight CocUnusedHighlight guibg='none' guifg='Yellow'
