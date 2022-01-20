@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ~/git/dotfiles
 ./pullfiles.sh
-git diff
+git --no-pager diff
 git add .
 git commit -m "$(date)"
 git push
