@@ -17,6 +17,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+" code context support
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " c++ highlighting with ccls
 Plug 'jackguo380/vim-lsp-cxx-highlight'
@@ -40,7 +41,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " indentation plugin
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'nvim-lua/completion-nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -95,7 +95,7 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
+set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L\ %{FugitiveStatusline()}
 set laststatus=2
 " i have no idea
 set whichwrap+=<,>,h,l
@@ -106,11 +106,11 @@ set ignorecase
 set smartcase
 " line numbers on the side
 set number
+set relativenumber
 " copy paste integration with OS
 set clipboard+=unnamedplus
 " where :sp and :vsp will split to
 set splitbelow
-set splitright
 " history of commands
 set history=500
 " allows mouse input
@@ -164,8 +164,16 @@ nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
+" call highlight variable
+nnoremap <leader>l :call CocActionAsync('highlight')<cr>
 " save command
 nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>
+" git mergetool
+nnoremap <leader>m :Git mergetool<cr>
+" git addtool
+nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+" git difftool
+nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " search files
 nnoremap <leader>f :Files<cr>
 " search through open buffers
@@ -173,7 +181,7 @@ nnoremap <leader>b :Buffers<cr>
 " search through what files have been edited last with nvim
 nnoremap <leader>k :History<cr>
 " grep instances of text in all files at directory
-nnoremap <leader>g :Rg<cr>
+nnoremap <leader>F :Rg<cr>
 " rename current word
 nnoremap <leader>r gd[{V%:s///g<left><left>
 nnoremap <leader>R gD:%s///g<left><left>
@@ -226,6 +234,10 @@ let g:rainbow_active = 1
 " have markdown preview auto open in surf
 let g:mkdp_auto_start = 1
 let g:mkdp_browser= 'surf'
+
+highlight DiffAdd guibg=#006400
+highlight DiffText guibg=#666600
+highlight DiffChange guibg=#1E1E1E
 
 " coc highlighting for vars and stuff
 highlight CocUnusedHighlight guibg='none' guifg='Yellow'
