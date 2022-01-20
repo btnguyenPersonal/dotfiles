@@ -7,7 +7,7 @@ cp -v ./ben/.xinitrc /home/ben/.xinitrc
 cp -v ./ben/.zshrc /home/ben/.zshrc
 cp -v ./ben/.zprofile /home/ben/.zprofile
 cp -v ./ben/.vimrc /home/ben/.vimrc
-cp -rv ./nvim /home/ben/.config/nvim
+cp -rv ./nvim /home/ben/.config/
 if [ $(hostname) = 'benGreenLaptop' ]; then
   sed 's/size: 12/size: 8/' ./alacritty/alacritty.yml > /home/ben/.config/alacritty/alacritty.yml;
 else
