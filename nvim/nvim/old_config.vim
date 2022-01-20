@@ -95,7 +95,7 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
+set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L\ %{FugitiveStatusline()}
 set laststatus=2
 " i have no idea
 set whichwrap+=<,>,h,l
@@ -111,7 +111,6 @@ set relativenumber
 set clipboard+=unnamedplus
 " where :sp and :vsp will split to
 set splitbelow
-set splitright
 " history of commands
 set history=500
 " allows mouse input
@@ -165,14 +164,16 @@ nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
+" call highlight variable
+nnoremap <leader>l :call CocActionAsync('highlight')<cr>
 " save command
 nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>
 " git mergetool
 nnoremap <leader>m :Git mergetool<cr>
 " git addtool
-nnoremap <leader>a :q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr>
+nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " git difftool
-nnoremap <leader>g :Git difftool --name-status<cr>:vert Gdiff :0<cr>
+nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " search files
 nnoremap <leader>f :Files<cr>
 " search through open buffers
@@ -227,9 +228,6 @@ autocmd FileType markdown,text let b:coc_suggest_disable = 1
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" highlight variable on hold
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
 " have rainbow parenthesis
 let g:rainbow_active = 1
 
@@ -238,8 +236,8 @@ let g:mkdp_auto_start = 1
 let g:mkdp_browser= 'surf'
 
 highlight DiffAdd guibg=#006400
-" highlight DiffChange guibg=#5A6600
-highlight DiffChange guibg=#666600
+highlight DiffText guibg=#666600
+highlight DiffChange guibg=#1E1E1E
 
 " coc highlighting for vars and stuff
 highlight CocUnusedHighlight guibg='none' guifg='Yellow'
