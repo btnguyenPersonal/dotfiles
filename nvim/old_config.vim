@@ -73,6 +73,8 @@ set expandtab
 set smarttab
 " can use c-a on letters
 set nrformats+=alpha
+" path stuff
+set path=.,./**
 " indentation stuff
 set cindent
 set copyindent
@@ -166,15 +168,17 @@ nnoremap <leader>m :Git mergetool<cr>
 " git addtool
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " git difftool
-nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+nnoremap <leader>c :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " search files
 nnoremap <leader>f :Files<cr>
+" find files and put into quickfix list
+nnoremap <leader>F :FileFile
 " search through open buffers
 nnoremap <leader>b :Buffers<cr>
 " search through what files have been edited last with nvim
 nnoremap <leader>k :History<cr>
 " grep instances of text in all files at directory
-nnoremap <leader>F :Rg<cr>
+nnoremap <leader>g :Rg<cr>
 " rename current word
 nnoremap <leader>r gd[{V%:s///g<left><left>
 nnoremap <leader>R gD:%s///g<left><left>
@@ -300,3 +304,14 @@ iab wletl for (let w = 0; w < count; w++) {
 iab xletl for (let x = 0; x < count; x++) {
 iab yletl for (let y = 0; y < count; y++) {
 iab zletl for (let z = 0; z < count; z++) {
+
+" find files and populate the quickfix list
+fun! FindFiles(filename)
+  let error_file = tempname()
+  silent exe '!find . -iname "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
+  set errorformat=%f:%l:%m
+  exe "cfile ". error_file
+  copen
+  call delete(error_file)
+endfun
+command! -nargs=1 FindFile call FindFiles(<q-args>)
