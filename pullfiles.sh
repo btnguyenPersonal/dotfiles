@@ -1,7 +1,7 @@
 #!/bin/bash
-cp -v /home/ben/.zshrc /home/ben/git/dotfiles/ben/.zshrc
-cp -v /home/ben/.zprofile /home/ben/git/dotfiles/ben/.zprofile
-cp -rv /home/ben/.config/nvim /home/ben/git/dotfiles/
-cp -v /home/ben/.config/alacritty/alacritty.yml /home/ben/git/dotfiles/alacritty/alacritty.yml
-cp -v /home/ben/.tmux.conf /home/ben/git/dotfiles/tmux/.tmux.conf
-cp -v /home/ben/.vimrc /home/ben/git/dotfiles/ben/.vimrc
+cp -v ${HOME}/.zshrc ${HOME}/git/dotfiles/ben/.zshrc
+cp -v ${HOME}/.zprofile ${HOME}/git/dotfiles/ben/.zprofile
+cp -rv ${HOME}/.config/nvim ${HOME}/git/dotfiles/
+cp -v ${HOME}/.config/alacritty/alacritty.yml ${HOME}/git/dotfiles/alacritty/alacritty.yml
+cp -v ${HOME}/.tmux.conf ${HOME}/git/dotfiles/tmux/.tmux.conf
+cp -v ${HOME}/.vimrc ${HOME}/git/dotfiles/ben/.vimrc
