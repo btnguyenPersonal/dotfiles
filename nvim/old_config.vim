@@ -313,3 +313,7 @@ fun! FindFiles(filename)
   call delete(error_file)
 endfun
 command! -nargs=1 FindFile call FindFiles(<q-args>)
+
+highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
+highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
+
