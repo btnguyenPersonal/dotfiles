@@ -175,9 +175,6 @@ nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>k :History<cr>
 " grep instances of text in all files at directory
 nnoremap <leader>g :Rg<cr>
-" rename current word
-nnoremap <leader>r gd[{V%:s///g<left><left>
-nnoremap <leader>R gD:%s///g<left><left>
 " format file command
 nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>zz
 " look at branches
@@ -312,6 +309,12 @@ fun! FindFiles(filename)
 endfun
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
 highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
 let g:indent_blankline_viewport_buffer = 10000
@@ -335,4 +338,3 @@ let g:indent_blankline_context_patterns = [
       \ "^case",
       \ "^default",
       \ "tuple", ]
-
