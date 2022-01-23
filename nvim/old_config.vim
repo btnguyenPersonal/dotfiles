@@ -312,7 +312,6 @@ fun! FindFiles(filename)
 endfun
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
-let g:indent_blankline_use_treesitter = v:true
 highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
 highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
 let g:indent_blankline_viewport_buffer = 10000
