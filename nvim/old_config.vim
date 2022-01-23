@@ -73,8 +73,6 @@ set expandtab
 set smarttab
 " can use c-a on letters
 set nrformats+=alpha
-" path stuff
-set path=.,./**
 " indentation stuff
 set cindent
 set copyindent
