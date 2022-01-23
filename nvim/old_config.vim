@@ -59,8 +59,6 @@ set wildmenu
 set wildmode=full
 set wildignorecase
 set ruler
-" extra characters for trailing spaces
-set list
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
