@@ -312,6 +312,28 @@ fun! FindFiles(filename)
 endfun
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
+let g:indent_blankline_use_treesitter = v:true
 highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
 highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
+
+let g:indent_blankline_context_patterns = [
+      \ "class",
+      \ "^func",
+      \ "method",
+      \ "^if",
+      \ "while",
+      \ "for",
+      \ "with",
+      \ "try",
+      \ "except",
+      \ "arguments",
+      \ "argument_list",
+      \ "object",
+      \ "dictionary",
+      \ "element",
+      \ "table",
+      \ "^switch",
+      \ "^case",
+      \ "^default",
+      \ "tuple", ]
 
