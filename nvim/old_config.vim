@@ -69,17 +69,19 @@ set autoread
 " no tabs only spaces
 set expandtab
 set smarttab
+set tabstop=2
+set shiftwidth=2
 " can use c-a on letters
 set nrformats+=alpha
 " indentation stuff
+set autoindent
+set smartindent
 set cindent
-set copyindent
-set tabstop=2
-set shiftwidth=2
 " where to store .swp files
 set directory=~/.vim/tmp
 " context around scrolling
 set scrolloff=6
+set spell
 " search will update with ever char pressed
 set incsearch
 set nohls
