@@ -211,9 +211,6 @@ let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ ]
 
-" remove suggestions for text and markdown files
-autocmd FileType markdown,text let b:coc_suggest_disable = 1
-
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
