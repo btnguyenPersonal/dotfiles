@@ -1,8 +1,8 @@
 #!/bin/bash
 cd ~/git/dotfiles
 git fetch
-git pull
 git --no-pager diff
+git pull
 cp -v ./ben/.xinitrc ${HOME}/.xinitrc
 cp -v ./ben/.zshrc ${HOME}/.zshrc
 cp -v ./ben/.zprofile ${HOME}/.zprofile
