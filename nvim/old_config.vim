@@ -165,6 +165,8 @@ nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " git difftool
 nnoremap <leader>c :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+" markdown
+nmap <leader>n :MarkdownPreviewToggle<cr>
 " search files
 nnoremap <leader>f :Files<cr>
 " find files and put into quickfix list
@@ -219,7 +221,6 @@ au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let g:rainbow_active = 1
 
 " have markdown preview auto open in surf
-let g:mkdp_auto_start = 1
 let g:mkdp_browser= 'surf'
 
 highlight DiffAdd guibg=#006400
