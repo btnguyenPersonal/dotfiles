@@ -44,6 +44,9 @@ function zle-keymap-select {
   fi
 }
 zle -N zle-keymap-select
+rmswp() {
+  rm ~/.vim/tmp/"$1".swp
+}
 topdf() {
   pandoc -f markdown -t pdf -o "$1".pdf *.md
 }

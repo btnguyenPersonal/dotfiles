@@ -220,9 +220,6 @@ au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " have rainbow parenthesis
 let g:rainbow_active = 1
 
-" have markdown preview auto open in surf
-let g:mkdp_browser= 'surf'
-
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
