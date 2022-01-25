@@ -1,9 +1,13 @@
 vim.cmd('source ~/.config/nvim/old_config.vim')
 
 require("indent_blankline").setup {
-    space_char_blankline = " ",
-    show_current_context = true,
-    show_current_context_start = true,
+  space_char_blankline = " ",
+  show_current_context = true,
+  show_current_context_start = true,
+}
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained",
 }
 
 require'nvim-treesitter.configs'.setup {
@@ -16,8 +20,4 @@ require'nvim-treesitter.configs'.setup {
       node_decremental = "grm",
     },
   },
-}
-
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained",
 }
