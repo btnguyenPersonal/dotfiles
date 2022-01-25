@@ -103,7 +103,6 @@ set ignorecase
 set smartcase
 " line numbers on the side
 set number
-set relativenumber
 " copy paste integration with OS
 set clipboard+=unnamedplus
 " where :sp and :vsp will split to
