@@ -333,3 +333,5 @@ let g:indent_blankline_context_patterns = [
       \ "^case",
       \ "^default",
       \ "tuple", ]
+
+autocmd FileType markdown IndentBlanklineDisable
