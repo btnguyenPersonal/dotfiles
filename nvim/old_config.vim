@@ -219,6 +219,8 @@ au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " have rainbow parenthesis
 let g:rainbow_active = 1
 
+let g:mkdp_browser = 'chromium'
+
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
