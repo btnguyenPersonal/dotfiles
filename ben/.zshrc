@@ -29,7 +29,7 @@ sshiastate() {
   then;
     ssh btnguyen@pyrite.cs.iastate.edu
   else;
-    echo "still in tmux"
+    echo "Still in tmux"
   fi
 }
 _fix_cursor() {
