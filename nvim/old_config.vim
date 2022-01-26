@@ -157,7 +157,7 @@ nmap [h <Plug>(GitGutterPrevHunk)
 " call highlight variable
 nnoremap <leader>l :call CocActionAsync('highlight')<cr>
 " save command
-nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>
+nnoremap <leader>w :call TrimWhitespace()<cr>
 " git mergetool
 nnoremap <leader>m :Git mergetool<cr>
 " git addtool
