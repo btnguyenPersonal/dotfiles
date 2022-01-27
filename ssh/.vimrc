@@ -1,5 +1,9 @@
+set nocompatible
 set hidden
 set updatetime=300
+set wildmenu
+set wildmode=full
+set wildignorecase
 set shortmess+=c
 set expandtab
 set smarttab
@@ -16,13 +20,13 @@ set nohls
 set lazyredraw
 set nobackup
 set nowritebackup
+set directory=~/.vim/tmp
 set backspace=eol,start,indent
 set laststatus=2
 set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
 set ignorecase
 set smartcase
 set number
-set relativenumber
 set clipboard+=unnamedplus
 set virtualedit=block
 set history=500
@@ -31,6 +35,8 @@ syntax on
 colorscheme desert
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
+vnoremap < <gv
+vnoremap > >gv
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap Q <Nop>
