@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd ~/git/dotfiles
 git fetch
 git --no-pager diff

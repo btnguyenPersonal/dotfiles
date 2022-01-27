@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cp -v ${HOME}/.zshrc ./ben/.zshrc
 cp -rv ${HOME}/.zsh ./
 cp -v ${HOME}/.zprofile ./ben/.zprofile

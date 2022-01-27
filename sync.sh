@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd ~/git/dotfiles
 ./pullfiles.sh
 git --no-pager diff
