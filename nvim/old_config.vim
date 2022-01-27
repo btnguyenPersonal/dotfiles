@@ -94,6 +94,8 @@ set matchpairs+=<:>
 " statusline
 set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L\ %{FugitiveStatusline()}
 set laststatus=2
+" path recursive searching with find
+set path+=**
 " i have no idea
 set whichwrap+=<,>,h,l
 " fuck sign column and fold column
@@ -105,12 +107,8 @@ set smartcase
 set number
 " copy paste integration with OS
 set clipboard+=unnamedplus
-" where :sp and :vsp will split to
-set splitbelow
 " history of commands
 set history=500
-" allows mouse input
-set mouse=a
 " intuitive visual block
 set virtualedit=block
 " spell check
