@@ -1,5 +1,5 @@
 font:
-  size: 8.0
+  size: 12.0
 draw_bold_text_with_bright_colors: false
 custom_cursor_colors: true
 background_opacity: 1
