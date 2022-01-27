@@ -1,7 +1,8 @@
 #!/bin/bash
-cp -v ${HOME}/.zshrc ${HOME}/git/dotfiles/ben/.zshrc
-cp -v ${HOME}/.zprofile ${HOME}/git/dotfiles/ben/.zprofile
-cp -rv ${HOME}/.config/nvim ${HOME}/git/dotfiles/
-cp -v ${HOME}/.config/alacritty/alacritty.yml ${HOME}/git/dotfiles/alacritty/alacritty.yml
-cp -v ${HOME}/.tmux.conf ${HOME}/git/dotfiles/tmux/.tmux.conf
-cp -v ${HOME}/.vimrc ${HOME}/git/dotfiles/ben/.vimrc
+cp -v ${HOME}/.zshrc ./ben/.zshrc
+cp -v ${HOME}/.zprofile ./ben/.zprofile
+cp -rv ${HOME}/.config/nvim ./
+cp -v ${HOME}/.config/alacritty/alacritty.yml ./alacritty/alacritty.yml
+cp -v ${HOME}/.tmux.conf ./tmux/.tmux.conf
+cp -v ${HOME}/.vimrc ./ben/.vimrc
+pacman -Q | sed 's/ .*$//' > ./packages.txt
