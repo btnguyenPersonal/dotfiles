@@ -8,6 +8,7 @@ cp -v ./ben/.zshrc ${HOME}/.zshrc
 cp -v ./ben/.zprofile ${HOME}/.zprofile
 cp -v ./ben/.vimrc ${HOME}/.vimrc
 cp -rv ./nvim ${HOME}/.config/
+cp -rv ./.zsh ${HOME}
 if [ $(hostname) = 'benGreenLaptop' ]; then
   sed 's/size: 12/size: 8/' ./alacritty/alacritty.yml > ${HOME}/.config/alacritty/alacritty.yml;
 else
