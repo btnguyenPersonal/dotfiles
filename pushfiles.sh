@@ -16,5 +16,5 @@ else
 fi
 echo "'./alacritty/alacritty.yml -> ${HOME}/.config/alacritty/alacritty.yml'"
 cp -v ./tmux/.tmux.conf ${HOME}/.tmux.conf
-cat ./packages.txt | xargs sudo pacman -S --noconfirm --needed
-chsh -s $(which zsh)
+# cat ./packages.txt | xargs sudo pacman -S --noconfirm --needed
+# chsh -s $(which zsh)
