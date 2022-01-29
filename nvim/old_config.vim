@@ -13,12 +13,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for':
 Plug 'tpope/vim-surround'
 " code context support
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" c++ highlighting with ccls
-" Plug 'jackguo380/vim-lsp-cxx-highlight'
 " parenthesis highlighting
 Plug 'luochen1990/rainbow'
-" IDE features
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " commenting code
 Plug 'tpope/vim-commentary'
 " plugins work with . command
@@ -73,7 +69,6 @@ set cindent
 set directory=~/.vim/tmp
 " context around scrolling
 set scrolloff=6
-set spell
 " search will update with ever char pressed
 set incsearch
 set nohls
