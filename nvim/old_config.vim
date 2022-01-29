@@ -124,7 +124,9 @@ nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
-" save command
+" ctags command
+nnoremap <leader>c :!ctags -R .<cr>
+" trim command
 nnoremap <leader>t :call TrimWhitespace()<cr>
 " git mergetool
 nnoremap <leader>m :Git mergetool<cr>

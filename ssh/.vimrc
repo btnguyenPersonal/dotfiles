@@ -37,10 +37,6 @@ let g:netrw_liststyle=3
 colorscheme desert
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-vnoremap < <gv
-vnoremap > >gv
-nnoremap n nzzzv
-nnoremap N Nzzzv
 nnoremap Q <Nop>
 inoremap {<cr> {<cr>}<esc>O
 iab aforl for (int a = 0; a < count; a++) {
