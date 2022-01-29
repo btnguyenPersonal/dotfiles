@@ -146,29 +146,6 @@ fun! TrimWhitespace()
   call winrestview(l:save)
 endfun
 
-" pressing enter doesn't accept coc autosuggestions
-inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
-" tab will accept an autosuggestion
-inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
-" c-n and c-p will cycle through the suggestions
-inoremap <silent><expr> <c-n>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "" :
-      \ coc#refresh()
-inoremap <silent><expr><c-p> pumvisible() ? "\<C-p>" : ""
-
-" coc extensions
-let g:coc_global_extensions = [
-      \ 'coc-tsserver',
-      \ 'coc-eslint',
-      \ 'coc-json',
-      \ 'coc-html',
-      \ 'coc-vimlsp',
-      \ 'coc-css',
-      \ 'coc-highlight',
-      \ 'coc-snippets',
-      \ ]
-
 " vim enter keep position
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
