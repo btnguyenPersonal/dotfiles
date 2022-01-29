@@ -125,7 +125,7 @@ nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
 " ctags command
-nnoremap <leader>c :!ctags -R .<cr>
+command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
 " trim command
 nnoremap <leader>t :call TrimWhitespace()<cr>
 " git mergetool
@@ -253,7 +253,7 @@ iab zletl for (let z = 0; z < count; z++) {
 
 highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
 highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
-let g:indent_blankline_viewport_buffer = 10000
+let g:indent_blankline_viewport_buffer = 0
 let g:indent_blankline_context_patterns = [
       \ "class",
       \ "^func",

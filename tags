@@ -1,0 +1,1279 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/ben/git/dotfiles/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+$(PLUGIN_TARGET)	.zsh/zsh-autosuggestions/Makefile	/^$(PLUGIN_TARGET): $(HEADER_FILES) $(SRC_FILES)$/;"	t
+$FZF_DEFAULT_OPTS	nvim/nvim/nvim/old_config.vim	/^let $FZF_DEFAULT_OPTS = '--layout=reverse'$/;"	v
+$FZF_DEFAULT_OPTS	nvim/nvim/old_config.vim	/^let $FZF_DEFAULT_OPTS = '--layout=reverse'$/;"	v
+%%	nvim/nvim/nvim/old_config.vim	/^cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'\/' : '%%'$/;"	m
+%%	nvim/nvim/old_config.vim	/^cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'\/' : '%%'$/;"	m
+%%	nvim/old_config.vim	/^cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'\/' : '%%'$/;"	m
+--	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^    REPLY="${"$(alias -- $arg)"#*=}"$/;"	a
+--	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^alias -- +plus=plus$/;"	a
+--	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^alias -- _other=other$/;"	a
+-L	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^    alias -L -g -- "$1" >\/dev\/null$/;"	a
+-L	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^if [[ $original_alias_dash_L_output == $(alias -L) ]]; then$/;"	a
+-g	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/global-alias1.zsh	/^alias -g foo=bar$/;"	a
+-g	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/parameter-to-global-alias.zsh	/^alias -g x=y$/;"	a
+-s	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias.zsh	/^alias -s alias2="echo"$/;"	a
+0	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+0	nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+0	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+0	nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+0	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+0	nvim/nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+1	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+1	nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+1	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+1	nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+1	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+1	nvim/nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+2	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+2	nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+2	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+2	nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+2	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+2	nvim/nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+3	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+3	nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+3	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+3	nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+3	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+3	nvim/nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+4	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+4	nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+4	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+4	nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+4	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+4	nvim/nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	s	array:languageserver.ccls.rootPatterns
+5	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+5	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+5	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	s	array:languageserver.ccls.filetypes
+<	ben/.vimrc	/^vnoremap < <gv$/;"	m
+<	nvim/nvim/nvim/old_config.vim	/^vnoremap < <gv$/;"	m
+<	nvim/nvim/old_config.vim	/^vnoremap < <gv$/;"	m
+<C-a>	ben/.vimrc	/^cnoremap <C-a> <Home>$/;"	m
+<C-a>	nvim/nvim/nvim/old_config.vim	/^cnoremap <C-a>      <Home>$/;"	m
+<C-a>	nvim/nvim/old_config.vim	/^cnoremap <C-a>      <Home>$/;"	m
+<C-a>	ssh/.vimrc	/^cnoremap <C-a> <Home>$/;"	m
+<C-e>	ben/.vimrc	/^cnoremap <C-e> <End>$/;"	m
+<C-e>	nvim/nvim/nvim/old_config.vim	/^cnoremap <C-e>      <End>$/;"	m
+<C-e>	nvim/nvim/old_config.vim	/^cnoremap <C-e>      <End>$/;"	m
+<C-e>	ssh/.vimrc	/^cnoremap <C-e> <End>$/;"	m
+<C-h>	nvim/nvim/nvim/old_config.vim	/^nnoremap <C-h> <C-w>h$/;"	m
+<C-h>	nvim/nvim/old_config.vim	/^nnoremap <C-h> <C-w>h$/;"	m
+<C-j>	nvim/nvim/nvim/old_config.vim	/^nnoremap <C-j> <C-w>j$/;"	m
+<C-j>	nvim/nvim/old_config.vim	/^nnoremap <C-j> <C-w>j$/;"	m
+<C-k>	nvim/nvim/nvim/old_config.vim	/^cnoremap <C-k>      <C-u>$/;"	m
+<C-k>	nvim/nvim/nvim/old_config.vim	/^nnoremap <C-k> <C-w>k$/;"	m
+<C-k>	nvim/nvim/old_config.vim	/^cnoremap <C-k>      <C-u>$/;"	m
+<C-k>	nvim/nvim/old_config.vim	/^nnoremap <C-k> <C-w>k$/;"	m
+<C-l>	nvim/nvim/nvim/old_config.vim	/^nnoremap <C-l> <C-w>l$/;"	m
+<C-l>	nvim/nvim/old_config.vim	/^nnoremap <C-l> <C-w>l$/;"	m
+<C-n>	nvim/nvim/nvim/old_config.vim	/^cnoremap <C-n> <Down>$/;"	m
+<C-n>	nvim/nvim/old_config.vim	/^cnoremap <C-n> <Down>$/;"	m
+<C-p>	nvim/nvim/nvim/old_config.vim	/^cnoremap <C-p> <Up>$/;"	m
+<C-p>	nvim/nvim/old_config.vim	/^cnoremap <C-p> <Up>$/;"	m
+<DOWN>	nvim/nvim/nvim/old_config.vim	/^vmap <expr> <DOWN>  'DVB_Drag('down')$/;"	m
+<DOWN>	nvim/nvim/old_config.vim	/^vmap <expr> <DOWN>  'DVB_Drag('down')$/;"	m
+<LEFT>	nvim/nvim/nvim/old_config.vim	/^vmap <expr> <LEFT>  'DVB_Drag('left')$/;"	m
+<LEFT>	nvim/nvim/old_config.vim	/^vmap <expr> <LEFT>  'DVB_Drag('left')$/;"	m
+<RIGHT>	nvim/nvim/nvim/old_config.vim	/^vmap <expr> <RIGHT> 'DVB_Drag('right')$/;"	m
+<RIGHT>	nvim/nvim/old_config.vim	/^vmap <expr> <RIGHT> 'DVB_Drag('right')$/;"	m
+<SPACE>	nvim/nvim/nvim/old_config.vim	/^nmap <SPACE> <leader>$/;"	m
+<SPACE>	nvim/nvim/nvim/old_config.vim	/^vmap <SPACE> <leader>$/;"	m
+<SPACE>	nvim/nvim/old_config.vim	/^nmap <SPACE> <leader>$/;"	m
+<SPACE>	nvim/nvim/old_config.vim	/^vmap <SPACE> <leader>$/;"	m
+<SPACE>	nvim/old_config.vim	/^nmap <SPACE> <leader>$/;"	m
+<SPACE>	nvim/old_config.vim	/^vmap <SPACE> <leader>$/;"	m
+<TAB>	nvim/nvim/nvim/old_config.vim	/^inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm() : "\\<C-g>u\\<TAB>"$/;"	m
+<TAB>	nvim/nvim/old_config.vim	/^inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm() : "\\<C-g>u\\<TAB>"$/;"	m
+<TAB>	nvim/old_config.vim	/^inoremap <silent><expr> <TAB> pumvisible() ? coc#_select_confirm() : "\\<C-g>u\\<TAB>"$/;"	m
+<UP>	nvim/nvim/nvim/old_config.vim	/^vmap <expr> <UP>    'DVB_Drag('up')$/;"	m
+<UP>	nvim/nvim/old_config.vim	/^vmap <expr> <UP>    'DVB_Drag('up')$/;"	m
+<c-n>	nvim/nvim/nvim/old_config.vim	/^inoremap <silent><expr> <c-n>$/;"	m
+<c-n>	nvim/nvim/old_config.vim	/^inoremap <silent><expr> <c-n>$/;"	m
+<c-n>	nvim/old_config.vim	/^inoremap <silent><expr> <c-n>$/;"	m
+<c-p>	nvim/nvim/nvim/old_config.vim	/^inoremap <silent><expr><c-p> pumvisible() ? "\\<C-p>" : ""$/;"	m
+<c-p>	nvim/nvim/old_config.vim	/^inoremap <silent><expr><c-p> pumvisible() ? "\\<C-p>" : ""$/;"	m
+<c-p>	nvim/old_config.vim	/^inoremap <silent><expr><c-p> pumvisible() ? "\\<C-p>" : ""$/;"	m
+<cr>	nvim/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
+<cr>	nvim/nvim/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
+<cr>	nvim/nvim/nvim/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
+<cr>	nvim/nvim/nvim/old_config.vim	/^inoremap <silent><expr> <cr> "\\<C-g>u\\<CR>\\<c-r>=coc#on_enter()\\<cr>"$/;"	m
+<cr>	nvim/nvim/old_config.vim	/^inoremap <silent><expr> <cr> "\\<C-g>u\\<CR>\\<c-r>=coc#on_enter()\\<cr>"$/;"	m
+<cr>	nvim/old_config.vim	/^inoremap <silent><expr> <cr> "\\<C-g>u\\<CR>\\<c-r>=coc#on_enter()\\<cr>"$/;"	m
+<leader>=	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>zz$/;"	m
+<leader>=	nvim/nvim/old_config.vim	/^nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>zz$/;"	m
+<leader>F	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>F :Rg<cr>$/;"	m
+<leader>R	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>R gD:%s\/\/\/g<left><left>$/;"	m
+<leader>R	nvim/nvim/old_config.vim	/^nnoremap <leader>R gD:%s\/\/\/g<left><left>$/;"	m
+<leader>a	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>/;"	m
+<leader>a	nvim/old_config.vim	/^nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>/;"	m
+<leader>b	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>b :Buffers<cr>$/;"	m
+<leader>b	nvim/nvim/old_config.vim	/^nnoremap <leader>b :Buffers<cr>$/;"	m
+<leader>c	nvim/old_config.vim	/^nnoremap <leader>c :!ctags -R .<cr>$/;"	m
+<leader>f	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>f :Files<cr>$/;"	m
+<leader>f	nvim/nvim/old_config.vim	/^nnoremap <leader>f :Files<cr>$/;"	m
+<leader>g	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l$/;"	m
+<leader>g	nvim/nvim/old_config.vim	/^nnoremap <leader>g :Rg<cr>$/;"	m
+<leader>g	nvim/old_config.vim	/^nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l$/;"	m
+<leader>j	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>j :GBranches<cr>$/;"	m
+<leader>j	nvim/nvim/old_config.vim	/^nnoremap <leader>j :GBranches<cr>$/;"	m
+<leader>j	nvim/old_config.vim	/^nnoremap <leader>j :GBranches<cr>$/;"	m
+<leader>k	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>k :History<cr>$/;"	m
+<leader>k	nvim/nvim/old_config.vim	/^nnoremap <leader>k :History<cr>$/;"	m
+<leader>l	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>l :call CocActionAsync('highlight')<cr>$/;"	m
+<leader>m	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>m :Git mergetool<cr>$/;"	m
+<leader>m	nvim/old_config.vim	/^nnoremap <leader>m :Git mergetool<cr>$/;"	m
+<leader>n	nvim/old_config.vim	/^nmap <leader>n :MarkdownPreviewToggle<cr>$/;"	m
+<leader>r	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>r gd[{V%:s\/\/\/g<left><left>$/;"	m
+<leader>r	nvim/nvim/old_config.vim	/^nnoremap <leader>r gd[{V%:s\/\/\/g<left><left>$/;"	m
+<leader>t	nvim/old_config.vim	/^nnoremap <leader>t :call TrimWhitespace()<cr>$/;"	m
+<leader>w	nvim/nvim/nvim/old_config.vim	/^nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>$/;"	m
+<leader>w	nvim/nvim/old_config.vim	/^nnoremap <leader>w :call TrimWhitespace()<cr>:wa<cr>$/;"	m
+<plug>(plug-preview)	nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
+<plug>(plug-preview)	nvim/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
+<plug>(plug-preview)	nvim/nvim/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
+>	ben/.vimrc	/^vnoremap > >gv$/;"	m
+>	nvim/nvim/nvim/old_config.vim	/^vnoremap > >gv$/;"	m
+>	nvim/nvim/old_config.vim	/^vnoremap > >gv$/;"	m
+@@@@ M@CROS @@@@	vimnotes.md	/^## @@@@ M@CROS @@@@$/;"	s	chapter:VIM
+API changes (for highlighter authors):	.zsh/zsh-syntax-highlighting/changelog.md	/^## API changes (for highlighter authors):$/;"	s	chapter:Changes in version 0.5.0
+API changes (for highlighter authors):	.zsh/zsh-syntax-highlighting/changelog.md	/^## API changes (for highlighter authors):$/;"	s	chapter:Changes in version 0.6.0
+Added highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Added highlighting of:$/;"	s	chapter:Changes in version 0.3.0
+Added highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Added highlighting of:$/;"	s	chapter:Changes in version 0.4.0
+Added highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Added highlighting of:$/;"	s	chapter:Changes in version 0.5.0
+Added highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Added highlighting of:$/;"	s	chapter:Changes in version 0.6.0
+Additional context	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/bug-report.md	/^### Additional context$/;"	S
+Additional context	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/feature_request.md	/^### Additional context$/;"	S
+Antigen	.zsh/zsh-autosuggestions/INSTALL.md	/^## Antigen$/;"	s	chapter:Installation
+Asynchronous Mode	.zsh/zsh-autosuggestions/README.md	/^### Asynchronous Mode$/;"	S	section:zsh-autosuggestions""Configuration
+Build Process	.zsh/zsh-autosuggestions/README.md	/^### Build Process$/;"	S	section:zsh-autosuggestions""Development
+Changelog	.zsh/zsh-autosuggestions/CHANGELOG.md	/^# Changelog$/;"	c
+Changes fixed as part of the switch to zle-line-pre-redraw	.zsh/zsh-syntax-highlighting/changelog.md	/^## Changes fixed as part of the switch to zle-line-pre-redraw$/;"	s	chapter:Changes in HEAD
+Changes in 0.8.0-alpha1-pre-redrawhook	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in 0.8.0-alpha1-pre-redrawhook$/;"	c
+Changes in HEAD	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in HEAD$/;"	c
+Changes in version 0.3.0	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.3.0$/;"	c
+Changes in version 0.4.0	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.4.0$/;"	c
+Changes in version 0.4.1	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.4.1$/;"	c
+Changes in version 0.5.0	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.5.0$/;"	c
+Changes in version 0.6.0	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.6.0$/;"	c
+Changes in version 0.7.0	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.7.0$/;"	c
+Changes in version 0.7.1	.zsh/zsh-syntax-highlighting/changelog.md	/^# Changes in version 0.7.1$/;"	c
+Configuration	.zsh/zsh-autosuggestions/README.md	/^## Configuration$/;"	s	chapter:zsh-autosuggestions
+D	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> D  :PlugDiff<cr>$/;"	m
+D	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> D  :PlugDiff<cr>$/;"	m
+D	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> D  :PlugDiff<cr>$/;"	m
+D	nvim/nvim/nvim/old_config.vim	/^vmap <expr> D DVB_Duplicate()$/;"	m
+D	nvim/nvim/old_config.vim	/^vmap <expr> D DVB_Duplicate()$/;"	m
+DOC_DIR	.zsh/zsh-syntax-highlighting/Makefile	/^DOC_DIR?=$(DESTDIR)$(PREFIX)\/share\/doc\/$(NAME)$/;"	m
+Describe alternatives you've considered	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/feature_request.md	/^### Describe alternatives you've considered$/;"	S
+Describe the bug	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/bug-report.md	/^### Describe the bug$/;"	S
+Describe the solution you'd like	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/feature_request.md	/^### Describe the solution you'd like$/;"	S
+Desktop	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/bug-report.md	/^### Desktop$/;"	S
+Developer-visible changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Developer-visible changes:$/;"	s	chapter:Changes in version 0.3.0
+Developer-visible changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Developer-visible changes:$/;"	s	chapter:Changes in version 0.4.0
+Developer-visible changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Developer-visible changes:$/;"	s	chapter:Changes in version 0.5.0
+Developer-visible changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Developer-visible changes:$/;"	s	chapter:Changes in version 0.6.0
+Development	.zsh/zsh-autosuggestions/README.md	/^## Development$/;"	s	chapter:zsh-autosuggestions
+Disabling automatic widget re-binding	.zsh/zsh-autosuggestions/README.md	/^### Disabling automatic widget re-binding$/;"	S	section:zsh-autosuggestions""Configuration
+Disabling suggestion for large buffers	.zsh/zsh-autosuggestions/README.md	/^### Disabling suggestion for large buffers$/;"	S	section:zsh-autosuggestions""Configuration
+Does syntax highlighting work during incremental history search?	.zsh/zsh-syntax-highlighting/README.md	/^### Does syntax highlighting work during incremental history search?$/;"	S	section:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]""FAQ
+EX commands	vimnotes.md	/^#### EX commands$/;"	t	chapter:VIM
+Expected behavior	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/bug-report.md	/^### Expected behavior$/;"	S
+FAQ	.zsh/zsh-syntax-highlighting/README.md	/^FAQ$/;"	s	chapter:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]
+Fixed highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Fixed highlighting of:$/;"	s	chapter:Changes in version 0.3.0
+Fixed highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Fixed highlighting of:$/;"	s	chapter:Changes in version 0.4.0
+Fixed highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Fixed highlighting of:$/;"	s	chapter:Changes in version 0.5.0
+Fixed highlighting of:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Fixed highlighting of:$/;"	s	chapter:Changes in version 0.6.0
+Fixes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Fixes:$/;"	s	chapter:Changes in version 0.4.1
+Forward compatibility.	.zsh/zsh-syntax-highlighting/docs/highlighters/main.md	/^#### Forward compatibility.$/;"	t	subsection:zsh-syntax-highlighting / highlighters / main""Useless trivia
+Forward compatibility.	.zsh/zsh-syntax-highlighting/highlighters/main/README.md	/^#### Forward compatibility.$/;"	t	subsection:zsh-syntax-highlighting / highlighters / main""Useless trivia
+G	nvim/nvim/nvim/old_config.vim	/^xnoremap <expr>  G   'G' . virtcol('.') . "\\|"$/;"	m
+G	nvim/nvim/old_config.vim	/^xnoremap <expr>  G   'G' . virtcol('.') . "\\|"$/;"	m
+G	nvim/old_config.vim	/^xnoremap <expr>  G   'G' . virtcol('.') . "\\|"$/;"	m
+HEADER_FILES	.zsh/zsh-autosuggestions/Makefile	/^HEADER_FILES := \\$/;"	m
+Hacking on zsh-syntax-highlighting itself	.zsh/zsh-syntax-highlighting/HACKING.md	/^Hacking on zsh-syntax-highlighting itself$/;"	c
+Highlighter-independent settings	.zsh/zsh-syntax-highlighting/docs/highlighters.md	/^Highlighter-independent settings$/;"	s	chapter:zsh-syntax-highlighting / highlighters
+Highlighting test	.zsh/zsh-syntax-highlighting/tests/README.md	/^Highlighting test$/;"	s	chapter:zsh-syntax-highlighting / tests
+How are new releases announced?	.zsh/zsh-syntax-highlighting/README.md	/^### How are new releases announced?$/;"	S	section:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]""FAQ
+How to activate highlighters	.zsh/zsh-syntax-highlighting/docs/highlighters.md	/^How to activate highlighters$/;"	s	chapter:zsh-syntax-highlighting / highlighters
+How to implement a new highlighter	.zsh/zsh-syntax-highlighting/docs/highlighters.md	/^How to implement a new highlighter$/;"	s	chapter:zsh-syntax-highlighting / highlighters
+How to install	.zsh/zsh-syntax-highlighting/INSTALL.md	/^How to install$/;"	s
+How to install	.zsh/zsh-syntax-highlighting/README.md	/^How to install$/;"	s	chapter:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]
+How to tweak	.zsh/zsh-syntax-highlighting/README.md	/^How to tweak$/;"	s	chapter:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]
+How to tweak highlighters	.zsh/zsh-syntax-highlighting/docs/highlighters.md	/^How to tweak highlighters$/;"	s	chapter:zsh-syntax-highlighting / highlighters
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/brackets.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / brackets
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/cursor.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / cursor
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/line.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / line
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/main.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / main
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/pattern.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / pattern
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/regexp.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / regexp
+How to tweak it	.zsh/zsh-syntax-highlighting/docs/highlighters/root.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / root
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/brackets/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / brackets
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/cursor/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / cursor
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/line/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / line
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/main/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / main
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/pattern/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / pattern
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/regexp/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / regexp
+How to tweak it	.zsh/zsh-syntax-highlighting/highlighters/root/README.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / root
+INSTALL	.zsh/zsh-syntax-highlighting/Makefile	/^INSTALL?=install -c$/;"	m
+IRC channel	.zsh/zsh-syntax-highlighting/HACKING.md	/^IRC channel$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
+Ignoring history suggestions that match a pattern	.zsh/zsh-autosuggestions/README.md	/^### Ignoring history suggestions that match a pattern$/;"	S	section:zsh-autosuggestions""Configuration
+In your ~/.zshrc	.zsh/zsh-syntax-highlighting/INSTALL.md	/^### In your ~\/.zshrc$/;"	S	section:How to install
+Incompatible changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Incompatible changes:$/;"	s	chapter:Changes in 0.8.0-alpha1-pre-redrawhook
+Installation	.zsh/zsh-autosuggestions/INSTALL.md	/^# Installation$/;"	c
+Installation	.zsh/zsh-autosuggestions/README.md	/^## Installation$/;"	s	chapter:zsh-autosuggestions
+Is your feature request related to a problem? Please describe.	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/feature_request.md	/^### Is your feature request related to a problem? Please describe.$/;"	S
+Key Bindings	.zsh/zsh-autosuggestions/README.md	/^### Key Bindings$/;"	S	section:zsh-autosuggestions""Configuration
+L	nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim/autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim/nvim/autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim/nvim/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim/nvim/nvim/autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+License	.zsh/zsh-autosuggestions/README.md	/^## License$/;"	s	chapter:zsh-autosuggestions
+Manual (Git Clone)	.zsh/zsh-autosuggestions/INSTALL.md	/^## Manual (Git Clone)$/;"	s	chapter:Installation
+Memos and commas	.zsh/zsh-syntax-highlighting/HACKING.md	/^Memos and commas$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
+Miscellany	.zsh/zsh-syntax-highlighting/HACKING.md	/^Miscellany$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
+N	ben/.vimrc	/^nnoremap N Nzzzv$/;"	m
+N	nvim/nvim/nvim/old_config.vim	/^nnoremap N Nzzzv$/;"	m
+N	nvim/nvim/old_config.vim	/^nnoremap N Nzzzv$/;"	m
+NAME	.zsh/zsh-syntax-highlighting/Makefile	/^NAME=zsh-syntax-highlighting$/;"	m
+Notice about an improbable-but-not-impossible forward incompatibility	.zsh/zsh-syntax-highlighting/changelog.md	/^## Notice about an improbable-but-not-impossible forward incompatibility$/;"	s	chapter:Changes in 0.8.0-alpha1-pre-redrawhook
+Oh My Zsh	.zsh/zsh-autosuggestions/INSTALL.md	/^## Oh My Zsh$/;"	s	chapter:Installation
+Other changes	.zsh/zsh-syntax-highlighting/changelog.md	/^## Other changes$/;"	s	chapter:Changes in HEAD
+Other changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Other changes:$/;"	s	chapter:Changes in 0.8.0-alpha1-pre-redrawhook
+Other changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Other changes:$/;"	s	chapter:Changes in version 0.3.0
+Other changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Other changes:$/;"	s	chapter:Changes in version 0.4.0
+Other changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Other changes:$/;"	s	chapter:Changes in version 0.5.0
+Other changes:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Other changes:$/;"	s	chapter:Changes in version 0.6.0
+PLUGIN_TARGET	.zsh/zsh-autosuggestions/Makefile	/^PLUGIN_TARGET := zsh-autosuggestions.zsh$/;"	m
+PREFIX	.zsh/zsh-syntax-highlighting/Makefile	/^PREFIX?=\/usr\/local$/;"	m
+Packages	.zsh/zsh-autosuggestions/INSTALL.md	/^## Packages$/;"	s	chapter:Installation
+Parameters	.zsh/zsh-syntax-highlighting/docs/highlighters/main.md	/^#### Parameters$/;"	t	subsection:zsh-syntax-highlighting / highlighters / main""How to tweak it
+Parameters	.zsh/zsh-syntax-highlighting/highlighters/main/README.md	/^#### Parameters$/;"	t	subsection:zsh-syntax-highlighting / highlighters / main""How to tweak it
+Performance improvements:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Performance improvements:$/;"	s	chapter:Changes in version 0.5.0
+Performance improvements:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Performance improvements:$/;"	s	chapter:Changes in version 0.6.0
+Performance test	.zsh/zsh-syntax-highlighting/tests/README.md	/^Performance test$/;"	s	chapter:zsh-syntax-highlighting / tests
+Plug	nvim/autoload/plug.vim	/^  command! -nargs=+ -bar Plug call plug#(<args>)$/;"	c
+Plug	nvim/nvim/autoload/plug.vim	/^  command! -nargs=+ -bar Plug call plug#(<args>)$/;"	c
+Plug	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=+ -bar Plug call plug#(<args>)$/;"	c
+PlugClean	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar -bang PlugClean call s:clean(<bang>0)$/;"	c
+PlugClean	nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar -bang PlugClean call s:clean(<bang>0)$/;"	c
+PlugClean	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar -bang PlugClean call s:clean(<bang>0)$/;"	c
+PlugDiff	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugDiff    call s:diff()$/;"	c
+PlugDiff	nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugDiff    call s:diff()$/;"	c
+PlugDiff	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugDiff    call s:diff()$/;"	c
+PlugInstall	nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install(<bang>0, /;"	c
+PlugInstall	nvim/nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install(<bang>0, /;"	c
+PlugInstall	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install(<bang>0, /;"	c
+PlugLOD	nvim/autoload/plug.vim	/^    augroup PlugLOD$/;"	a
+PlugLOD	nvim/nvim/autoload/plug.vim	/^    augroup PlugLOD$/;"	a
+PlugLOD	nvim/nvim/nvim/autoload/plug.vim	/^    augroup PlugLOD$/;"	a
+PlugSnapshot	nvim/autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=file PlugSnapshot call s:snapshot(<bang>0, <f-args>)$/;"	c
+PlugSnapshot	nvim/nvim/autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=file PlugSnapshot call s:snapshot(<bang>0, <f-args>)$/;"	c
+PlugSnapshot	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=file PlugSnapshot call s:snapshot(<bang>0, <f-args>)$/;"	c
+PlugStatus	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
+PlugStatus	nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
+PlugStatus	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
+PlugUpdate	nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
+PlugUpdate	nvim/nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
+PlugUpdate	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
+PlugUpgrade	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
+PlugUpgrade	nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
+PlugUpgrade	nvim/nvim/nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
+Pull Requests	.zsh/zsh-autosuggestions/README.md	/^### Pull Requests$/;"	S	section:zsh-autosuggestions""Development
+Q	ben/.vimrc	/^nnoremap Q <Nop>$/;"	m
+Q	nvim/nvim/nvim/old_config.vim	/^nnoremap Q <NOP>$/;"	m
+Q	nvim/nvim/old_config.vim	/^nnoremap Q <NOP>$/;"	m
+Q	nvim/old_config.vim	/^nnoremap Q <NOP>$/;"	m
+Q	ssh/.vimrc	/^nnoremap Q <Nop>$/;"	m
+R	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
+R	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
+R	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
+Release procedure (for developers):	.zsh/zsh-syntax-highlighting/release.md	/^# Release procedure (for developers):$/;"	c
+Removed features:	.zsh/zsh-syntax-highlighting/changelog.md	/^## Removed features:$/;"	s	chapter:Changes in version 0.4.0
+Reporting an Issue	.zsh/zsh-autosuggestions/README.md	/^### Reporting an Issue$/;"	S	section:zsh-autosuggestions""Troubleshooting
+S	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> S  :PlugStatus<cr>$/;"	m
+S	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> S  :PlugStatus<cr>$/;"	m
+S	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> S  :PlugStatus<cr>$/;"	m
+SHARE_DIR	.zsh/zsh-syntax-highlighting/Makefile	/^SHARE_DIR?=$(DESTDIR)$(PREFIX)\/share\/$(NAME)$/;"	m
+SRC_DIR	.zsh/zsh-autosuggestions/Makefile	/^SRC_DIR    := .\/src$/;"	m
+SRC_FILES	.zsh/zsh-autosuggestions/Makefile	/^SRC_FILES := \\$/;"	m
+Screenshots	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/bug-report.md	/^### Screenshots$/;"	S
+Skipping completion suggestions for certain cases	.zsh/zsh-autosuggestions/README.md	/^### Skipping completion suggestions for certain cases$/;"	S	section:zsh-autosuggestions""Configuration
+Suggestion Highlight Style	.zsh/zsh-autosuggestions/README.md	/^### Suggestion Highlight Style$/;"	S	section:zsh-autosuggestions""Configuration
+Suggestion Strategy	.zsh/zsh-autosuggestions/README.md	/^### Suggestion Strategy$/;"	S	section:zsh-autosuggestions""Configuration
+System-wide installation	.zsh/zsh-syntax-highlighting/INSTALL.md	/^### System-wide installation$/;"	S	section:How to install
+TerminalSession	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^class TerminalSession$/;"	c
+Testing	.zsh/zsh-autosuggestions/README.md	/^### Testing$/;"	S	section:zsh-autosuggestions""Development
+Testing the `brackets` highlighter	.zsh/zsh-syntax-highlighting/HACKING.md	/^Testing the `brackets` highlighter$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
+Testing the `pattern` and `regexp` highlighters	.zsh/zsh-syntax-highlighting/HACKING.md	/^Testing the `pattern` and `regexp` highlighters$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
+The `main` highlighter	.zsh/zsh-syntax-highlighting/HACKING.md	/^The `main` highlighter$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
+To Reproduce	.zsh/zsh-autosuggestions/.github/ISSUE_TEMPLATE/bug-report.md	/^### To Reproduce$/;"	S
+TrimWhitespace	nvim/nvim/nvim/old_config.vim	/^fun! TrimWhitespace()$/;"	f
+TrimWhitespace	nvim/nvim/old_config.vim	/^fun! TrimWhitespace()$/;"	f
+TrimWhitespace	nvim/old_config.vim	/^fun! TrimWhitespace()$/;"	f
+Troubleshooting	.zsh/zsh-autosuggestions/README.md	/^## Troubleshooting$/;"	s	chapter:zsh-autosuggestions
+U	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim/autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim/nvim/autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim/nvim/nvim/autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+Uninstallation	.zsh/zsh-autosuggestions/README.md	/^## Uninstallation$/;"	s	chapter:zsh-autosuggestions
+Usage	.zsh/zsh-autosuggestions/README.md	/^## Usage$/;"	s	chapter:zsh-autosuggestions
+Useless trivia	.zsh/zsh-syntax-highlighting/docs/highlighters/main.md	/^### Useless trivia$/;"	S	section:zsh-syntax-highlighting / highlighters / main
+Useless trivia	.zsh/zsh-syntax-highlighting/highlighters/main/README.md	/^### Useless trivia$/;"	S	section:zsh-syntax-highlighting / highlighters / main
+Using packages	.zsh/zsh-syntax-highlighting/INSTALL.md	/^### Using packages$/;"	S	section:How to install
+VIM	vimnotes.md	/^# VIM$/;"	c
+Version 0.2.1	.zsh/zsh-syntax-highlighting/changelog.md	/^# Version 0.2.1$/;"	c
+Why must `zsh-syntax-highlighting.zsh` be sourced at the end of the `.zshrc` file?	.zsh/zsh-syntax-highlighting/README.md	/^### Why must `zsh-syntax-highlighting.zsh` be sourced at the end of the `.zshrc` file?$/;"	S	section:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]""FAQ
+Widget Mapping	.zsh/zsh-autosuggestions/README.md	/^### Widget Mapping$/;"	S	section:zsh-autosuggestions""Configuration
+With a plugin manager	.zsh/zsh-syntax-highlighting/INSTALL.md	/^### With a plugin manager$/;"	S	section:How to install
+Writing new tests	.zsh/zsh-syntax-highlighting/tests/README.md	/^Writing new tests$/;"	s	chapter:zsh-syntax-highlighting / tests
+X	nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
+X	nvim/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
+X	nvim/nvim/nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
+ZSH	.zsh/zsh-syntax-highlighting/Makefile	/^ZSH?=zsh # zsh binary to run tests with$/;"	m
+ZSH_BIN	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  ZSH_BIN = ENV['TEST_ZSH_BIN'] || 'zsh'$/;"	C	class:TerminalSession
+ZSH_HIGHLIGHT_STYLES=	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^ZSH_HIGHLIGHT_STYLES=()$/;"	f
+[Antigen](https://github.com/zsh-users/antigen)	.zsh/zsh-syntax-highlighting/INSTALL.md	/^#### [Antigen](https:\/\/github.com\/zsh-users\/antigen)$/;"	t	subsection:How to install""With a plugin manager
+[Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)	.zsh/zsh-syntax-highlighting/INSTALL.md	/^#### [Oh-my-zsh](https:\/\/github.com\/robbyrussell\/oh-my-zsh)$/;"	t	subsection:How to install""With a plugin manager
+[Prezto](https://github.com/sorin-ionescu/prezto)	.zsh/zsh-syntax-highlighting/INSTALL.md	/^#### [Prezto](https:\/\/github.com\/sorin-ionescu\/prezto)$/;"	t	subsection:How to install""With a plugin manager
+[[	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
+[[	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
+[[	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
+[h	nvim/nvim/nvim/old_config.vim	/^nmap [h <Plug>(GitGutterPrevHunk)$/;"	m
+[h	nvim/nvim/old_config.vim	/^nmap [h <Plug>(GitGutterPrevHunk)$/;"	m
+[h	nvim/old_config.vim	/^nmap [h <Plug>(GitGutterPrevHunk)$/;"	m
+[zgen](https://github.com/tarjoilija/zgen)	.zsh/zsh-syntax-highlighting/INSTALL.md	/^#### [zgen](https:\/\/github.com\/tarjoilija\/zgen)$/;"	t	subsection:How to install""With a plugin manager
+[zplug](https://github.com/zplug/zplug)	.zsh/zsh-syntax-highlighting/INSTALL.md	/^#### [zplug](https:\/\/github.com\/zplug\/zplug)$/;"	t	subsection:How to install""With a plugin manager
+[zplugin](https://github.com/psprint/zplugin)	.zsh/zsh-syntax-highlighting/INSTALL.md	/^#### [zplugin](https:\/\/github.com\/psprint\/zplugin)$/;"	t	subsection:How to install""With a plugin manager
+]]	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
+]]	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
+]]	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
+]h	nvim/nvim/nvim/old_config.vim	/^nmap ]h <Plug>(GitGutterNextHunk)$/;"	m
+]h	nvim/nvim/old_config.vim	/^nmap ]h <Plug>(GitGutterNextHunk)$/;"	m
+]h	nvim/old_config.vim	/^nmap ]h <Plug>(GitGutterNextHunk)$/;"	m
+_complete	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^	function _complete() {$/;"	f
+_complete	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^	function _complete() {$/;"	f
+_zsh_autosuggest_accept	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_accept() {$/;"	f
+_zsh_autosuggest_accept	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_accept() {$/;"	f
+_zsh_autosuggest_async_request	.zsh/zsh-autosuggestions/src/async.zsh	/^_zsh_autosuggest_async_request() {$/;"	f
+_zsh_autosuggest_async_request	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_async_request() {$/;"	f
+_zsh_autosuggest_async_response	.zsh/zsh-autosuggestions/src/async.zsh	/^_zsh_autosuggest_async_response() {$/;"	f
+_zsh_autosuggest_async_response	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_async_response() {$/;"	f
+_zsh_autosuggest_bind_widget	.zsh/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_bind_widget() {$/;"	f
+_zsh_autosuggest_bind_widget	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_bind_widget() {$/;"	f
+_zsh_autosuggest_bind_widgets	.zsh/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_bind_widgets() {$/;"	f
+_zsh_autosuggest_bind_widgets	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_bind_widgets() {$/;"	f
+_zsh_autosuggest_capture_completion_async	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^_zsh_autosuggest_capture_completion_async() {$/;"	f
+_zsh_autosuggest_capture_completion_async	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_capture_completion_async() {$/;"	f
+_zsh_autosuggest_capture_completion_sync	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^_zsh_autosuggest_capture_completion_sync() {$/;"	f
+_zsh_autosuggest_capture_completion_sync	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_capture_completion_sync() {$/;"	f
+_zsh_autosuggest_capture_completion_widget	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^_zsh_autosuggest_capture_completion_widget() {$/;"	f
+_zsh_autosuggest_capture_completion_widget	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_capture_completion_widget() {$/;"	f
+_zsh_autosuggest_capture_postcompletion	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^_zsh_autosuggest_capture_postcompletion() {$/;"	f
+_zsh_autosuggest_capture_postcompletion	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_capture_postcompletion() {$/;"	f
+_zsh_autosuggest_capture_setup	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^_zsh_autosuggest_capture_setup() {$/;"	f
+_zsh_autosuggest_capture_setup	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_capture_setup() {$/;"	f
+_zsh_autosuggest_clear	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_clear() {$/;"	f
+_zsh_autosuggest_clear	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_clear() {$/;"	f
+_zsh_autosuggest_disable	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_disable() {$/;"	f
+_zsh_autosuggest_disable	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_disable() {$/;"	f
+_zsh_autosuggest_enable	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_enable() {$/;"	f
+_zsh_autosuggest_enable	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_enable() {$/;"	f
+_zsh_autosuggest_escape_command	.zsh/zsh-autosuggestions/src/util.zsh	/^_zsh_autosuggest_escape_command() {$/;"	f
+_zsh_autosuggest_escape_command	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_escape_command() {$/;"	f
+_zsh_autosuggest_execute	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_execute() {$/;"	f
+_zsh_autosuggest_execute	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_execute() {$/;"	f
+_zsh_autosuggest_fetch	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_fetch() {$/;"	f
+_zsh_autosuggest_fetch	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_fetch() {$/;"	f
+_zsh_autosuggest_fetch_suggestion	.zsh/zsh-autosuggestions/src/fetch.zsh	/^_zsh_autosuggest_fetch_suggestion() {$/;"	f
+_zsh_autosuggest_fetch_suggestion	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_fetch_suggestion() {$/;"	f
+_zsh_autosuggest_highlight_apply	.zsh/zsh-autosuggestions/src/highlight.zsh	/^_zsh_autosuggest_highlight_apply() {$/;"	f
+_zsh_autosuggest_highlight_apply	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_highlight_apply() {$/;"	f
+_zsh_autosuggest_highlight_reset	.zsh/zsh-autosuggestions/src/highlight.zsh	/^_zsh_autosuggest_highlight_reset() {$/;"	f
+_zsh_autosuggest_highlight_reset	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_highlight_reset() {$/;"	f
+_zsh_autosuggest_incr_bind_count	.zsh/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_incr_bind_count() {$/;"	f
+_zsh_autosuggest_incr_bind_count	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_incr_bind_count() {$/;"	f
+_zsh_autosuggest_invoke_original_widget	.zsh/zsh-autosuggestions/src/bind.zsh	/^_zsh_autosuggest_invoke_original_widget() {$/;"	f
+_zsh_autosuggest_invoke_original_widget	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_invoke_original_widget() {$/;"	f
+_zsh_autosuggest_modify	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_modify() {$/;"	f
+_zsh_autosuggest_modify	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_modify() {$/;"	f
+_zsh_autosuggest_partial_accept	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_partial_accept() {$/;"	f
+_zsh_autosuggest_partial_accept	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_partial_accept() {$/;"	f
+_zsh_autosuggest_start	.zsh/zsh-autosuggestions/src/start.zsh	/^_zsh_autosuggest_start() {$/;"	f
+_zsh_autosuggest_start	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_start() {$/;"	f
+_zsh_autosuggest_strategy_completion	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^_zsh_autosuggest_strategy_completion() {$/;"	f
+_zsh_autosuggest_strategy_completion	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_strategy_completion() {$/;"	f
+_zsh_autosuggest_strategy_history	.zsh/zsh-autosuggestions/src/strategies/history.zsh	/^_zsh_autosuggest_strategy_history() {$/;"	f
+_zsh_autosuggest_strategy_history	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_strategy_history() {$/;"	f
+_zsh_autosuggest_strategy_match_prev_cmd	.zsh/zsh-autosuggestions/src/strategies/match_prev_cmd.zsh	/^_zsh_autosuggest_strategy_match_prev_cmd() {$/;"	f
+_zsh_autosuggest_strategy_match_prev_cmd	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_strategy_match_prev_cmd() {$/;"	f
+_zsh_autosuggest_suggest	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_suggest() {$/;"	f
+_zsh_autosuggest_suggest	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_suggest() {$/;"	f
+_zsh_autosuggest_toggle	.zsh/zsh-autosuggestions/src/widgets.zsh	/^_zsh_autosuggest_toggle() {$/;"	f
+_zsh_autosuggest_toggle	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^_zsh_autosuggest_toggle() {$/;"	f
+_zsh_highlight	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight()$/;"	f
+_zsh_highlight__function_callable_p	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight__function_callable_p() {$/;"	f
+_zsh_highlight__function_is_autoload_stub_p	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight__function_is_autoload_stub_p() {$/;"	f
+_zsh_highlight__is_function_p	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight__is_function_p() {$/;"	f
+_zsh_highlight__zle-line-finish	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^  _zsh_highlight__zle-line-finish() {$/;"	f
+_zsh_highlight__zle-line-pre-redraw	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^  _zsh_highlight__zle-line-pre-redraw() {$/;"	f
+_zsh_highlight_add_highlight	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/inheritance.zsh	/^_zsh_highlight_add_highlight()$/;"	f
+_zsh_highlight_add_highlight	.zsh/zsh-syntax-highlighting/tests/generate.zsh	/^_zsh_highlight_add_highlight()$/;"	f
+_zsh_highlight_add_highlight	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^_zsh_highlight_add_highlight()$/;"	f
+_zsh_highlight_add_highlight	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_add_highlight()$/;"	f
+_zsh_highlight_apply_zle_highlight	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_apply_zle_highlight() {$/;"	f
+_zsh_highlight_bind_widgets	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^  _zsh_highlight_bind_widgets()$/;"	f
+_zsh_highlight_bind_widgets	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^  _zsh_highlight_bind_widgets(){}$/;"	f
+_zsh_highlight_brackets_match	.zsh/zsh-syntax-highlighting/highlighters/brackets/brackets-highlighter.zsh	/^_zsh_highlight_brackets_match()$/;"	f
+_zsh_highlight_buffer_modified	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_buffer_modified()$/;"	f
+_zsh_highlight_call_widget	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_call_widget()$/;"	f
+_zsh_highlight_cursor_moved	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_cursor_moved()$/;"	f
+_zsh_highlight_highlighter_brackets_paint	.zsh/zsh-syntax-highlighting/highlighters/brackets/brackets-highlighter.zsh	/^_zsh_highlight_highlighter_brackets_paint()$/;"	f
+_zsh_highlight_highlighter_brackets_predicate	.zsh/zsh-syntax-highlighting/highlighters/brackets/brackets-highlighter.zsh	/^_zsh_highlight_highlighter_brackets_predicate()$/;"	f
+_zsh_highlight_highlighter_cursor_paint	.zsh/zsh-syntax-highlighting/highlighters/cursor/cursor-highlighter.zsh	/^_zsh_highlight_highlighter_cursor_paint()$/;"	f
+_zsh_highlight_highlighter_cursor_predicate	.zsh/zsh-syntax-highlighting/highlighters/cursor/cursor-highlighter.zsh	/^_zsh_highlight_highlighter_cursor_predicate()$/;"	f
+_zsh_highlight_highlighter_line_paint	.zsh/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh	/^_zsh_highlight_highlighter_line_paint()$/;"	f
+_zsh_highlight_highlighter_line_predicate	.zsh/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh	/^_zsh_highlight_highlighter_line_predicate()$/;"	f
+_zsh_highlight_highlighter_main_paint	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_highlighter_main_paint()$/;"	f
+_zsh_highlight_highlighter_main_predicate	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_highlighter_main_predicate()$/;"	f
+_zsh_highlight_highlighter_pattern_paint	.zsh/zsh-syntax-highlighting/highlighters/pattern/pattern-highlighter.zsh	/^_zsh_highlight_highlighter_pattern_paint()$/;"	f
+_zsh_highlight_highlighter_pattern_predicate	.zsh/zsh-syntax-highlighting/highlighters/pattern/pattern-highlighter.zsh	/^_zsh_highlight_highlighter_pattern_predicate()$/;"	f
+_zsh_highlight_highlighter_regexp_paint	.zsh/zsh-syntax-highlighting/highlighters/regexp/regexp-highlighter.zsh	/^_zsh_highlight_highlighter_regexp_paint()$/;"	f
+_zsh_highlight_highlighter_regexp_predicate	.zsh/zsh-syntax-highlighting/highlighters/regexp/regexp-highlighter.zsh	/^_zsh_highlight_highlighter_regexp_predicate()$/;"	f
+_zsh_highlight_highlighter_root_paint	.zsh/zsh-syntax-highlighting/highlighters/root/root-highlighter.zsh	/^_zsh_highlight_highlighter_root_paint()$/;"	f
+_zsh_highlight_highlighter_root_predicate	.zsh/zsh-syntax-highlighting/highlighters/root/root-highlighter.zsh	/^_zsh_highlight_highlighter_root_predicate()$/;"	f
+_zsh_highlight_load_highlighters	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_load_highlighters()$/;"	f
+_zsh_highlight_main__command_type_cache=	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^  _zsh_highlight_main__command_type_cache=()$/;"	f
+_zsh_highlight_main__is_global_alias	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__is_global_alias() {$/;"	f
+_zsh_highlight_main__is_redirection	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__is_redirection() {$/;"	f
+_zsh_highlight_main__is_runnable	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__is_runnable() {$/;"	f
+_zsh_highlight_main__precmd_hook	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__precmd_hook() {$/;"	f
+_zsh_highlight_main__resolve_alias	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__resolve_alias() {$/;"	f
+_zsh_highlight_main__stack_pop	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__stack_pop() {$/;"	f
+_zsh_highlight_main__type	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main__type() {$/;"	f
+_zsh_highlight_main_add_many_region_highlights	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_add_many_region_highlights() {$/;"	f
+_zsh_highlight_main_add_region_highlight	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_add_region_highlight() {$/;"	f
+_zsh_highlight_main_calculate_fallback	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_calculate_fallback() {$/;"	f
+_zsh_highlight_main_highlighter__try_expand_parameter	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter__try_expand_parameter()$/;"	f
+_zsh_highlight_main_highlighter_check_assign	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_check_assign()$/;"	f
+_zsh_highlight_main_highlighter_check_path	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_check_path()$/;"	f
+_zsh_highlight_main_highlighter_expand_path	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_expand_path()$/;"	f
+_zsh_highlight_main_highlighter_highlight_argument	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_argument()$/;"	f
+_zsh_highlight_main_highlighter_highlight_arithmetic	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_arithmetic()$/;"	f
+_zsh_highlight_main_highlighter_highlight_backtick	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_backtick()$/;"	f
+_zsh_highlight_main_highlighter_highlight_dollar_quote	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_dollar_quote()$/;"	f
+_zsh_highlight_main_highlighter_highlight_double_quote	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_double_quote()$/;"	f
+_zsh_highlight_main_highlighter_highlight_list	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_list()$/;"	f
+_zsh_highlight_main_highlighter_highlight_path_separators	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_path_separators()$/;"	f
+_zsh_highlight_main_highlighter_highlight_single_quote	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^_zsh_highlight_main_highlighter_highlight_single_quote()$/;"	f
+_zsh_highlight_pattern_highlighter_loop	.zsh/zsh-syntax-highlighting/highlighters/pattern/pattern-highlighter.zsh	/^_zsh_highlight_pattern_highlighter_loop()$/;"	f
+_zsh_highlight_preexec_hook	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^_zsh_highlight_preexec_hook()$/;"	f
+_zsh_highlight_regexp_highlighter_loop	.zsh/zsh-syntax-highlighting/highlighters/regexp/regexp-highlighter.zsh	/^_zsh_highlight_regexp_highlighter_loop()$/;"	f
+`copy-earlier-word`	.zsh/zsh-autosuggestions/spec/async_spec.rb	/^  describe '`copy-earlier-word`' do$/;"	d
+`up-line-or-beginning-search`	.zsh/zsh-autosuggestions/spec/async_spec.rb	/^  describe '`up-line-or-beginning-search`' do$/;"	d
+`vi-delete`	.zsh/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^  describe '`vi-delete`' do$/;"	d
+`vi-find-next-char`	.zsh/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^  describe '`vi-find-next-char`' do$/;"	d
+`vi-forward-word-end`	.zsh/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^  describe '`vi-forward-word-end`' do$/;"	d
+`vi-forward-word`	.zsh/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^  describe '`vi-forward-word`' do$/;"	d
+`yank-pop`	.zsh/zsh-autosuggestions/spec/kill_ring_spec.rb	/^  describe '`yank-pop`' do$/;"	d
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-loop.zsh	/^alias a=b b=c c=b$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-nested-precommand.zsh	/^alias a=b b=sudo$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-nested.zsh	/^alias a=b b=:$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-quoted.zsh	/^alias a=: ls='ls -l'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse1.zsh	/^alias a=: b='a | a'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse2.zsh	/^alias a=: b='a && a'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse3.zsh	/^alias a=: b='a; a'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse4.zsh	/^alias a=: b='a $(a)'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-reuse5.zsh	/^alias a=: b='a < <(a)'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-unknown-token1.zsh	/^alias a=b b=foo$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-unknown-token2.zsh	/^alias a='() { ls "$@" ; foo }'$/;"	a
+a	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/off-by-one.zsh	/^alias a=:$/;"	a
+a displayed suggestion	.zsh/zsh-autosuggestions/spec/options/highlight_style_spec.rb	/^describe 'a displayed suggestion' do$/;"	d
+a modification to the widget lists	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^describe 'a modification to the widget lists' do$/;"	d
+a multi-line suggestion	.zsh/zsh-autosuggestions/spec/multi_line_spec.rb	/^describe 'a multi-line suggestion' do$/;"	d
+a running zpty command	.zsh/zsh-autosuggestions/spec/integrations/client_zpty_spec.rb	/^describe 'a running zpty command' do$/;"	d
+a special character in the buffer should be treated like any other character	.zsh/zsh-autosuggestions/spec/strategies/special_characters_helper.rb	/^  describe 'a special character in the buffer should be treated like any other character' do$/;"	d
+a suggestion	.zsh/zsh-autosuggestions/spec/options/buffer_max_size_spec.rb	/^describe 'a suggestion' do$/;"	d
+a suggestion for a given prefix	.zsh/zsh-autosuggestions/spec/options/strategy_spec.rb	/^describe 'a suggestion for a given prefix' do$/;"	d
+a wrapped widget	.zsh/zsh-autosuggestions/spec/integrations/wrapped_widget_spec.rb	/^describe 'a wrapped widget' do$/;"	d
+a zle widget	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^describe 'a zle widget' do$/;"	d
+alias1	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias.zsh	/^alias alias1="ls"$/;"	a
+alias1	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias.zsh	/^function alias1() {} # to check that it's highlighted as an alias, not as a function$/;"	f
+all	.zsh/zsh-autosuggestions/Makefile	/^all: $(PLUGIN_TARGET)$/;"	t
+all	.zsh/zsh-syntax-highlighting/Makefile	/^all:$/;"	t
+an original zle widget	.zsh/zsh-autosuggestions/spec/options/original_widget_prefix_spec.rb	/^describe 'an original zle widget' do$/;"	d
+arg0	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^      alias arg0$/;"	a
+arg0	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^      function arg0$/;"	f
+args	vimnotes.md	/^#### args$/;"	t	section:VIM""@@@@ M@CROS @@@@
+attach!	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def attach!$/;"	f	class:TerminalSession
+b	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-loop.zsh	/^function b() {} # beware of ALIAS_FUNC_DEF$/;"	f
+bar	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/array-cmdsep1.zsh	/^bar(){}$/;"	f
+cache	nvim/coc-settings.json	/^        "cache": {$/;"	o	object:languageserver.ccls.initializationOptions
+cache	nvim/nvim/coc-settings.json	/^        "cache": {$/;"	o	object:languageserver.ccls.initializationOptions
+cache	nvim/nvim/nvim/coc-settings.json	/^        "cache": {$/;"	o	object:languageserver.ccls.initializationOptions
+cat	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-self2.zsh	/^alias cat='cat | cat'$/;"	a
+ccls	nvim/coc-settings.json	/^    "ccls": {$/;"	o	object:languageserver
+ccls	nvim/nvim/coc-settings.json	/^    "ccls": {$/;"	o	object:languageserver
+ccls	nvim/nvim/nvim/coc-settings.json	/^    "ccls": {$/;"	o	object:languageserver
+cd	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/function.zsh	/^cd() {$/;"	f
+clang	nvim/coc-settings.json	/^        "clang": {$/;"	o	object:languageserver.ccls.initializationOptions
+clang	nvim/nvim/coc-settings.json	/^        "clang": {$/;"	o	object:languageserver.ccls.initializationOptions
+clang	nvim/nvim/nvim/coc-settings.json	/^        "clang": {$/;"	o	object:languageserver.ccls.initializationOptions
+clean	.zsh/zsh-autosuggestions/Makefile	/^clean:$/;"	t
+clean	.zsh/zsh-syntax-highlighting/Makefile	/^clean:$/;"	t
+clear_screen	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def clear_screen$/;"	f	class:TerminalSession
+coc.preferences.enableMarkdown	nvim/coc-settings.json	/^  "coc.preferences.enableMarkdown": false,$/;"	b
+coc.preferences.enableMarkdown	nvim/nvim/coc-settings.json	/^  "coc.preferences.enableMarkdown": false,$/;"	b
+coc.preferences.enableMarkdown	nvim/nvim/nvim/coc-settings.json	/^  "coc.preferences.enableMarkdown": false,$/;"	b
+command	nvim/coc-settings.json	/^      "command": "ccls",$/;"	s	object:languageserver.ccls
+command	nvim/nvim/coc-settings.json	/^      "command": "ccls",$/;"	s	object:languageserver.ccls
+command	nvim/nvim/nvim/coc-settings.json	/^      "command": "ccls",$/;"	s	object:languageserver.ccls
+compilationDatabaseDirectory	nvim/coc-settings.json	/^        "compilationDatabaseDirectory": ".vscode\/"$/;"	s	object:languageserver.ccls.initializationOptions
+compilationDatabaseDirectory	nvim/nvim/coc-settings.json	/^        "compilationDatabaseDirectory": ".vscode\/"$/;"	s	object:languageserver.ccls.initializationOptions
+compilationDatabaseDirectory	nvim/nvim/nvim/coc-settings.json	/^        "compilationDatabaseDirectory": ".vscode\/"$/;"	s	object:languageserver.ccls.initializationOptions
+completion	nvim/coc-settings.json	/^        "completion": {$/;"	o	object:languageserver.ccls.initializationOptions
+completion	nvim/nvim/coc-settings.json	/^        "completion": {$/;"	o	object:languageserver.ccls.initializationOptions
+completion	nvim/nvim/nvim/coc-settings.json	/^        "completion": {$/;"	o	object:languageserver.ccls.initializationOptions
+content	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def content(esc_seqs: false)$/;"	f	class:TerminalSession
+cursor	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def cursor$/;"	f	class:TerminalSession
+d	nvim/autoload/plug.vim	/^      nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@$/;"	m
+d	nvim/autoload/plug.vim	/^      xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>$/;"	m
+d	nvim/nvim/autoload/plug.vim	/^      nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@$/;"	m
+d	nvim/nvim/autoload/plug.vim	/^      xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>$/;"	m
+d	nvim/nvim/nvim/autoload/plug.vim	/^      nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@$/;"	m
+d	nvim/nvim/nvim/autoload/plug.vim	/^      xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>$/;"	m
+dd	nvim/autoload/plug.vim	/^      nmap     <silent> <buffer> dd d_$/;"	m
+dd	nvim/nvim/autoload/plug.vim	/^      nmap     <silent> <buffer> dd d_$/;"	m
+dd	nvim/nvim/nvim/autoload/plug.vim	/^      nmap     <silent> <buffer> dd d_$/;"	m
+destroy	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def destroy$/;"	f	class:TerminalSession
+detailedLable	nvim/coc-settings.json	/^          "detailedLable": true,$/;"	b	object:languageserver.ccls.initializationOptions.completion
+detailedLable	nvim/nvim/coc-settings.json	/^          "detailedLable": true,$/;"	b	object:languageserver.ccls.initializationOptions.completion
+detailedLable	nvim/nvim/nvim/coc-settings.json	/^          "detailedLable": true,$/;"	b	object:languageserver.ccls.initializationOptions.completion
+directory	nvim/coc-settings.json	/^          "directory": "\/tmp\/ccls"$/;"	s	object:languageserver.ccls.initializationOptions.cache
+directory	nvim/nvim/coc-settings.json	/^          "directory": "\/tmp\/ccls"$/;"	s	object:languageserver.ccls.initializationOptions.cache
+directory	nvim/nvim/nvim/coc-settings.json	/^          "directory": "\/tmp\/ccls"$/;"	s	object:languageserver.ccls.initializationOptions.cache
+doas	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/precommand4.zsh	/^doas(){}$/;"	f
+echo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-self.zsh	/^alias echo='echo foo'$/;"	a
+ed	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/opt-shwordsplit1.zsh	/^ed() { command ed "$@" }$/;"	f
+expected_region_highlight=	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias.zsh	/^expected_region_highlight=()$/;"	f
+expected_region_highlight=	.zsh/zsh-syntax-highlighting/tests/test-zprof.zsh	/^  expected_region_highlight=()$/;"	f
+f	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/off-by-one.zsh	/^f() {}$/;"	f
+filetypedetect	nvim/autoload/plug.vim	/^        augroup filetypedetect$/;"	a
+filetypedetect	nvim/nvim/autoload/plug.vim	/^        augroup filetypedetect$/;"	a
+filetypedetect	nvim/nvim/nvim/autoload/plug.vim	/^        augroup filetypedetect$/;"	a
+filetypes	nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	a	object:languageserver.ccls
+filetypes	nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	a	object:languageserver.ccls
+filetypes	nvim/nvim/nvim/coc-settings.json	/^      "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],$/;"	a	object:languageserver.ccls
+foo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-basic.zsh	/^alias foo="echo hello world"$/;"	a
+foobar	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-command-substitution.zsh	/^alias foobar='echo "$(echo foobar)"'$/;"	a
+g:_plug_bang	nvim/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
+g:_plug_bang	nvim/nvim/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
+g:_plug_bang	nvim/nvim/nvim/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
+g:coc_global_extensions	nvim/nvim/nvim/old_config.vim	/^let g:coc_global_extensions = [$/;"	v
+g:coc_global_extensions	nvim/nvim/old_config.vim	/^let g:coc_global_extensions = [$/;"	v
+g:coc_global_extensions	nvim/old_config.vim	/^let g:coc_global_extensions = [$/;"	v
+g:fzf_layout	nvim/nvim/nvim/old_config.vim	/^let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoff/;"	v
+g:fzf_layout	nvim/nvim/old_config.vim	/^let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoff/;"	v
+g:indent_blankline_context_patterns	nvim/old_config.vim	/^let g:indent_blankline_context_patterns = [$/;"	v
+g:indent_blankline_viewport_buffer	nvim/old_config.vim	/^let g:indent_blankline_viewport_buffer = 10000$/;"	v
+g:loaded_plug	nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:loaded_plug	nvim/nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:loaded_plug	nvim/nvim/nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:mkdp_auto_start	nvim/nvim/nvim/old_config.vim	/^let g:mkdp_auto_start = 1$/;"	v
+g:mkdp_auto_start	nvim/nvim/old_config.vim	/^let g:mkdp_auto_start = 1$/;"	v
+g:mkdp_browser	nvim/nvim/nvim/old_config.vim	/^let g:mkdp_browser= 'surf'$/;"	v
+g:mkdp_browser	nvim/nvim/old_config.vim	/^let g:mkdp_browser= 'surf'$/;"	v
+g:mkdp_browser	nvim/old_config.vim	/^let g:mkdp_browser = 'chromium'$/;"	v
+g:netrw_banner	nvim/old_config.vim	/^let g:netrw_banner=0$/;"	v
+g:netrw_banner	ssh/.vimrc	/^let g:netrw_banner=0$/;"	v
+g:netrw_liststyle	nvim/old_config.vim	/^let g:netrw_liststyle=3$/;"	v
+g:netrw_liststyle	ssh/.vimrc	/^let g:netrw_liststyle=3$/;"	v
+g:plug_home	nvim/autoload/plug.vim	/^  let g:plug_home = home$/;"	v
+g:plug_home	nvim/nvim/autoload/plug.vim	/^  let g:plug_home = home$/;"	v
+g:plug_home	nvim/nvim/nvim/autoload/plug.vim	/^  let g:plug_home = home$/;"	v
+g:plugs	nvim/autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
+g:plugs	nvim/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
+g:plugs	nvim/nvim/autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
+g:plugs	nvim/nvim/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
+g:plugs	nvim/nvim/nvim/autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
+g:plugs	nvim/nvim/nvim/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
+g:plugs_order	nvim/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
+g:plugs_order	nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:plugs_order	nvim/nvim/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
+g:plugs_order	nvim/nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:plugs_order	nvim/nvim/nvim/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
+g:plugs_order	nvim/nvim/nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:rainbow_active	nvim/nvim/nvim/old_config.vim	/^let g:rainbow_active = 1$/;"	v
+g:rainbow_active	nvim/nvim/old_config.vim	/^let g:rainbow_active = 1$/;"	v
+g:rainbow_active	nvim/old_config.vim	/^let g:rainbow_active = 1$/;"	v
+highlight	nvim/coc-settings.json	/^        "highlight": {"lsRanges": true},$/;"	o	object:languageserver.ccls.initializationOptions
+highlight	nvim/nvim/coc-settings.json	/^        "highlight": {"lsRanges": true},$/;"	o	object:languageserver.ccls.initializationOptions
+highlight	nvim/nvim/nvim/coc-settings.json	/^        "highlight": {"lsRanges": true},$/;"	o	object:languageserver.ccls.initializationOptions
+index	nvim/coc-settings.json	/^        "index": {$/;"	o	object:languageserver.ccls.initializationOptions
+index	nvim/nvim/coc-settings.json	/^        "index": {$/;"	o	object:languageserver.ccls.initializationOptions
+index	nvim/nvim/nvim/coc-settings.json	/^        "index": {$/;"	o	object:languageserver.ccls.initializationOptions
+initialNoLinkage	nvim/coc-settings.json	/^          "initialNoLinkage": true,$/;"	b	object:languageserver.ccls.initializationOptions.index
+initialNoLinkage	nvim/nvim/coc-settings.json	/^          "initialNoLinkage": true,$/;"	b	object:languageserver.ccls.initializationOptions.index
+initialNoLinkage	nvim/nvim/nvim/coc-settings.json	/^          "initialNoLinkage": true,$/;"	b	object:languageserver.ccls.initializationOptions.index
+initializationOptions	nvim/coc-settings.json	/^      "initializationOptions": {$/;"	o	object:languageserver.ccls
+initializationOptions	nvim/nvim/coc-settings.json	/^      "initializationOptions": {$/;"	o	object:languageserver.ccls
+initializationOptions	nvim/nvim/nvim/coc-settings.json	/^      "initializationOptions": {$/;"	o	object:languageserver.ccls
+initialize	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def initialize(opts = {})$/;"	f	class:TerminalSession
+initialized after sourcing the plugin	.zsh/zsh-autosuggestions/spec/integrations/wrapped_widget_spec.rb	/^  context 'initialized after sourcing the plugin' do$/;"	c
+initialized before sourcing the plugin	.zsh/zsh-autosuggestions/spec/integrations/rebound_bracket_spec.rb	/^  context 'initialized before sourcing the plugin' do$/;"	c
+initialized before sourcing the plugin	.zsh/zsh-autosuggestions/spec/integrations/wrapped_widget_spec.rb	/^  context 'initialized before sourcing the plugin' do$/;"	c
+insert mode	vimnotes.md	/^#### insert mode$/;"	t	chapter:VIM
+install	.zsh/zsh-syntax-highlighting/Makefile	/^install: all$/;"	t
+invoked on a non-empty buffer	.zsh/zsh-autosuggestions/spec/widgets/enable_spec.rb	/^  context 'invoked on a non-empty buffer' do$/;"	c
+invoked on an empty buffer	.zsh/zsh-autosuggestions/spec/widgets/enable_spec.rb	/^  context 'invoked on an empty buffer' do$/;"	c
+iteration	vimnotes.md	/^#### iteration$/;"	t	section:VIM""@@@@ M@CROS @@@@
+languageserver	nvim/coc-settings.json	/^  "languageserver": {$/;"	o
+languageserver	nvim/nvim/coc-settings.json	/^  "languageserver": {$/;"	o
+languageserver	nvim/nvim/nvim/coc-settings.json	/^  "languageserver": {$/;"	o
+list_highlights=	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^  list_highlights=()$/;"	f
+ls	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-eponymous1.zsh	/^alias ls='command ls'$/;"	a
+ls	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-eponymous2.zsh	/^alias ls=tmp tmp='command ls'$/;"	a
+ls	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-loop2.zsh	/^alias ls="ls"$/;"	a
+ls	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/function.zsh	/^ls() {$/;"	f
+lsRanges	nvim/coc-settings.json	/^        "highlight": {"lsRanges": true},$/;"	b	object:languageserver.ccls.initializationOptions.highlight
+lsRanges	nvim/nvim/coc-settings.json	/^        "highlight": {"lsRanges": true},$/;"	b	object:languageserver.ccls.initializationOptions.highlight
+lsRanges	nvim/nvim/nvim/coc-settings.json	/^        "highlight": {"lsRanges": true},$/;"	b	object:languageserver.ccls.initializationOptions.highlight
+moving the cursor after exiting insert mode	.zsh/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^  describe 'moving the cursor after exiting insert mode' do$/;"	d
+n	ben/.vimrc	/^nnoremap n nzzzv$/;"	m
+n	nvim/nvim/nvim/old_config.vim	/^nnoremap n nzzzv$/;"	m
+n	nvim/nvim/old_config.vim	/^nnoremap n nzzzv$/;"	m
+navigation	vimnotes.md	/^#### navigation$/;"	t	chapter:VIM
+o	nvim/autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
+o	nvim/nvim/autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
+o	nvim/nvim/nvim/autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
+onChange	nvim/coc-settings.json	/^          "onChange": false,$/;"	b	object:languageserver.ccls.initializationOptions.index
+onChange	nvim/nvim/coc-settings.json	/^          "onChange": false,$/;"	b	object:languageserver.ccls.initializationOptions.index
+onChange	nvim/nvim/nvim/coc-settings.json	/^          "onChange": false,$/;"	b	object:languageserver.ccls.initializationOptions.index
+opts	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  attr_reader :opts$/;"	A	class:TerminalSession
+p	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-in-cmdsubst.zsh	/^alias p='print -r --'$/;"	a
+paste_string	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def paste_string(str)$/;"	f	class:TerminalSession
+pasting using bracketed-paste-magic	.zsh/zsh-autosuggestions/spec/integrations/bracketed_paste_magic_spec.rb	/^describe 'pasting using bracketed-paste-magic' do$/;"	d
+perf	.zsh/zsh-syntax-highlighting/Makefile	/^perf:$/;"	t
+placeholder	nvim/coc-settings.json	/^          "placeholder": true$/;"	b	object:languageserver.ccls.initializationOptions.completion
+placeholder	nvim/nvim/coc-settings.json	/^          "placeholder": true$/;"	b	object:languageserver.ccls.initializationOptions.completion
+placeholder	nvim/nvim/nvim/coc-settings.json	/^          "placeholder": true$/;"	b	object:languageserver.ccls.initializationOptions.completion
+plain text macro edit	vimnotes.md	/^#### plain text macro edit$/;"	t	section:VIM""@@@@ M@CROS @@@@
+plug#	nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#	nvim/nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#	nvim/nvim/nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#begin	nvim/nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#begin	nvim/nvim/nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#end	nvim/nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#end	nvim/nvim/nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#helptags	nvim/nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#helptags	nvim/nvim/nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug#load	nvim/nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug#load	nvim/nvim/nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug#shellescape	nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+plug#shellescape	nvim/nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+plug#shellescape	nvim/nvim/nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+pressing ^C after fetching a suggestion	.zsh/zsh-autosuggestions/spec/async_spec.rb	/^  describe 'pressing ^C after fetching a suggestion' do$/;"	d
+q	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :call <SID>close_pane()<cr>$/;"	m
+q	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
+q	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :call <SID>close_pane()<cr>$/;"	m
+q	nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
+q	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :call <SID>close_pane()<cr>$/;"	m
+q	nvim/nvim/nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
+quiet-test	.zsh/zsh-syntax-highlighting/Makefile	/^quiet-test:$/;"	t
+rebinding [	.zsh/zsh-autosuggestions/spec/integrations/rebound_bracket_spec.rb	/^describe 'rebinding [' do$/;"	d
+region_highlight=	.zsh/zsh-syntax-highlighting/tests/generate.zsh	/^  region_highlight=()$/;"	f
+region_highlight=	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^        region_highlight=()$/;"	f
+region_highlight=	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^    region_highlight=()$/;"	f
+region_highlight[-1]=	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^    region_highlight[-1]=()$/;"	f
+reply=	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^  reply=()$/;"	f
+resourceDir	nvim/coc-settings.json	/^          "resourceDir": "\/usr\/lib\/clang\/13.0.0"$/;"	s	object:languageserver.ccls.initializationOptions.clang
+resourceDir	nvim/nvim/coc-settings.json	/^          "resourceDir": "\/usr\/lib\/clang\/13.0.0"$/;"	s	object:languageserver.ccls.initializationOptions.clang
+resourceDir	nvim/nvim/nvim/coc-settings.json	/^          "resourceDir": "\/usr\/lib\/clang\/13.0.0"$/;"	s	object:languageserver.ccls.initializationOptions.clang
+rootPatterns	nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	a	object:languageserver.ccls
+rootPatterns	nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	a	object:languageserver.ccls
+rootPatterns	nvim/nvim/nvim/coc-settings.json	/^      "rootPatterns": [ "compile_commands.json", ".git\/", ".hg\/", ".vscode", ".vim\/" ],$/;"	a	object:languageserver.ccls
+run_command	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def run_command(command)$/;"	f	class:TerminalSession
+run_test	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^run_test() {$/;"	f
+run_test	.zsh/zsh-syntax-highlighting/tests/test-perfs.zsh	/^run_test() {$/;"	f
+run_test	.zsh/zsh-syntax-highlighting/tests/test-zprof.zsh	/^run_test() {$/;"	f
+run_test_internal	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^run_test_internal() {$/;"	f
+run_test_internal	.zsh/zsh-syntax-highlighting/tests/test-perfs.zsh	/^run_test_internal() {$/;"	f
+run_test_internal	.zsh/zsh-syntax-highlighting/tests/test-zprof.zsh	/^run_test_internal() {$/;"	f
+s	ssh/.tmux.conf	/^bind -n M-Enter 'swap-pane -s :. -t :.0; select-pane -t :.0'$/;"	k
+s	tmux/.tmux.conf	/^bind -n M-Enter 'swap-pane -s :. -t :.0; select-pane -t :.0'$/;"	k
+s:TYPE	nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:TYPE	nvim/nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:TYPE	nvim/nvim/nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:append_ul	nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+s:append_ul	nvim/nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+s:append_ul	nvim/nvim/nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+s:ask	nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+s:ask	nvim/nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+s:ask	nvim/nvim/nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+s:ask_no_interrupt	nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+s:ask_no_interrupt	nvim/nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+s:ask_no_interrupt	nvim/nvim/nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+s:assign_name	nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+s:assign_name	nvim/nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+s:assign_name	nvim/nvim/nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+s:assoc	nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+s:assoc	nvim/nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+s:assoc	nvim/nvim/nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+s:bang	nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+s:bang	nvim/nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+s:bang	nvim/nvim/nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+s:bar	nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+s:bar	nvim/nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+s:bar	nvim/nvim/nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+s:base_spec	nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
+s:base_spec	nvim/nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
+s:base_spec	nvim/nvim/nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
+s:batchfile	nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+s:batchfile	nvim/nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+s:batchfile	nvim/nvim/nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+s:check_ruby	nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+s:check_ruby	nvim/nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+s:check_ruby	nvim/nvim/nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+s:checkout	nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+s:checkout	nvim/nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+s:checkout	nvim/nvim/nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+s:chsh	nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+s:chsh	nvim/nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+s:chsh	nvim/nvim/nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+s:clean	nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:clean	nvim/nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:clean	nvim/nvim/nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:close_pane	nvim/autoload/plug.vim	/^function! s:close_pane()$/;"	f
+s:close_pane	nvim/nvim/autoload/plug.vim	/^function! s:close_pane()$/;"	f
+s:close_pane	nvim/nvim/nvim/autoload/plug.vim	/^function! s:close_pane()$/;"	f
+s:compare_git_uri	nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+s:compare_git_uri	nvim/nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+s:compare_git_uri	nvim/nvim/nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+s:cpo_save	nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	nvim/nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:cpo_save	nvim/nvim/nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:define_commands	nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+s:define_commands	nvim/nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+s:define_commands	nvim/nvim/nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+s:delete	nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+s:delete	nvim/nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+s:delete	nvim/nvim/nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+s:delete_op	nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+s:delete_op	nvim/nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+s:delete_op	nvim/nvim/nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+s:diff	nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+s:diff	nvim/nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+s:diff	nvim/nvim/nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
+s:dirpath	nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:dirpath	nvim/nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:dirpath	nvim/nvim/nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:do	nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+s:do	nvim/nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+s:do	nvim/nvim/nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+s:doautocmd	nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+s:doautocmd	nvim/nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+s:doautocmd	nvim/nvim/nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+s:dobufread	nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:dobufread	nvim/nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:dobufread	nvim/nvim/nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:err	nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:err	nvim/nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:err	nvim/nvim/nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:esc	nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+s:esc	nvim/nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+s:esc	nvim/nvim/nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+s:escrtp	nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+s:escrtp	nvim/nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+s:escrtp	nvim/nvim/nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+s:extract_name	nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:extract_name	nvim/nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:extract_name	nvim/nvim/nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:find_name	nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+s:find_name	nvim/nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+s:find_name	nvim/nvim/nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+s:finish	nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+s:finish	nvim/nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+s:finish	nvim/nvim/nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+s:finish_bindings	nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+s:finish_bindings	nvim/nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+s:finish_bindings	nvim/nvim/nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+s:format_git_log	nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+s:format_git_log	nvim/nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+s:format_git_log	nvim/nvim/nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+s:format_message	nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+s:format_message	nvim/nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+s:format_message	nvim/nvim/nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+s:git_dir	nvim/autoload/plug.vim	/^function! s:git_dir(dir) abort$/;"	f
+s:git_dir	nvim/nvim/autoload/plug.vim	/^function! s:git_dir(dir) abort$/;"	f
+s:git_dir	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_dir(dir) abort$/;"	f
+s:git_local_branch	nvim/autoload/plug.vim	/^function! s:git_local_branch(dir) abort$/;"	f
+s:git_local_branch	nvim/nvim/autoload/plug.vim	/^function! s:git_local_branch(dir) abort$/;"	f
+s:git_local_branch	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_local_branch(dir) abort$/;"	f
+s:git_origin_branch	nvim/autoload/plug.vim	/^function! s:git_origin_branch(spec)$/;"	f
+s:git_origin_branch	nvim/nvim/autoload/plug.vim	/^function! s:git_origin_branch(spec)$/;"	f
+s:git_origin_branch	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_origin_branch(spec)$/;"	f
+s:git_origin_url	nvim/autoload/plug.vim	/^function! s:git_origin_url(dir) abort$/;"	f
+s:git_origin_url	nvim/nvim/autoload/plug.vim	/^function! s:git_origin_url(dir) abort$/;"	f
+s:git_origin_url	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_origin_url(dir) abort$/;"	f
+s:git_revision	nvim/autoload/plug.vim	/^function! s:git_revision(dir) abort$/;"	f
+s:git_revision	nvim/nvim/autoload/plug.vim	/^function! s:git_revision(dir) abort$/;"	f
+s:git_revision	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_revision(dir) abort$/;"	f
+s:git_validate	nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_validate	nvim/nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_validate	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_version_requirement	nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+s:git_version_requirement	nvim/nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+s:git_version_requirement	nvim/nvim/nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+s:glob	nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+s:glob	nvim/nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+s:glob	nvim/nvim/nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+s:glob_dir	nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+s:glob_dir	nvim/nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+s:glob_dir	nvim/nvim/nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+s:hash_match	nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:hash_match	nvim/nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:hash_match	nvim/nvim/nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:infer_properties	nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+s:infer_properties	nvim/nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+s:infer_properties	nvim/nvim/nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+s:install	nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+s:install	nvim/nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+s:install	nvim/nvim/nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+s:is_local_plug	nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+s:is_local_plug	nvim/nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+s:is_local_plug	nvim/nvim/nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+s:is_managed	nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_managed	nvim/nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_managed	nvim/nvim/nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_powershell	nvim/autoload/plug.vim	/^function! s:is_powershell(shell)$/;"	f
+s:is_powershell	nvim/nvim/autoload/plug.vim	/^function! s:is_powershell(shell)$/;"	f
+s:is_powershell	nvim/nvim/nvim/autoload/plug.vim	/^function! s:is_powershell(shell)$/;"	f
+s:is_preview_window_open	nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_preview_window_open	nvim/nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_preview_window_open	nvim/nvim/nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_updated	nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+s:is_updated	nvim/nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+s:is_updated	nvim/nvim/nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+s:is_win	nvim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:is_win	nvim/nvim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:is_win	nvim/nvim/nvim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:isabsolute	nvim/autoload/plug.vim	/^function! s:isabsolute(dir) abort$/;"	f
+s:isabsolute	nvim/nvim/autoload/plug.vim	/^function! s:isabsolute(dir) abort$/;"	f
+s:isabsolute	nvim/nvim/nvim/autoload/plug.vim	/^function! s:isabsolute(dir) abort$/;"	f
+s:job_abort	nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+s:job_abort	nvim/nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+s:job_abort	nvim/nvim/nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+s:job_cb	nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_cb	nvim/nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_cb	nvim/nvim/nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_exit_cb	nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+s:job_exit_cb	nvim/nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+s:job_exit_cb	nvim/nvim/nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+s:job_out_cb	nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:job_out_cb	nvim/nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:job_out_cb	nvim/nvim/nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:last_non_empty_line	nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:last_non_empty_line	nvim/nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:last_non_empty_line	nvim/nvim/nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:lastline	nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+s:lastline	nvim/nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+s:lastline	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+s:lazy	nvim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+s:lazy	nvim/nvim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+s:lazy	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+s:lines	nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+s:lines	nvim/nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+s:lines	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+s:load_plugin	nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+s:load_plugin	nvim/nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+s:load_plugin	nvim/nvim/nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+s:loaded	nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded	nvim/nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded	nvim/nvim/nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded_names	nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+s:loaded_names	nvim/nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+s:loaded_names	nvim/nvim/nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+s:lod	nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+s:lod	nvim/nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+s:lod	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+s:lod_cmd	nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+s:lod_cmd	nvim/nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+s:lod_cmd	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+s:lod_ft	nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+s:lod_ft	nvim/nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+s:lod_ft	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+s:lod_map	nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+s:lod_map	nvim/nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+s:lod_map	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+s:log	nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+s:log	nvim/nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+s:log	nvim/nvim/nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+s:log4	nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:log4	nvim/nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:log4	nvim/nvim/nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:logpos	nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+s:logpos	nvim/nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+s:logpos	nvim/nvim/nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+s:lpad	nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:lpad	nvim/nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:lpad	nvim/nvim/nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:mac_gui	nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:mac_gui	nvim/nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:mac_gui	nvim/nvim/nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:me	nvim/nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:me	nvim/nvim/nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:names	nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+s:names	nvim/nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+s:names	nvim/nvim/nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+s:new_window	nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:new_window	nvim/nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:new_window	nvim/nvim/nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:nvim	nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:nvim	nvim/nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:nvim	nvim/nvim/nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:nvim_cb	nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+s:nvim_cb	nvim/nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+s:nvim_cb	nvim/nvim/nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+s:parse_options	nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:parse_options	nvim/nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:parse_options	nvim/nvim/nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:path	nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+s:path	nvim/nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+s:path	nvim/nvim/nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+s:plug_buf	nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_buf	nvim/nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_buf	nvim/nvim/nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_call	nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+s:plug_call	nvim/nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+s:plug_call	nvim/nvim/nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+s:plug_expand	nvim/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+s:plug_expand	nvim/nvim/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+s:plug_expand	nvim/nvim/nvim/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+s:plug_fnamemodify	nvim/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+s:plug_fnamemodify	nvim/nvim/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+s:plug_fnamemodify	nvim/nvim/nvim/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+s:plug_getcwd	nvim/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+s:plug_getcwd	nvim/nvim/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+s:plug_getcwd	nvim/nvim/nvim/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+s:plug_src	nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_src	nvim/nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_src	nvim/nvim/nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_tab	nvim/nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_tab	nvim/nvim/nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_tempname	nvim/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+s:plug_tempname	nvim/nvim/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+s:plug_tempname	nvim/nvim/nvim/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+s:plug_window_exists	nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:plug_window_exists	nvim/nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:plug_window_exists	nvim/nvim/nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:prepare	nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+s:prepare	nvim/nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+s:prepare	nvim/nvim/nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+s:preview_commit	nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+s:preview_commit	nvim/nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+s:preview_commit	nvim/nvim/nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+s:progress_bar	nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+s:progress_bar	nvim/nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+s:progress_bar	nvim/nvim/nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+s:progress_opt	nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+s:progress_opt	nvim/nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+s:progress_opt	nvim/nvim/nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+s:reap	nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+s:reap	nvim/nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+s:reap	nvim/nvim/nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+s:regress_bar	nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+s:regress_bar	nvim/nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+s:regress_bar	nvim/nvim/nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+s:reload_plugins	nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+s:reload_plugins	nvim/nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+s:reload_plugins	nvim/nvim/nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+s:remove_rtp	nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_rtp	nvim/nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_rtp	nvim/nvim/nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_triggers	nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:remove_triggers	nvim/nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:remove_triggers	nvim/nvim/nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:reorg_rtp	nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+s:reorg_rtp	nvim/nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+s:reorg_rtp	nvim/nvim/nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+s:retry	nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+s:retry	nvim/nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+s:retry	nvim/nvim/nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+s:revert	nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+s:revert	nvim/nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+s:revert	nvim/nvim/nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+s:rm_rf	nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+s:rm_rf	nvim/nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+s:rm_rf	nvim/nvim/nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+s:rtp	nvim/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+s:rtp	nvim/nvim/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+s:rtp	nvim/nvim/nvim/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+s:section	nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+s:section	nvim/nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+s:section	nvim/nvim/nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+s:shellesc_cmd	nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+s:shellesc_cmd	nvim/nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+s:shellesc_cmd	nvim/nvim/nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+s:shellesc_ps1	nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+s:shellesc_ps1	nvim/nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+s:shellesc_ps1	nvim/nvim/nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+s:shellesc_sh	nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+s:shellesc_sh	nvim/nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+s:shellesc_sh	nvim/nvim/nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+s:snapshot	nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+s:snapshot	nvim/nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+s:snapshot	nvim/nvim/nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+s:source	nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+s:source	nvim/nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+s:source	nvim/nvim/nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+s:spawn	nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+s:spawn	nvim/nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+s:spawn	nvim/nvim/nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+s:split_rtp	nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:split_rtp	nvim/nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:split_rtp	nvim/nvim/nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:status	nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+s:status	nvim/nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+s:status	nvim/nvim/nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+s:status_load	nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+s:status_load	nvim/nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+s:status_load	nvim/nvim/nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+s:status_update	nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+s:status_update	nvim/nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+s:status_update	nvim/nvim/nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+s:switch_in	nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+s:switch_in	nvim/nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+s:switch_in	nvim/nvim/nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+s:switch_out	nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:switch_out	nvim/nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:switch_out	nvim/nvim/nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:syntax	nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+s:syntax	nvim/nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+s:syntax	nvim/nvim/nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+s:system	nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+s:system	nvim/nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+s:system	nvim/nvim/nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+s:system_chomp	nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:system_chomp	nvim/nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:system_chomp	nvim/nvim/nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:tick	nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+s:tick	nvim/nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+s:tick	nvim/nvim/nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+s:to_a	nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+s:to_a	nvim/nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+s:to_a	nvim/nvim/nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+s:to_s	nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+s:to_s	nvim/nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+s:to_s	nvim/nvim/nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+s:triggers	nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:triggers	nvim/nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:triggers	nvim/nvim/nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:trim	nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+s:trim	nvim/nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+s:trim	nvim/nvim/nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+s:update	nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update	nvim/nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update	nvim/nvim/nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update_finish	nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+s:update_finish	nvim/nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+s:update_finish	nvim/nvim/nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+s:update_impl	nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+s:update_impl	nvim/nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+s:update_impl	nvim/nvim/nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+s:update_python	nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+s:update_python	nvim/nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+s:update_python	nvim/nvim/nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+s:update_ruby	nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+s:update_ruby	nvim/nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+s:update_ruby	nvim/nvim/nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+s:update_vim	nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+s:update_vim	nvim/nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+s:update_vim	nvim/nvim/nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+s:upgrade	nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+s:upgrade	nvim/nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+s:upgrade	nvim/nvim/nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+s:upgrade_specs	nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:upgrade_specs	nvim/nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:upgrade_specs	nvim/nvim/nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:version_requirement	nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+s:version_requirement	nvim/nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+s:version_requirement	nvim/nvim/nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+s:vim8	nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:vim8	nvim/nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:vim8	nvim/nvim/nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:warn	nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+s:warn	nvim/nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+s:warn	nvim/nvim/nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+s:with_cd	nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+s:with_cd	nvim/nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+s:with_cd	nvim/nvim/nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+s:wrap_cmds	nvim/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+s:wrap_cmds	nvim/nvim/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+s:wrap_cmds	nvim/nvim/nvim/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+seen_alias=	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^        seen_alias=()$/;"	f
+send_keys	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def send_keys(*keys)$/;"	f	class:TerminalSession
+send_string	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def send_string(str)$/;"	f	class:TerminalSession
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-nested-precommand.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument1.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument2.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument3.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument4.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/cmdpos-elision-partial.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/commmand-parameter.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/param-precommand-option-argument1.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/param-precommand-option-argument3.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/precommand-unknown-option.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/sudo-command.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/sudo-comment.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/sudo-redirection.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/sudo-redirection2.zsh	/^sudo(){}$/;"	f
+sudo	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/sudo-redirection3.zsh	/^sudo(){}$/;"	f
+sudo_b	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument2.zsh	/^alias sudo_b='sudo -b'$/;"	a
+sudo_b	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument4.zsh	/^alias sudo_b='sudo -b'$/;"	a
+sudo_b_u	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument2.zsh	/^alias sudo_b_u='sudo_b -u'$/;"	a
+sudo_b_u	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument4.zsh	/^alias sudo_b_u='sudo_b -u'$/;"	a
+sudo_u	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument1.zsh	/^alias sudo_u='sudo -u'$/;"	a
+sudo_u	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-precommand-option-argument3.zsh	/^alias sudo_u='sudo -u'$/;"	a
+t	ssh/.tmux.conf	/^bind -n M-< 'rotate-window -U; select-pane -t 0;select-layout main-vertical;resize-pane -t :.0 -/;"	k
+t	ssh/.tmux.conf	/^bind -n M-> 'rotate-window -D; select-pane -t 0;select-layout main-vertical;resize-pane -t :.0 -/;"	k
+t	ssh/.tmux.conf	/^bind -n M-c 'kill-pane;select-layout main-vertical;resize-pane -t :.0 -x 66%'$/;"	k
+t	ssh/.tmux.conf	/^bind -n M-j 'select-pane -t :.+;select-layout main-vertical;resize-pane -t :.0 -x 66%'$/;"	k
+t	ssh/.tmux.conf	/^bind -n M-k 'select-pane -t :.-;select-layout main-vertical;resize-pane -t :.0 -x 66%'$/;"	k
+t	ssh/.tmux.conf	/^bind -n M-n 'split-window -t :.0 -c "#{pane_current_path}"; swap-pane -s :.0 -t :.1;select-layou/;"	k
+t	ssh/.tmux.conf	/^bind -n M-w 'split-window -t :.0; swap-pane -s :.0 -t :.1;select-layout main-vertical;resize-pan/;"	k
+t	tmux/.tmux.conf	/^bind -n M-< 'rotate-window -U; select-pane -t 0;select-layout main-vertical;resize-pane -t :.0 -/;"	k
+t	tmux/.tmux.conf	/^bind -n M-> 'rotate-window -D; select-pane -t 0;select-layout main-vertical;resize-pane -t :.0 -/;"	k
+t	tmux/.tmux.conf	/^bind -n M-c 'kill-pane;select-layout main-vertical;resize-pane -t :.0 -x 66%'$/;"	k
+t	tmux/.tmux.conf	/^bind -n M-j 'select-pane -t :.+;select-layout main-vertical;resize-pane -t :.0 -x 66%'$/;"	k
+t	tmux/.tmux.conf	/^bind -n M-k 'select-pane -t :.-;select-layout main-vertical;resize-pane -t :.0 -x 66%'$/;"	k
+t	tmux/.tmux.conf	/^bind -n M-n 'split-window -t :.0 -c "#{pane_current_path}"; swap-pane -s :.0 -t :.1;select-layou/;"	k
+t	tmux/.tmux.conf	/^bind -n M-w 'split-window -t :.0; swap-pane -s :.0 -t :.1;select-layout main-vertical;resize-pan/;"	k
+tap_escape	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^tap_escape() {$/;"	f
+test	.zsh/zsh-autosuggestions/Makefile	/^test: all$/;"	t
+test	.zsh/zsh-syntax-highlighting/Makefile	/^test:$/;"	t
+that modifies the buffer	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'that modifies the buffer' do$/;"	c
+that moves the cursor forward	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'that moves the cursor forward' do$/;"	c
+the `autosuggest-disable` widget	.zsh/zsh-autosuggestions/spec/widgets/disable_spec.rb	/^describe 'the `autosuggest-disable` widget' do$/;"	d
+the `autosuggest-enable` widget	.zsh/zsh-autosuggestions/spec/widgets/enable_spec.rb	/^describe 'the `autosuggest-enable` widget' do$/;"	d
+the `autosuggest-fetch` widget	.zsh/zsh-autosuggestions/spec/widgets/fetch_spec.rb	/^describe 'the `autosuggest-fetch` widget' do$/;"	d
+the `autosuggest-toggle` widget	.zsh/zsh-autosuggestions/spec/widgets/toggle_spec.rb	/^describe 'the `autosuggest-toggle` widget' do$/;"	d
+the `completion` suggestion strategy	.zsh/zsh-autosuggestions/spec/strategies/completion_spec.rb	/^describe 'the `completion` suggestion strategy' do$/;"	d
+the `history` suggestion strategy	.zsh/zsh-autosuggestions/spec/strategies/history_spec.rb	/^describe 'the `history` suggestion strategy' do$/;"	d
+the `match_prev_cmd` strategy	.zsh/zsh-autosuggestions/spec/strategies/match_prev_cmd_spec.rb	/^describe 'the `match_prev_cmd` strategy' do$/;"	d
+threads	nvim/coc-settings.json	/^          "threads": 2$/;"	n	object:languageserver.ccls.initializationOptions.index
+threads	nvim/nvim/coc-settings.json	/^          "threads": 2$/;"	n	object:languageserver.ccls.initializationOptions.index
+threads	nvim/nvim/nvim/coc-settings.json	/^          "threads": 2$/;"	n	object:languageserver.ccls.initializationOptions.index
+time	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/time-and-nocorrect2.zsh	/^alias time=':' nocorrect=':'$/;"	a
+tmux_command	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def tmux_command(cmd)$/;"	f	class:TerminalSession
+tmux_socket_name	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def tmux_socket_name$/;"	f	class:TerminalSession
+typeset_p	.zsh/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^typeset_p() {$/;"	f
+using `zle -U`	.zsh/zsh-autosuggestions/spec/integrations/zle_input_stack_spec.rb	/^describe 'using `zle -U`' do$/;"	d
+v0.2.17	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.2.17$/;"	s	chapter:Changelog
+v0.3.0	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.3.0$/;"	s	chapter:Changelog
+v0.3.1	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.3.1$/;"	s	chapter:Changelog
+v0.3.2	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.3.2$/;"	s	chapter:Changelog
+v0.3.3	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.3.3$/;"	s	chapter:Changelog
+v0.4.0	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.4.0$/;"	s	chapter:Changelog
+v0.4.1	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.4.1$/;"	s	chapter:Changelog
+v0.4.2	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.4.2$/;"	s	chapter:Changelog
+v0.4.3	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.4.3$/;"	s	chapter:Changelog
+v0.5.0	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.5.0$/;"	s	chapter:Changelog
+v0.5.1	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.5.1$/;"	s	chapter:Changelog
+v0.5.2	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.5.2$/;"	s	chapter:Changelog
+v0.6.0	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.6.0$/;"	s	chapter:Changelog
+v0.6.1	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.6.1$/;"	s	chapter:Changelog
+v0.6.2	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.6.2$/;"	s	chapter:Changelog
+v0.6.3	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.6.3$/;"	s	chapter:Changelog
+v0.6.4	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.6.4$/;"	s	chapter:Changelog
+v0.7.0	.zsh/zsh-autosuggestions/CHANGELOG.md	/^## v0.7.0$/;"	s	chapter:Changelog
+when ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE is specified	.zsh/zsh-autosuggestions/spec/options/buffer_max_size_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE is specified' do$/;"	c
+when ZSH_AUTOSUGGEST_COMPLETION_IGNORE is set to a pattern	.zsh/zsh-autosuggestions/spec/strategies/completion_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_COMPLETION_IGNORE is set to a pattern' do$/;"	c
+when ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE is set to a zle_highlight string	.zsh/zsh-autosuggestions/spec/options/highlight_style_spec.rb	/^  describe 'when ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE is set to a zle_highlight string' do$/;"	d
+when ZSH_AUTOSUGGEST_HISTORY_IGNORE is set to a pattern	.zsh/zsh-autosuggestions/spec/strategies/history_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_HISTORY_IGNORE is set to a pattern' do$/;"	c
+when ZSH_AUTOSUGGEST_HISTORY_IGNORE is set to a pattern	.zsh/zsh-autosuggestions/spec/strategies/match_prev_cmd_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_HISTORY_IGNORE is set to a pattern' do$/;"	c
+when ZSH_AUTOSUGGEST_ORIGINAL_WIDGET_PREFIX is set	.zsh/zsh-autosuggestions/spec/options/original_widget_prefix_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_ORIGINAL_WIDGET_PREFIX is set' do$/;"	c
+when ZSH_AUTOSUGGEST_STRATEGY is set to a string	.zsh/zsh-autosuggestions/spec/options/strategy_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_STRATEGY is set to a string' do$/;"	c
+when ZSH_AUTOSUGGEST_STRATEGY is set to an array	.zsh/zsh-autosuggestions/spec/options/strategy_spec.rb	/^  context 'when ZSH_AUTOSUGGEST_STRATEGY is set to an array' do$/;"	c
+when `_complete` is aliased	.zsh/zsh-autosuggestions/spec/strategies/completion_spec.rb	/^  context 'when `_complete` is aliased' do$/;"	c
+when added to ZSH_AUTOSUGGEST_ACCEPT_WIDGETS	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'when added to ZSH_AUTOSUGGEST_ACCEPT_WIDGETS' do$/;"	c
+when added to ZSH_AUTOSUGGEST_CLEAR_WIDGETS	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'when added to ZSH_AUTOSUGGEST_CLEAR_WIDGETS' do$/;"	c
+when added to ZSH_AUTOSUGGEST_EXECUTE_WIDGETS	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'when added to ZSH_AUTOSUGGEST_EXECUTE_WIDGETS' do$/;"	c
+when added to ZSH_AUTOSUGGEST_IGNORE_WIDGETS	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'when added to ZSH_AUTOSUGGEST_IGNORE_WIDGETS' do$/;"	c
+when added to ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^    context 'when added to ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS' do$/;"	c
+when async mode is enabled	.zsh/zsh-autosuggestions/spec/strategies/completion_spec.rb	/^  context 'when async mode is enabled' do$/;"	c
+when manual rebind is enabled	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^  context 'when manual rebind is enabled' do$/;"	c
+when not added to any of the widget lists	.zsh/zsh-autosuggestions/spec/options/widget_lists_spec.rb	/^    context 'when not added to any of the widget lists' do$/;"	c
+when suggestions are disabled	.zsh/zsh-autosuggestions/spec/widgets/fetch_spec.rb	/^  context 'when suggestions are disabled' do$/;"	c
+when using `completion` strategy	.zsh/zsh-autosuggestions/spec/integrations/client_zpty_spec.rb	/^  context 'when using `completion` strategy' do$/;"	c
+when using vi mode	.zsh/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^describe 'when using vi mode' do$/;"	d
+with `AUTO_CD` option set	.zsh/zsh-autosuggestions/spec/integrations/auto_cd_spec.rb	/^describe 'with `AUTO_CD` option set' do$/;"	d
+with `GLOB_SUBST` option set	.zsh/zsh-autosuggestions/spec/integrations/glob_subst_spec.rb	/^describe 'with `GLOB_SUBST` option set' do$/;"	d
+with `bracketed-paste` added to the list of widgets that clear the suggestion	.zsh/zsh-autosuggestions/spec/integrations/bracketed_paste_magic_spec.rb	/^  context 'with `bracketed-paste` added to the list of widgets that clear the suggestion' do$/;"	c
+with asynchronous suggestions enabled	.zsh/zsh-autosuggestions/spec/async_spec.rb	/^context 'with asynchronous suggestions enabled' do$/;"	c
+with some items in the kill ring	.zsh/zsh-autosuggestions/spec/kill_ring_spec.rb	/^context 'with some items in the kill ring' do$/;"	c
+with suggestions disabled while pasting	.zsh/zsh-autosuggestions/spec/integrations/bracketed_paste_magic_spec.rb	/^  context 'with suggestions disabled while pasting' do$/;"	c
+with zle-line-init unignored	.zsh/zsh-autosuggestions/spec/line_init_spec.rb	/^context 'with zle-line-init unignored' do$/;"	c
+with_history	.zsh/zsh-autosuggestions/spec/spec_helper.rb	/^  def with_history(*commands, &block)$/;"	f
+words=	.zsh/zsh-syntax-highlighting/highlighters/main/main-highlighter.zsh	/^            words=( )$/;"	f
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-comment1.zsh	/^alias x=$'# foo\\npwd'$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-comment2.zsh	/^alias x=$'# foo\\npwd'$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-complex.zsh	/^alias x='echo && ls; >'$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-empty.zsh	/^alias x=''$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-redirect.zsh	/^alias x=\\>$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-to-dir.zsh	/^alias x=\/$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/alias-to-dir1b.zsh	/^alias x=\/$/;"	a
+x	.zsh/zsh-syntax-highlighting/highlighters/main/test-data/noglob-alias.zsh	/^alias x=command$/;"	a
+zsh-autosuggestions	.zsh/zsh-autosuggestions/README.md	/^# zsh-autosuggestions$/;"	c
+zsh-syntax-highlighting / highlighters	.zsh/zsh-syntax-highlighting/docs/highlighters.md	/^zsh-syntax-highlighting \/ highlighters$/;"	c
+zsh-syntax-highlighting / highlighters	.zsh/zsh-syntax-highlighting/highlighters/README.md	/^zsh-syntax-highlighting \/ highlighters$/;"	c
+zsh-syntax-highlighting / highlighters / brackets	.zsh/zsh-syntax-highlighting/docs/highlighters/brackets.md	/^zsh-syntax-highlighting \/ highlighters \/ brackets$/;"	s
+zsh-syntax-highlighting / highlighters / brackets	.zsh/zsh-syntax-highlighting/highlighters/brackets/README.md	/^zsh-syntax-highlighting \/ highlighters \/ brackets$/;"	s
+zsh-syntax-highlighting / highlighters / cursor	.zsh/zsh-syntax-highlighting/docs/highlighters/cursor.md	/^zsh-syntax-highlighting \/ highlighters \/ cursor$/;"	s
+zsh-syntax-highlighting / highlighters / cursor	.zsh/zsh-syntax-highlighting/highlighters/cursor/README.md	/^zsh-syntax-highlighting \/ highlighters \/ cursor$/;"	s
+zsh-syntax-highlighting / highlighters / line	.zsh/zsh-syntax-highlighting/docs/highlighters/line.md	/^zsh-syntax-highlighting \/ highlighters \/ line$/;"	s
+zsh-syntax-highlighting / highlighters / line	.zsh/zsh-syntax-highlighting/highlighters/line/README.md	/^zsh-syntax-highlighting \/ highlighters \/ line$/;"	s
+zsh-syntax-highlighting / highlighters / main	.zsh/zsh-syntax-highlighting/docs/highlighters/main.md	/^zsh-syntax-highlighting \/ highlighters \/ main$/;"	s
+zsh-syntax-highlighting / highlighters / main	.zsh/zsh-syntax-highlighting/highlighters/main/README.md	/^zsh-syntax-highlighting \/ highlighters \/ main$/;"	s
+zsh-syntax-highlighting / highlighters / pattern	.zsh/zsh-syntax-highlighting/docs/highlighters/pattern.md	/^zsh-syntax-highlighting \/ highlighters \/ pattern$/;"	s
+zsh-syntax-highlighting / highlighters / pattern	.zsh/zsh-syntax-highlighting/highlighters/pattern/README.md	/^zsh-syntax-highlighting \/ highlighters \/ pattern$/;"	s
+zsh-syntax-highlighting / highlighters / regexp	.zsh/zsh-syntax-highlighting/docs/highlighters/regexp.md	/^zsh-syntax-highlighting \/ highlighters \/ regexp$/;"	s
+zsh-syntax-highlighting / highlighters / regexp	.zsh/zsh-syntax-highlighting/highlighters/regexp/README.md	/^zsh-syntax-highlighting \/ highlighters \/ regexp$/;"	s
+zsh-syntax-highlighting / highlighters / root	.zsh/zsh-syntax-highlighting/docs/highlighters/root.md	/^zsh-syntax-highlighting \/ highlighters \/ root$/;"	s
+zsh-syntax-highlighting / highlighters / root	.zsh/zsh-syntax-highlighting/highlighters/root/README.md	/^zsh-syntax-highlighting \/ highlighters \/ root$/;"	s
+zsh-syntax-highlighting / tests	.zsh/zsh-syntax-highlighting/tests/README.md	/^zsh-syntax-highlighting \/ tests$/;"	c
+zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]	.zsh/zsh-syntax-highlighting/README.md	/^zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]$/;"	c
+zsh_version	.zsh/zsh-autosuggestions/spec/terminal_session.rb	/^  def zsh_version$/;"	f	class:TerminalSession
+zshexit	.zsh/zsh-autosuggestions/src/strategies/completion.zsh	/^		zshexit() {$/;"	f
+zshexit	.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh	/^		zshexit() {$/;"	f
+{	nvim/nvim/nvim/old_config.vim	/^xnoremap <expr>  {   '{' . virtcol('.') . "\\|"$/;"	m
+{	nvim/nvim/old_config.vim	/^xnoremap <expr>  {   '{' . virtcol('.') . "\\|"$/;"	m
+{	nvim/old_config.vim	/^xnoremap <expr>  {   '{' . virtcol('.') . "\\|"$/;"	m
+{<cr>	ben/.vimrc	/^inoremap {<cr> {<cr>}<esc>O$/;"	m
+{<cr>	nvim/nvim/nvim/old_config.vim	/^inoremap {<cr> {<cr>}<esc>O$/;"	m
+{<cr>	nvim/nvim/old_config.vim	/^inoremap {<cr> {<cr>}<esc>O$/;"	m
+{<cr>	nvim/old_config.vim	/^inoremap {<cr> {<cr>}<esc>O$/;"	m
+{<cr>	ssh/.vimrc	/^inoremap {<cr> {<cr>}<esc>O$/;"	m
+{cur_widget}	.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^             _zsh_highlight_widget_${cur_widget}() { :; _zsh_highlight }$/;"	f
+}	nvim/nvim/nvim/old_config.vim	/^xnoremap <expr>  }   '}' . virtcol('.') . "\\|"$/;"	m
+}	nvim/nvim/old_config.vim	/^xnoremap <expr>  }   '}' . virtcol('.') . "\\|"$/;"	m
+}	nvim/old_config.vim	/^xnoremap <expr>  }   '}' . virtcol('.') . "\\|"$/;"	m

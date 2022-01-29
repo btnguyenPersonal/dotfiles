@@ -39,6 +39,7 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 inoremap {<cr> {<cr>}<esc>O
+command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
 iab aforl for (int a = 0; a < count; a++) {
 iab bforl for (int b = 0; b < count; b++) {
 iab cforl for (int c = 0; c < count; c++) {
