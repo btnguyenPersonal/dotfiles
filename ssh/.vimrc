@@ -32,6 +32,8 @@ set virtualedit=block
 set history=500
 set path+=**
 syntax on
+let g:netrw_banner=0
+let g:netrw_liststyle=3
 colorscheme desert
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
