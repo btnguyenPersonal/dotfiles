@@ -11,18 +11,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for': ['markdown','vim-plug']}
 " parenthesis stuff
 Plug 'tpope/vim-surround'
-" fzf so i can find files
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'stsewd/fzf-checkout.vim'
 " code context support
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " c++ highlighting with ccls
-Plug 'jackguo380/vim-lsp-cxx-highlight'
+" Plug 'jackguo380/vim-lsp-cxx-highlight'
 " parenthesis highlighting
 Plug 'luochen1990/rainbow'
 " IDE features
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " commenting code
 Plug 'tpope/vim-commentary'
 " plugins work with . command
@@ -56,12 +52,10 @@ call matchadd('ColorColumn', '\%81v', 100)
 set wildmenu
 set wildmode=full
 set wildignorecase
-set ruler
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
 set updatetime=300
-set shortmess+=c
 " auto load changes in vim when a file changes
 set autoread
 " no tabs only spaces
@@ -111,29 +105,13 @@ set clipboard+=unnamedplus
 set history=500
 " intuitive visual block
 set virtualedit=block
+set mouse=a
 " spell check
-" set spell
+set spell
 " syntax highlighting on
 syntax on
-vnoremap < <gv
-vnoremap > >gv
-" emacs cmd line edit
-cnoremap <C-a>      <Home>
-cnoremap <C-e>      <End>
-cnoremap <C-k>      <C-u>
-" ex command completion with c-n and c-p
-cnoremap <C-p> <Up>
-cnoremap <C-n> <Down>
 " ex command current file mapping
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-" when searching always keep next instance centered
-nnoremap n nzzzv
-nnoremap N Nzzzv
-" easier window switching
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 " turns off ex mode
 nnoremap Q <NOP>
 " braces macro
@@ -143,39 +121,24 @@ xnoremap <expr>  G   'G' . virtcol('.') . "\|"
 xnoremap <expr>  }   '}' . virtcol('.') . "\|"
 xnoremap <expr>  {   '{' . virtcol('.') . "\|"
 
-" fzf layout
-let g:fzf_layout = { 'up': '~90%', 'window': { 'width': 0.8, 'height': 0.8, 'yoffset':0.5, 'xoffset': 0.5 } }
-let $FZF_DEFAULT_OPTS = '--layout=reverse'
+let g:netrw_banner=0
+let g:netrw_liststyle=3
 
 " git gutter next chunk
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
 " leader commands
-" call highlight variable
-nnoremap <leader>l :call CocActionAsync('highlight')<cr>
 " save command
-nnoremap <leader>w :call TrimWhitespace()<cr>
+nnoremap <leader>t :call TrimWhitespace()<cr>
 " git mergetool
 nnoremap <leader>m :Git mergetool<cr>
 " git addtool
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " git difftool
-nnoremap <leader>c :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " markdown
 nmap <leader>n :MarkdownPreviewToggle<cr>
-" search files
-nnoremap <leader>f :Files<cr>
-" find files and put into quickfix list
-nnoremap <leader>F :FileFile
-" search through open buffers
-nnoremap <leader>b :Buffers<cr>
-" search through what files have been edited last with nvim
-nnoremap <leader>k :History<cr>
-" grep instances of text in all files at directory
-nnoremap <leader>g :Rg<cr>
-" format file command
-nnoremap <leader>= mggg=G`g:call TrimWhitespace()<cr>zz
 " look at branches
 nnoremap <leader>j :GBranches<cr>
 
@@ -185,7 +148,6 @@ fun! TrimWhitespace()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
 endfun
-autocmd BufWritePre * :call TrimWhitespace()
 
 " pressing enter doesn't accept coc autosuggestions
 inoremap <silent><expr> <cr> "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<cr>"
@@ -291,23 +253,6 @@ iab wletl for (let w = 0; w < count; w++) {
 iab xletl for (let x = 0; x < count; x++) {
 iab yletl for (let y = 0; y < count; y++) {
 iab zletl for (let z = 0; z < count; z++) {
-
-" find files and populate the quickfix list
-fun! FindFiles(filename)
-  let error_file = tempname()
-  silent exe '!find . -iname "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
-  set errorformat=%f:%l:%m
-  exe "cfile ". error_file
-  copen
-  call delete(error_file)
-endfun
-command! -nargs=1 FindFile call FindFiles(<q-args>)
-
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gp <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
 highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
