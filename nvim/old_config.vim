@@ -94,6 +94,8 @@ set ignorecase
 set smartcase
 " line numbers on the side
 set number
+" cursor always block
+set guicursor=i:block
 " copy paste integration with OS
 set clipboard+=unnamedplus
 " history of commands
