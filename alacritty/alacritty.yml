@@ -6,6 +6,9 @@ background_opacity: 1
 window:
   startup_mode: Maximized
   decorations: None
+cursor:
+  style:
+    shape: Block
 
 # Colors
 colors:

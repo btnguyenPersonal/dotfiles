@@ -1190,6 +1190,7 @@ udiskie
 udisks2
 unarchiver
 unibilium
+unzip
 upower
 usb_modeswitch
 usbmuxd
