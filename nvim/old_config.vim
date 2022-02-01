@@ -136,6 +136,7 @@ nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert G
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " markdown
 nmap <leader>n :MarkdownPreviewToggle<cr>
+nmap <leader>s z=
 " look at branches
 nnoremap <leader>j :GBranches<cr>
 
