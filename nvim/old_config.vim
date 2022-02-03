@@ -31,6 +31,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " indentation plugin
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'BurntSushi/ripgrep' 
+Plug 'sharkdp/fd'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -141,6 +145,10 @@ nmap <leader>n :MarkdownPreviewToggle<cr>
 nmap <leader>s z=
 " look at branches
 nnoremap <leader>j :GBranches<cr>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " trim whitespace on save
 fun! TrimWhitespace()
