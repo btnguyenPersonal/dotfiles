@@ -81,8 +81,23 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L\ %{FugitiveStatusline()}
+set statusline=(%n)
+set statusline+=\ {
+set statusline+=%{NrBufs()}
+set statusline+=}
+set statusline+=\ %f%M%=\ %2.3v\ %l/%L\ %{FugitiveStatusline()}
 set laststatus=2
+function! NrBufs()
+    let i = bufnr('$')
+    let j = 0
+    while i >= 1
+        if buflisted(i)
+            let j+=1
+        endif
+        let i-=1
+    endwhile
+    return j
+endfunction
 " path recursive searching with find
 set path+=**
 " i have no idea

@@ -21,3 +21,32 @@ require'nvim-treesitter.configs'.setup {
     },
   },
 }
+
+require("telescope").setup {
+  defaults = {
+    theme = 'dropdown',
+    hidden = true,
+    sorting_strategy = 'ascending',
+    layout_config = {
+      prompt_position = 'top',
+      height = 0.9,
+      width = 0.9,
+      mirror = false,
+    },
+    mappings = {
+      i = {
+        ["<C-h>"] = "which_key"
+      }
+    },
+    path_display = { truncate = 3 },
+    file_ignore_patterns = { ".git/", ".go/" },
+    vimgrep_arguments = {
+      "rg",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--ignore-case",
+    }
+  },
+}
