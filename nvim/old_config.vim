@@ -81,11 +81,14 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set statusline=(%n)
-set statusline+=\ {
-set statusline+=%{NrBufs()}
-set statusline+=}
-set statusline+=\ %f%M%=\ %2.3v\ %l/%L\ %{FugitiveStatusline()}
+set statusline=%n
+set statusline+=/%{NrBufs()}
+set statusline+=\ %f
+set statusline+=%M
+set statusline+=%=
+set statusline+=\ %2.3v
+set statusline+=\ %l/%L
+set statusline+=\ %{FugitiveStatusline()}
 set laststatus=2
 function! NrBufs()
     let i = bufnr('$')
