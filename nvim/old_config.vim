@@ -51,7 +51,6 @@ set wildignorecase
 " colors independent of what terminal you are using
 set termguicolors
 set hidden
-set updatetime=300
 " auto load changes in vim when a file changes
 set autoread
 " no tabs only spaces
