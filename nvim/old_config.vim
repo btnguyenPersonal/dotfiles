@@ -42,10 +42,6 @@ call plug#end()
 " have to put this here so doesn't override my highlighting
 colorscheme codedark
 
-" space as leader
-nmap <SPACE> <leader>
-vmap <SPACE> <leader>
-
 " adds mark if over the 80 char limit per line
 call matchadd('ColorColumn', '\%81v', 100)
 " autocorrect on tab for commands
@@ -129,7 +125,10 @@ let g:netrw_liststyle=3
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
-" leader commands
+" space as leader
+nmap <SPACE> <leader>
+vmap <SPACE> <leader>
+
 " ctags command
 command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
 " trim command
