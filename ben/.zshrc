@@ -25,6 +25,8 @@ alias clearswp='rm -f ~/.vim/tmp/*'
 alias poefolder='cd /home/ben/.local/share/Steam/steamapps/compatdata/238960/pfx/drive_c/users/steamuser/Documents/My\ Games/Path\ of\ Exile'
 alias p='sudo pacman'
 alias mario='games/sm64-port/build/us_pc/sm64.us'
+alias maventests='mvn clean;mvn test;mvn jacoco:restore-instrumented-classes;mvn jacoco:report'
+alias powerfolder='cd /home/ben/git/jacoco-0.8.7/examples/power'
 sshiastate() {
   if [ -z $TMUX ];
   then;

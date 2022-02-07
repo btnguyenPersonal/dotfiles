@@ -385,8 +385,13 @@ iwd
 jack2
 jansson
 jasper
+java-environment-common
+java-runtime-common
 jbig2dec
+jdk-openjdk
 jfsutils
+jre-openjdk
+jre-openjdk-headless
 js78
 json-c
 json-glib
@@ -695,6 +700,7 @@ libmpcdec
 libmpeg2
 libmtp
 libndp
+libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
@@ -866,6 +872,7 @@ manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-system
 manjaro-zsh-config
+maven
 md4c
 mdadm
 media-player-info
