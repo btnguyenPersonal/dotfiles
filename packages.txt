@@ -22,6 +22,7 @@ alsa-ucm-conf
 alsa-utils
 android-tools
 android-udev
+antlr4-runtime
 aom
 appstream
 appstream-glib
@@ -33,6 +34,7 @@ ark
 at-spi2-atk
 at-spi2-core
 atk
+atkmm
 attica
 attr
 audit
@@ -49,6 +51,7 @@ bluez
 bluez-libs
 bluez-qt
 boost-libs
+box2d
 breeze
 breeze-gtk
 breeze-icons
@@ -61,6 +64,7 @@ ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
 cairo
+cairomm
 cantarell-fonts
 ccls
 cdparanoia
@@ -72,6 +76,7 @@ chromium
 cifs-utils
 ckbcomp
 clang
+clucene
 compiler-rt
 confuse
 convertlit
@@ -169,6 +174,7 @@ glib-networking
 glib2
 glibc
 glibc-locales
+glibmm
 glslang
 glu
 gmp
@@ -209,6 +215,7 @@ gstreamer
 gtk-update-icon-cache
 gtk3
 gtk4
+gtkmm3
 gtop
 guile
 gupnp
@@ -389,6 +396,7 @@ java-environment-common
 java-runtime-common
 jbig2dec
 jdk-openjdk
+jemalloc
 jfsutils
 jre-openjdk
 jre-openjdk-headless
@@ -593,6 +601,7 @@ lib32-wayland
 lib32-xz
 lib32-zlib
 lib32-zstd
+libabw
 libaccounts-glib
 libaccounts-qt
 libaio
@@ -601,6 +610,7 @@ libass
 libassuan
 libasyncns
 libatasmart
+libatomic_ops
 libavc1394
 libavif
 libavtp
@@ -617,6 +627,7 @@ libcap-ng
 libcddb
 libcdio
 libcdio-paranoia
+libcdr
 libcloudproviders
 libcolord
 libcroco
@@ -635,18 +646,23 @@ libdv
 libdvdcss
 libdvdnav
 libdvdread
+libe-book
 libedit
 libelf
 libepoxy
+libepubgen
+libetonyek
 libevdev
 libevent
 libexif
+libexttextcat
 libfakekey
 libfdk-aac
 libffi
 libfilezilla
 libfontenc
 libfreeaptx
+libfreehand
 libftdi
 libgcrypt
 libgee
@@ -671,6 +687,7 @@ libimobiledevice
 libinih
 libinput
 libinstpatch
+libixion
 libjpeg-turbo
 libkate
 libkdcraw
@@ -679,6 +696,7 @@ libkipi
 libksba
 libkscreen
 libksysguard
+liblangtag
 libldac
 libldap
 liblqr
@@ -698,7 +716,9 @@ libmodplug
 libmpc
 libmpcdec
 libmpeg2
+libmspub
 libmtp
+libmwaw
 libndp
 libnet
 libnetfilter_conntrack
@@ -712,11 +732,15 @@ libnl
 libnm
 libnotify
 libnsl
+libnumbertext
+libodfgen
 libofa
 libogg
 libomxil-bellagio
+liborcus
 libp11-kit
 libpackagekit-glib
+libpagemaker
 libpamac
 libpaper
 libpcap
@@ -735,9 +759,12 @@ libqaccessibilityclient
 libqalculate
 libqmi
 libqrtr-glib
+libqxp
 libraqm
 libraw
 libraw1394
+libreoffice-fresh
+librevenge
 librsvg
 libsamplerate
 libsasl
@@ -745,6 +772,7 @@ libseccomp
 libsecret
 libshout
 libsidplay
+libsigc++
 libsigsegv
 libsm
 libsndfile
@@ -757,6 +785,7 @@ libspiro
 libsrtp
 libssh
 libssh2
+libstaroffice
 libstemmer
 libsynctex
 libsysprof-capture
@@ -784,13 +813,17 @@ libva-intel-driver
 libva-mesa-driver
 libva-vdpau-driver
 libvdpau
+libvisio
 libvisual
 libvorbis
 libvpx
 libvterm
 libwacom
 libwebp
+libwpd
 libwpe
+libwpg
+libwps
 libx11
 libx86emu
 libxau
@@ -830,6 +863,7 @@ libxxf86vm
 libyaml
 libyuv
 libzip
+libzmf
 lilv
 linux-api-headers
 linux-firmware
@@ -841,6 +875,7 @@ llvm-libs
 lm_sensors
 lmdb
 logrotate
+lpsolve
 lsb-release
 lsof
 lua
@@ -873,6 +908,9 @@ manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
 manjaro-system
 manjaro-zsh-config
+mariadb
+mariadb-clients
+mariadb-libs
 maven
 md4c
 mdadm
@@ -904,6 +942,7 @@ msgpack-c
 mtdev
 mtpfs
 mujs
+mysql-workbench
 nano
 nano-syntax-highlighting
 ncurses
@@ -965,6 +1004,7 @@ pamac-tray-icon-plasma
 pambase
 pandoc
 pango
+pangomm
 parted
 partitionmanager
 pciutils
@@ -1036,6 +1076,7 @@ ppp
 pptpclient
 prison
 procps-ng
+proj
 protobuf
 psmisc
 pulseaudio
@@ -1095,9 +1136,11 @@ qt6-declarative
 qt6-translations
 rapidjson
 raptor
+rasqal
 rav1e
 re2
 readline
+redland
 reiserfsprogs
 rest
 ripgrep
@@ -1198,6 +1241,7 @@ udiskie
 udisks2
 unarchiver
 unibilium
+unixodbc
 unzip
 upower
 usb_modeswitch
@@ -1214,6 +1258,7 @@ vim-spell-en
 vmaf
 volume_key
 vpnc
+vsqlite++
 vte-common
 vte3
 vulkan-headers
