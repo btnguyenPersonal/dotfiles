@@ -55,6 +55,7 @@ box2d
 breeze
 breeze-gtk
 breeze-icons
+bridge-utils
 brotli
 btrfs-progs
 bubblewrap
@@ -79,6 +80,7 @@ clang
 clucene
 compiler-rt
 confuse
+containerd
 convertlit
 coreutils
 cpupower
@@ -106,6 +108,8 @@ dnsmasq
 dnssec-anchors
 docbook-xml
 docbook-xsl
+docker
+docker-compose
 dolphin
 dolphin-plugins
 dosfstools
@@ -1155,6 +1159,7 @@ ruby-irb
 ruby-reline
 rubygems
 run-parts
+runc
 s-nail
 samba
 sbc
