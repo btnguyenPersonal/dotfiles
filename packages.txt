@@ -1282,6 +1282,7 @@ which
 wildmidi
 wireless-regdb
 wl-clipboard
+wmctrl
 woff2
 wpa_supplicant
 wpebackend-fdo

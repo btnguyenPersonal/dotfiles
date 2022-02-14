@@ -23,8 +23,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 " allow swapping with sub commands
 Plug 'tpope/vim-abolish'
-" vscode-like appearance
-" Plug 'tomasiser/vim-code-dark'
 " git gutters
 Plug 'airblade/vim-gitgutter'
 " git integration
@@ -35,6 +33,7 @@ Plug 'BurntSushi/ripgrep'
 Plug 'sharkdp/fd'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'gioele/vim-autoswap'
 
 " Initialize plugin system
 call plug#end()
@@ -50,6 +49,9 @@ set termguicolors
 set hidden
 " auto load changes in vim when a file changes
 set autoread
+" title
+set title
+set titlestring=
 " no tabs only spaces
 set expandtab
 set smarttab
@@ -131,6 +133,8 @@ inoremap {<cr> {<cr>}<esc>O
 xnoremap <expr>  G   'G' . virtcol('.') . "\|"
 xnoremap <expr>  }   '}' . virtcol('.') . "\|"
 xnoremap <expr>  {   '{' . virtcol('.') . "\|"
+
+let g:autoswap_detect_tmux = 1
 
 let g:netrw_banner=0
 let g:netrw_liststyle=3
