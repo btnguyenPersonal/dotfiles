@@ -6,4 +6,8 @@ cp -rv ${HOME}/.config/nvim ./
 cp -v ${HOME}/.config/alacritty/alacritty.yml ./alacritty/alacritty.yml
 cp -v ${HOME}/.tmux.conf ./tmux/.tmux.conf
 cp -v ${HOME}/.vimrc ./ben/.vimrc
+
+# ssh
+cp -v ${HOME}/.vimrc ./ssh/.vimrc
+cp -v ${HOME}/.tmux.conf ./ssh/.tmux.conf
 pacman -Q | sed 's/ .*$//' > ./packages.txt

@@ -23,7 +23,20 @@ set nowritebackup
 set directory=~/.vim/tmp
 set backspace=eol,start,indent
 set laststatus=2
-set statusline=(%n)\ %f%M%=\ %2.3v\ %l/%L
+set statusline=%n
+set statusline+=/%{NrBufs()}
+set statusline+=\ %f%M%=\ %2.3v\ %l/%L
+function! NrBufs()
+    let i = bufnr('$')
+    let j = 0
+    while i >= 1
+        if buflisted(i)
+            let j+=1
+        endif
+        let i-=1
+    endwhile
+    return j
+endfunction
 set ignorecase
 set smartcase
 set number
@@ -34,12 +47,16 @@ set path+=**
 syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-colorscheme desert
+colorscheme elflord
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 inoremap {<cr> {<cr>}<esc>O
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
+autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
+au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+autocmd VimEnter * :norm zz
 iab aforl for (int a = 0; a < count; a++) {
 iab bforl for (int b = 0; b < count; b++) {
 iab cforl for (int c = 0; c < count; c++) {
