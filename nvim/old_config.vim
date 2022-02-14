@@ -24,7 +24,7 @@ Plug 'tpope/vim-unimpaired'
 " allow swapping with sub commands
 Plug 'tpope/vim-abolish'
 " vscode-like appearance
-Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasiser/vim-code-dark'
 " git gutters
 Plug 'airblade/vim-gitgutter'
 " git integration
@@ -39,8 +39,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " Initialize plugin system
 call plug#end()
 
-" have to put this here so doesn't override my highlighting
-colorscheme codedark
+colorscheme elflord
 
 " adds mark if over the 80 char limit per line
 call matchadd('ColorColumn', '\%81v', 100)
@@ -280,3 +279,5 @@ let g:indent_blankline_context_patterns = [
       \ "tuple", ]
 
 autocmd FileType markdown IndentBlanklineDisable
+
+highlight clear SignColumn
