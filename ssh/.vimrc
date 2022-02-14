@@ -1,4 +1,21 @@
 set nocompatible
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+call plug#begin('~/.vim/plugged')
+if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
+  autocmd VimEnter * PlugInstall | q
+endif
+Plug 'gioele/vim-autoswap'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-surround'
+call plug#end()
 set hidden
 set updatetime=300
 set wildmenu
