@@ -150,7 +150,7 @@ vmap <SPACE> <leader>
 " ctags command
 command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
 " trim command
-nnoremap <leader>t :call TrimWhitespace()<cr>
+nnoremap <leader>w :call TrimWhitespace()<cr>
 " git mergetool
 nnoremap <leader>m :Git mergetool<cr>
 " git addtool

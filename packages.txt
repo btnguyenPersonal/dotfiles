@@ -87,6 +87,7 @@ cpupower
 crda
 cronie
 cryptsetup
+ctags
 curl
 dav1d
 db

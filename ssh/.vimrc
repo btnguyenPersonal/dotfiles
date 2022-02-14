@@ -65,7 +65,22 @@ set wildignore=**/node_modules/**
 syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
+let g:autoswap_detect_tmux = 1
 colorscheme elflord
+nmap <SPACE> <leader>
+vmap <SPACE> <leader>
+nnoremap <leader>w :call TrimWhitespace()<cr>
+nnoremap <leader>t :Maketags<cr>
+nnoremap <leader>m :Git mergetool<cr>
+nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+nmap <leader>s z=
+nnoremap <leader>j :GBranches<cr>
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
+endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
