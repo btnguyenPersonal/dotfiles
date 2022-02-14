@@ -44,6 +44,7 @@ set clipboard+=unnamedplus
 set virtualedit=block
 set history=500
 set path=$PWD/**
+set wildignore=**/node_modules/**
 syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
