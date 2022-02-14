@@ -39,8 +39,6 @@ Plug 'nvim-telescope/telescope.nvim'
 " Initialize plugin system
 call plug#end()
 
-colorscheme elflord
-
 " adds mark if over the 80 char limit per line
 call matchadd('ColorColumn', '\%81v', 100)
 " autocorrect on tab for commands

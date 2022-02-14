@@ -56,6 +56,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+autocmd VimEnter * :norm zz
 iab aforl for (int a = 0; a < count; a++) {
 iab bforl for (int b = 0; b < count; b++) {
 iab cforl for (int c = 0; c < count; c++) {
