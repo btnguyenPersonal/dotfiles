@@ -15,6 +15,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 set hidden
 set updatetime=300
@@ -39,6 +40,7 @@ set nobackup
 set nowritebackup
 set directory=~/.vim/tmp
 set backspace=eol,start,indent
+set signcolumn=yes
 set laststatus=2
 set statusline=%n
 set statusline+=/%{NrBufs()}
@@ -68,6 +70,8 @@ syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:autoswap_detect_tmux = 1
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
 colorscheme elflord
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
@@ -92,6 +96,13 @@ command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modul
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd VimEnter * :norm zz
+highlight DiffAdd guibg=#006400
+highlight DiffText guibg=#666600
+highlight DiffChange guibg=#1E1E1E
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+highlight clear SignColumn
 iab aforl for (int a = 0; a < count; a++) {
 iab bforl for (int b = 0; b < count; b++) {
 iab cforl for (int c = 0; c < count; c++) {

@@ -107,7 +107,6 @@ endfunction
 set path+=**
 " i have no idea
 set whichwrap+=<,>,h,l
-" fuck sign column and fold column
 set signcolumn=yes
 " searches are not case-sensitive anymore
 set ignorecase
