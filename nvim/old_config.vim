@@ -201,9 +201,6 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-" highlights all of the line numbers for the git gutters
-au VimEnter * :GitGutterLineNrHighlightsEnable
-
 " easy for loop macro
 " there has to be a better way to do this smh
 iab aforl for (int a = 0; a < count; a++) {
