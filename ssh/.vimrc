@@ -62,6 +62,8 @@ set virtualedit=block
 set history=500
 set path=$PWD/**
 set wildignore=**/node_modules/**
+set timeoutlen=1000
+set ttimeoutlen=5
 syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3

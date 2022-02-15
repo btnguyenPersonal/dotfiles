@@ -7,6 +7,10 @@ endif
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
+if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
+  autocmd VimEnter * PlugInstall | q
+endif
+
 " markdown preview
 Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for': ['markdown','vim-plug']}
 " parenthesis stuff
@@ -89,15 +93,15 @@ set statusline+=\ %l/%L
 set statusline+=\ %{FugitiveStatusline()}
 set laststatus=2
 function! NrBufs()
-    let i = bufnr('$')
-    let j = 0
-    while i >= 1
-        if buflisted(i)
-            let j+=1
-        endif
-        let i-=1
-    endwhile
-    return j
+  let i = bufnr('$')
+  let j = 0
+  while i >= 1
+    if buflisted(i)
+      let j+=1
+    endif
+    let i-=1
+  endwhile
+  return j
 endfunction
 " path recursive searching with find
 set path+=**
@@ -256,8 +260,8 @@ iab xletl for (let x = 0; x < count; x++) {
 iab yletl for (let y = 0; y < count; y++) {
 iab zletl for (let z = 0; z < count; z++) {
 
-highlight IndentBlanklineContextStart guisp=#00FF00 gui=underline
 highlight IndentBlanklineContextChar guifg=#00FF00 gui=nocombine
+
 let g:indent_blankline_viewport_buffer = 0
 let g:indent_blankline_context_patterns = [
       \ "class",

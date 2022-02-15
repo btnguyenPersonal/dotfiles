@@ -115,6 +115,7 @@ dolphin
 dolphin-plugins
 dosfstools
 double-conversion
+dtc
 e2fsprogs
 ebook-tools
 ecryptfs-utils
@@ -164,6 +165,7 @@ gcc
 gcc-libs
 gcr
 gd
+gdb-common
 gdbm
 gdk-pixbuf2
 geoclue
@@ -622,10 +624,12 @@ libavtp
 libb2
 libblockdev
 libbluray
+libbpf
 libbs2b
 libbsd
 libbytesize
 libcaca
+libcacard
 libcanberra
 libcap
 libcap-ng
@@ -779,6 +783,7 @@ libshout
 libsidplay
 libsigc++
 libsigsegv
+libslirp
 libsm
 libsndfile
 libsodium
@@ -1116,6 +1121,8 @@ python-urllib3
 python-yaml
 python-zipp
 qca-qt5
+qemu
+qemu-arch-extra
 qqc2-desktop-style
 qrencode
 qt5-base
@@ -1149,6 +1156,11 @@ redland
 reiserfsprogs
 rest
 ripgrep
+riscv64-linux-gnu-binutils
+riscv64-linux-gnu-gcc
+riscv64-linux-gnu-gdb
+riscv64-linux-gnu-glibc
+riscv64-linux-gnu-linux-api-headers
 rpcbind
 rpi-imager
 rsync
@@ -1168,6 +1180,8 @@ sddm
 sddm-breath-theme
 sddm-kcm
 sdl2
+sdl2_image
+seabios
 sed
 semver
 serd
@@ -1195,6 +1209,7 @@ spectacle
 spectre-meltdown-checker
 speex
 speexdsp
+spice
 spirv-tools
 sqlite
 squashfs-tools
@@ -1252,15 +1267,18 @@ unzip
 upower
 usb_modeswitch
 usbmuxd
+usbredir
 usbutils
 util-linux
 util-linux-libs
 v4l-utils
 v86d
+vde2
 vi
 vid.stab
 vim-runtime
 vim-spell-en
+virglrenderer
 vmaf
 volume_key
 vpnc
