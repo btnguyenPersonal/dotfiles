@@ -892,6 +892,7 @@ lua
 lua52
 lua53
 luajit
+luit
 lv2
 lvm2
 lz4
@@ -1311,6 +1312,7 @@ x264
 x265
 xapian-core
 xapp
+xbitmaps
 xcb-proto
 xcb-util
 xcb-util-cursor
@@ -1357,6 +1359,7 @@ xorg-xset
 xorg-xsetroot
 xorgproto
 xsel
+xterm
 xvidcore
 xxhash
 xz
