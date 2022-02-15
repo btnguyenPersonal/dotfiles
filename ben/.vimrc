@@ -36,6 +36,8 @@ set spell
 set incsearch
 set nohls
 set lazyredraw
+set title
+set titlestring=
 set nobackup
 set nowritebackup
 set directory=~/.vim/tmp
