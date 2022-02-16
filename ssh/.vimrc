@@ -17,6 +17,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
+call matchadd('ColorColumn', '\%81v', 100)
 set hidden
 set updatetime=300
 set wildmenu
