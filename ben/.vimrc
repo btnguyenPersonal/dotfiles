@@ -33,7 +33,6 @@ set autoindent
 set smartindent
 set cindent
 set scrolloff=6
-set spell
 set incsearch
 set nohls
 set lazyredraw
