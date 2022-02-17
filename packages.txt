@@ -78,6 +78,7 @@ cifs-utils
 ckbcomp
 clang
 clucene
+code
 compiler-rt
 confuse
 containerd
@@ -122,6 +123,7 @@ ecryptfs-utils
 editorconfig-core-c
 efibootmgr
 efivar
+electron13
 elfutils
 ell
 enchant
