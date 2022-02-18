@@ -88,8 +88,6 @@ fun! TrimWhitespace()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
 endfun
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
 nnoremap Q <Nop>
 inoremap {<cr> {<cr>}<esc>O
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -104,55 +102,3 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 highlight clear SignColumn
-iab aletl for (int a = 0; a < count; a++) {
-iab bletl for (int b = 0; b < count; b++) {
-iab cletl for (int c = 0; c < count; c++) {
-iab dletl for (int d = 0; d < count; d++) {
-iab eletl for (int e = 0; e < count; e++) {
-iab fletl for (int f = 0; f < count; f++) {
-iab gletl for (int g = 0; g < count; g++) {
-iab hletl for (int h = 0; h < count; h++) {
-iab iletl for (int i = 0; i < count; i++) {
-iab jletl for (int j = 0; j < count; j++) {
-iab kletl for (int k = 0; k < count; k++) {
-iab lletl for (int l = 0; l < count; l++) {
-iab mletl for (int m = 0; m < count; m++) {
-iab nletl for (int n = 0; n < count; n++) {
-iab oletl for (int o = 0; o < count; o++) {
-iab pletl for (int p = 0; p < count; p++) {
-iab qletl for (int q = 0; q < count; q++) {
-iab rletl for (int r = 0; r < count; r++) {
-iab sletl for (int s = 0; s < count; s++) {
-iab tletl for (int t = 0; t < count; t++) {
-iab uletl for (int u = 0; u < count; u++) {
-iab vletl for (int v = 0; v < count; v++) {
-iab wletl for (int w = 0; w < count; w++) {
-iab xletl for (int x = 0; x < count; x++) {
-iab yletl for (int y = 0; y < count; y++) {
-iab zletl for (int z = 0; z < count; z++) {
-iab aforl for (int a = 0; a < count; a++) {
-iab bforl for (int b = 0; b < count; b++) {
-iab cforl for (int c = 0; c < count; c++) {
-iab dforl for (int d = 0; d < count; d++) {
-iab eforl for (int e = 0; e < count; e++) {
-iab fforl for (int f = 0; f < count; f++) {
-iab gforl for (int g = 0; g < count; g++) {
-iab hforl for (int h = 0; h < count; h++) {
-iab iforl for (int i = 0; i < count; i++) {
-iab jforl for (int j = 0; j < count; j++) {
-iab kforl for (int k = 0; k < count; k++) {
-iab lforl for (int l = 0; l < count; l++) {
-iab mforl for (int m = 0; m < count; m++) {
-iab nforl for (int n = 0; n < count; n++) {
-iab oforl for (int o = 0; o < count; o++) {
-iab pforl for (int p = 0; p < count; p++) {
-iab qforl for (int q = 0; q < count; q++) {
-iab rforl for (int r = 0; r < count; r++) {
-iab sforl for (int s = 0; s < count; s++) {
-iab tforl for (int t = 0; t < count; t++) {
-iab uforl for (int u = 0; u < count; u++) {
-iab vforl for (int v = 0; v < count; v++) {
-iab wforl for (int w = 0; w < count; w++) {
-iab xforl for (int x = 0; x < count; x++) {
-iab yforl for (int y = 0; y < count; y++) {
-iab zforl for (int z = 0; z < count; z++) {
