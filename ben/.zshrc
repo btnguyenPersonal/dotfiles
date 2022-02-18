@@ -55,16 +55,18 @@ connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
 }
 sn() {
+if [$1 = ""]
+then
+  cd ~/git/classnotesS2021
+  git add .
+  git commit -m "${date}"
+  git push
+else
   cd ~/git/classnotesS2021
   git add .
   git commit -m "$1"
   git push
-}
-savenotes() {
-  cd ~/git/classnotesS2021
-  git add .
-  git commit -m "$1"
-  git push
+fi
 }
 flashreader() {
   cd ~/git/FlashReader
