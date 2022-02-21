@@ -60,7 +60,7 @@ endfunction
 set ignorecase
 set smartcase
 set number
-set clipboard+=unnamedplus
+set clipboard^=unnamed,unnamedplus
 set virtualedit=block
 set history=500
 set path=$PWD/**
