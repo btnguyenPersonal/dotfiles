@@ -38,9 +38,12 @@ Plug 'sharkdp/fd'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gioele/vim-autoswap'
+Plug 'projekt0n/github-nvim-theme'
 
 " Initialize plugin system
 call plug#end()
+
+colorscheme github_dark_default
 
 " adds mark if over the 80 char limit per line
 call matchadd('ColorColumn', '\%81v', 100)
