@@ -1372,6 +1372,7 @@ zenity
 zensu
 zeromq
 zimg
+zip
 zita-alsa-pcmi
 zita-resampler
 zlib

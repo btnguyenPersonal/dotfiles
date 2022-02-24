@@ -156,6 +156,8 @@ command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modul
 nnoremap <leader>w :call TrimWhitespace()<cr>
 " git mergetool
 nnoremap <leader>m :Git mergetool<cr>
+" pic macro
+nnoremap <leader>p o![]()<left>../pic/
 " git addtool
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " git difftool
