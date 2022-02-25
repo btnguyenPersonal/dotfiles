@@ -24,6 +24,7 @@ android-tools
 android-udev
 antlr4-runtime
 aom
+apparmor
 appstream
 appstream-glib
 appstream-qt
@@ -1199,6 +1200,7 @@ signond
 slang
 smartmontools
 smbclient
+snapd
 snappy
 socat
 sof-firmware

@@ -33,7 +33,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 " indentation plugin
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'BurntSushi/ripgrep' 
+Plug 'BurntSushi/ripgrep'
 Plug 'sharkdp/fd'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -46,7 +46,7 @@ call plug#end()
 colorscheme github_dark_default
 
 " adds mark if over the 80 char limit per line
-call matchadd('ColorColumn', '\%81v', 100)
+" call matchadd('ColorColumn', '\%81v', 100)
 " autocorrect on tab for commands
 set wildmenu
 set wildmode=full
@@ -233,3 +233,64 @@ let g:indent_blankline_context_patterns = [
 autocmd FileType markdown IndentBlanklineDisable
 
 highlight clear SignColumn
+
+autocmd FileType sql iab add         ADD
+autocmd FileType sql iab all         ALL
+autocmd FileType sql iab alter       ALTER
+autocmd FileType sql iab and         AND
+autocmd FileType sql iab any         ANY
+autocmd FileType sql iab as          AS
+autocmd FileType sql iab asc         ASC
+autocmd FileType sql iab backup      BACKUP
+autocmd FileType sql iab between     BETWEEN
+autocmd FileType sql iab by          BY
+autocmd FileType sql iab case        CASE
+autocmd FileType sql iab check       CHECK
+autocmd FileType sql iab column      COLUMN
+autocmd FileType sql iab constraint  CONSTRAINT
+autocmd FileType sql iab create      CREATE
+autocmd FileType sql iab database    DATABASE
+autocmd FileType sql iab default     DEFAULT
+autocmd FileType sql iab delete      DELETE
+autocmd FileType sql iab desc        DESC
+autocmd FileType sql iab distinct    DISTINCT
+autocmd FileType sql iab drop        DROP
+autocmd FileType sql iab exec        EXEC
+autocmd FileType sql iab exists      EXISTS
+autocmd FileType sql iab foreign     FOREIGN
+autocmd FileType sql iab from        FROM
+autocmd FileType sql iab full        FULL
+autocmd FileType sql iab group       GROUP
+autocmd FileType sql iab having      HAVING
+autocmd FileType sql iab in          IN
+autocmd FileType sql iab index       INDEX
+autocmd FileType sql iab inner       INNER
+autocmd FileType sql iab insert      INSERT
+autocmd FileType sql iab into        INTO
+autocmd FileType sql iab is          IS
+autocmd FileType sql iab join        JOIN
+autocmd FileType sql iab key         KEY
+autocmd FileType sql iab left        LEFT
+autocmd FileType sql iab like        LIKE
+autocmd FileType sql iab limit       LIMIT
+autocmd FileType sql iab not         NOT
+autocmd FileType sql iab null        NULL
+autocmd FileType sql iab or          OR
+autocmd FileType sql iab order       ORDER
+autocmd FileType sql iab outer       OUTER
+autocmd FileType sql iab primary     PRIMARY
+autocmd FileType sql iab procedure   PROCEDURE
+autocmd FileType sql iab replace     REPLACE
+autocmd FileType sql iab right       RIGHT
+autocmd FileType sql iab rownum      ROWNUM
+autocmd FileType sql iab select      SELECT
+autocmd FileType sql iab set         SET
+autocmd FileType sql iab table       TABLE
+autocmd FileType sql iab top         TOP
+autocmd FileType sql iab truncate    TRUNCATE
+autocmd FileType sql iab union       UNION
+autocmd FileType sql iab unique      UNIQUE
+autocmd FileType sql iab update      UPDATE
+autocmd FileType sql iab values      VALUES
+autocmd FileType sql iab view        VIEW
+autocmd FileType sql iab where       WHERE
