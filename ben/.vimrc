@@ -18,8 +18,9 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
+Plug 'morhetz/gruvbox'
 call plug#end()
-colorscheme elflord
+colorscheme gruvbox
 set hidden
 set updatetime=300
 set wildmenu
@@ -58,6 +59,7 @@ set path=$PWD/**
 set wildignore=**/node_modules/**
 set timeoutlen=1000
 set ttimeoutlen=5
+set bg=dark
 syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
