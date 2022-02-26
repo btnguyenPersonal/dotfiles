@@ -18,6 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 call plug#end()
+colorscheme elflord
 set hidden
 set updatetime=300
 set wildmenu
@@ -64,7 +65,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_wq = 0
-colorscheme elflord
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
