@@ -43,20 +43,7 @@ set directory=~/.vim/tmp
 set backspace=eol,start,indent
 set signcolumn=yes
 set laststatus=2
-set statusline=%n
-set statusline+=/%{NrBufs()}
-set statusline+=\ %f%M%=\ %2.3v\ %l/%L
-function! NrBufs()
-    let i = bufnr('$')
-    let j = 0
-    while i >= 1
-        if buflisted(i)
-            let j+=1
-        endif
-        let i-=1
-    endwhile
-    return j
-endfunction
+set statusline=\ (%n)\ \"%f\"\ %m\ %r
 set ignorecase
 set smartcase
 set number
