@@ -17,8 +17,8 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-slash'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
-call matchadd('ColorColumn', '\%81v', 100)
 set hidden
 set updatetime=300
 set wildmenu
@@ -44,6 +44,9 @@ set backspace=eol,start,indent
 set signcolumn=yes
 set laststatus=2
 set statusline=\ (%n)\ \"%f\"\ %m\ %r
+set statusline+=%=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 set ignorecase
 set smartcase
 set number
@@ -58,6 +61,10 @@ syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:autoswap_detect_tmux = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 colorscheme elflord
@@ -65,10 +72,10 @@ nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>t :Maketags<cr>
+nnoremap <leader>s :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
-nmap <leader>s z=
 nnoremap <leader>j :GBranches<cr>
 fun! TrimWhitespace()
   let l:save = winsaveview()
