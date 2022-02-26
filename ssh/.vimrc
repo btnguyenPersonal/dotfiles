@@ -30,11 +30,11 @@ set tabstop=2
 set shiftwidth=2
 set nrformats+=alpha
 set autoindent
+set nohls
 set smartindent
 set cindent
 set scrolloff=6
 set incsearch
-set nohls
 set lazyredraw
 set title titlestring=
 set nobackup
@@ -79,6 +79,7 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 inoremap {<cr> {<cr>}<esc>O
+inoremap (<cr> (<cr>);<esc>O
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
