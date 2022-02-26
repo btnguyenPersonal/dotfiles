@@ -15,7 +15,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
-Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 call plug#end()
@@ -62,11 +61,9 @@ let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:autoswap_detect_tmux = 1
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_wq = 0
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
 colorscheme elflord
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
@@ -96,10 +93,8 @@ autocmd VimEnter * :norm zz
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
-highlight GitGutterAdd    guifg=#009900 ctermfg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 highlight clear SignColumn
+highlight SyntasticError guibg=#2f0000
 autocmd filetype sql iab absolute          ABSOLUTE
 autocmd filetype sql iab action            ACTION
 autocmd filetype sql iab add               ADD
