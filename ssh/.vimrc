@@ -19,8 +19,10 @@ Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
+Plug 'instant-markdown/vim-instant-markdown'
 call plug#end()
 colorscheme gruvbox
+filetype plugin on
 set hidden
 set updatetime=300
 set wildmenu
@@ -68,6 +70,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_wq = 0
+let g:instant_markdown_autostart = 0
+let g:instant_markdown_mathjax = 1
+let g:instant_markdown_mermaid = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
@@ -78,6 +83,8 @@ nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
+nmap <leader>n :InstantMarkdownPreview<cr>
+nmap <leader>b :InstantMarkdownStop<cr>
 fun! TrimWhitespace()
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
