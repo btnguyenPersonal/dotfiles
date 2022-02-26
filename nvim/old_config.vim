@@ -39,6 +39,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gioele/vim-autoswap'
 Plug 'projekt0n/github-nvim-theme'
+Plug 'godlygeek/tabular'
 
 " Initialize plugin system
 call plug#end()
