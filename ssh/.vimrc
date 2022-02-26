@@ -17,6 +17,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
+Plug 'ervandew/supertab'
 call plug#end()
 colorscheme elflord
 set hidden
@@ -65,6 +66,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_wq = 0
+let g:SuperTabDefaultCompletionType = "<c-n>"
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
@@ -95,6 +97,7 @@ highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
 highlight clear SignColumn
 highlight SyntasticError guibg=#2f0000
+highlight Pmenu ctermbg=gray ctermfg=black
 autocmd filetype sql iab absolute          ABSOLUTE
 autocmd filetype sql iab action            ACTION
 autocmd filetype sql iab add               ADD
