@@ -16,6 +16,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/vim-slash'
 call plug#end()
 call matchadd('ColorColumn', '\%81v', 100)
 set hidden
@@ -30,7 +31,6 @@ set tabstop=2
 set shiftwidth=2
 set nrformats+=alpha
 set autoindent
-set nohls
 set smartindent
 set cindent
 set scrolloff=6
@@ -78,6 +78,7 @@ endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
+noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
