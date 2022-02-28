@@ -167,6 +167,7 @@ nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert G
 " git difftool
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 " markdown
+" do :call mkdp#util#install() if doesn't work
 nmap <leader>n :MarkdownPreviewToggle<cr>
 nmap <leader>s z=
 " look at branches

@@ -139,6 +139,7 @@ faac
 faad2
 fakeroot
 ffmpeg
+ffmpeg4.4
 ffmpegthumbs
 fftw
 file
@@ -713,6 +714,7 @@ libldac
 libldap
 liblqr
 liblrdf
+libltc
 libluv
 libmad
 libmanette
@@ -749,6 +751,7 @@ libodfgen
 libofa
 libogg
 libomxil-bellagio
+libopenmpt
 liborcus
 libp11-kit
 libpackagekit-glib
@@ -932,6 +935,7 @@ media-player-info
 memtest86+
 mesa
 mesa-demos
+mesa-utils
 mesa-vdpau
 mhwd
 mhwd-amdgpu
@@ -1253,6 +1257,7 @@ timeshift
 timeshift-autosnap-manjaro
 tlp
 tmux
+tpm2-tss
 tracker3
 tree
 tree-sitter
@@ -1350,6 +1355,7 @@ xorg-server-common
 xorg-setxkbmap
 xorg-twm
 xorg-xauth
+xorg-xdpyinfo
 xorg-xhost
 xorg-xinit
 xorg-xkbcomp
