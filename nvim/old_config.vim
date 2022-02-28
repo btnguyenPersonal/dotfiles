@@ -236,6 +236,8 @@ autocmd FileType markdown IndentBlanklineDisable
 
 highlight clear SignColumn
 
+iab sprint System.out.println();<left><left>
+
 autocmd filetype sql iab absolute          ABSOLUTE
 autocmd filetype sql iab action            ACTION
 autocmd filetype sql iab add               ADD

@@ -19,6 +19,7 @@ Plug 'junegunn/vim-slash'
 Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
+Plug 'godlygeek/tabular'
 call plug#end()
 colorscheme gruvbox
 filetype plugin on
