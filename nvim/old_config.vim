@@ -11,35 +11,28 @@ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
   autocmd VimEnter * PlugInstall | q
 endif
 
-" markdown preview
-Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for': ['markdown','vim-plug']}
-" parenthesis stuff
-Plug 'tpope/vim-surround'
-" code context support
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" parenthesis highlighting
-Plug 'luochen1990/rainbow'
-" commenting code
-Plug 'tpope/vim-commentary'
-" plugins work with . command
-Plug 'tpope/vim-repeat'
-" better defaults
-Plug 'tpope/vim-unimpaired'
-" allow swapping with sub commands
-Plug 'tpope/vim-abolish'
-" git gutters
-Plug 'airblade/vim-gitgutter'
-" git integration
-Plug 'tpope/vim-fugitive'
-" indentation plugin
-Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'BurntSushi/ripgrep'
-Plug 'sharkdp/fd'
+Plug 'airblade/vim-gitgutter'
+Plug 'ervandew/supertab'
+Plug 'gioele/vim-autoswap'
+Plug 'godlygeek/tabular'
+Plug 'iamcco/markdown-preview.nvim', { 'do' : { -> mkdp#util#install() }, 'for': ['markdown','vim-plug']}
+Plug 'junegunn/vim-slash'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'luochen1990/rainbow'
+Plug 'morhetz/gruvbox'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'gioele/vim-autoswap'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'projekt0n/github-nvim-theme'
-Plug 'godlygeek/tabular'
+Plug 'sharkdp/fd'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-syntastic/syntastic'
 
 " Initialize plugin system
 call plug#end()

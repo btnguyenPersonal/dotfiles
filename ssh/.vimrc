@@ -8,18 +8,17 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
   autocmd VimEnter * PlugInstall | q
 endif
-Plug 'gioele/vim-autoswap'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-surround'
-Plug 'junegunn/vim-slash'
-Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
-Plug 'morhetz/gruvbox'
+Plug 'gioele/vim-autoswap'
 Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-slash'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 call plug#end()
 colorscheme gruvbox
 filetype plugin on
@@ -50,16 +49,13 @@ set signcolumn=yes
 set mouse=n
 set laststatus=2
 set statusline=\ (%n)\ \"%f\"\ %m\ %r
-set statusline+=%=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 set ignorecase
 set smartcase
 set number
 set clipboard^=unnamed,unnamedplus
 set virtualedit=block
 set history=500
-set path=$PWD/**
+set path+=**
 set wildignore=**/node_modules/**
 set timeoutlen=1000
 set ttimeoutlen=5
@@ -69,10 +65,6 @@ syntax on
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:autoswap_detect_tmux = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_wq = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
@@ -88,7 +80,9 @@ nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
-nnoremap <leader>s :setlocal spell!<cr>
+nnoremap <leader>s z=
+nnoremap <leader>c ^~
+nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
