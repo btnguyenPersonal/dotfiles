@@ -63,6 +63,7 @@ set path=$PWD/**
 set wildignore=**/node_modules/**
 set timeoutlen=1000
 set ttimeoutlen=5
+set tags=./tags;/
 set bg=dark
 syntax on
 let g:netrw_banner=0
@@ -109,7 +110,9 @@ autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd VimEnter * :norm zz
+autocmd BufWinEnter * :norm zz
 autocmd VimEnter * :norm zR
+autocmd BufWinEnter * :norm zR
 autocmd BufWinLeave ?* mkview
 autocmd BufWinEnter ?* silent loadview
 autocmd filetype sql iab absolute          ABSOLUTE
