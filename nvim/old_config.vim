@@ -125,7 +125,7 @@ set clipboard+=unnamedplus
 set history=500
 " intuitive visual block
 set virtualedit=block
-set mouse=a
+set mouse=n
 " spell check
 set spell
 " syntax highlighting on
@@ -170,6 +170,7 @@ nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff 
 " do :call mkdp#util#install() if doesn't work
 nmap <leader>n :MarkdownPreviewToggle<cr>
 nmap <leader>s z=
+nmap <leader>c ^~
 " look at branches
 nnoremap <leader>j :GBranches<cr>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>

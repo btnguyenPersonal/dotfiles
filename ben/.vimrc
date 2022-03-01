@@ -40,12 +40,14 @@ set cindent
 set scrolloff=6
 set incsearch
 set lazyredraw
+set foldmethod=indent
 set title titlestring=
 set nobackup
 set nowritebackup
 set directory=~/.vim/tmp
 set backspace=eol,start,indent
 set signcolumn=yes
+set mouse=n
 set laststatus=2
 set statusline=\ (%n)\ \"%f\"\ %m\ %r
 set statusline+=%=%#warningmsg#
@@ -106,6 +108,7 @@ highlight DiffChange guibg=#1E1E1E
 highlight clear SignColumn
 highlight SyntasticError guibg=#2f0000
 highlight Pmenu ctermbg=gray ctermfg=black
+autocmd VimEnter * :norm zR
 autocmd filetype sql iab absolute          ABSOLUTE
 autocmd filetype sql iab action            ACTION
 autocmd filetype sql iab add               ADD
