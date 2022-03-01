@@ -102,6 +102,8 @@ command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modul
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd VimEnter * :norm zz
+autocmd BufWinLeave ?* mkview
+autocmd BufWinEnter ?* silent loadview
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
