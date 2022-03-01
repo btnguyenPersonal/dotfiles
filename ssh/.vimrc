@@ -77,10 +77,16 @@ let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[1 q"
+highlight DiffAdd guibg=#006400
+highlight DiffText guibg=#666600
+highlight DiffChange guibg=#1E1E1E
+highlight clear SignColumn
+highlight SyntasticError guibg=#2f0000
+highlight Pmenu ctermbg=gray ctermfg=black
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
-nnoremap <leader>t :Maketags<cr>
+nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>s :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
@@ -98,19 +104,14 @@ noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-command! Maketags :!ctags -R --exclude=.git--exclude=vendor --exclude=node_modules --exclude=db --exclude=log .
+command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
-au bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd VimEnter * :norm zz
+autocmd VimEnter * :norm zR
 autocmd BufWinLeave ?* mkview
 autocmd BufWinEnter ?* silent loadview
-highlight DiffAdd guibg=#006400
-highlight DiffText guibg=#666600
-highlight DiffChange guibg=#1E1E1E
-highlight clear SignColumn
-highlight SyntasticError guibg=#2f0000
-highlight Pmenu ctermbg=gray ctermfg=black
-autocmd VimEnter * :norm zR
 autocmd filetype sql iab absolute          ABSOLUTE
 autocmd filetype sql iab action            ACTION
 autocmd filetype sql iab add               ADD
