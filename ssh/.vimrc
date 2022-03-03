@@ -12,7 +12,7 @@ Plug 'ervandew/supertab'
 Plug 'gioele/vim-autoswap'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-slash'
-Plug 'junegunn/fzf.vim'
+Plug 'kien/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -69,22 +69,6 @@ let g:autoswap_detect_tmux = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:fzf_layout = { 'window': { 'width': 1, 'height': 1}}
-let g:fzf_preview_window = ['up:60%', 'ctrl-/']
-let g:fzf_colors =
-  \ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
