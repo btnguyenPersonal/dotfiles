@@ -21,6 +21,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 colorscheme desert
 filetype plugin on
@@ -87,6 +89,7 @@ nnoremap <leader>f :Files<cr>
 nnoremap <leader>r :Rg<cr>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
+nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
@@ -110,8 +113,6 @@ autocmd VimEnter * :norm zz
 autocmd BufWinEnter * :norm zz
 autocmd VimEnter * :norm zR
 autocmd BufWinEnter * :norm zR
-autocmd BufWinLeave ?* mkview
-autocmd BufWinEnter ?* silent loadview
 autocmd filetype sql iab absolute          ABSOLUTE
 autocmd filetype sql iab action            ACTION
 autocmd filetype sql iab add               ADD
