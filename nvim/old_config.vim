@@ -82,8 +82,7 @@ set backspace=eol,start,indent
 " adds <> as matching pairs
 set matchpairs+=<:>
 " statusline
-set statusline=%n
-set statusline+=/%{NrBufs()}
+set statusline=(%n)
 set statusline+=\ %f
 set statusline+=%M
 set statusline+=%=
