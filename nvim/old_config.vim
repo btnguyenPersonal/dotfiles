@@ -75,6 +75,8 @@ set nohls
 set lazyredraw
 set nobackup
 set nowritebackup
+set splitbelow
+set splitright
 " backspace can break lines
 set backspace=eol,start,indent
 " adds <> as matching pairs
