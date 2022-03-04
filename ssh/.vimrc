@@ -101,6 +101,7 @@ endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
+nnoremap Y y$
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
