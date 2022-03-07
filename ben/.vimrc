@@ -108,6 +108,8 @@ nnoremap Q <Nop>
 nnoremap Y y$
 nnoremap <left> :bp<cr>
 nnoremap <right> :bn<cr>
+nnoremap <down> :bdel<cr>
+nnoremap <up> :b<space>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
