@@ -4,15 +4,12 @@ let g:netrw_liststyle=3
 let g:netrw_winsize=20
 let g:netrw_keep_dir=0
 let g:netrw_localcopydircmd='cp -r'
+let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(tar|gz|zip|d|o|exe|so|dll)$)'
+let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(tar|gz|zip|d|o|exe|so|dll)$)'
 let g:autoswap_detect_tmux = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_section_b = '%{strftime("%c")}'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](build|doc|tmp|node_modules)',
-  \ 'file': '\v(package-lock.json)$|(\v\.(tar|gz|zip|d|o|exe|so|dll)$)',
-  \ }
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
