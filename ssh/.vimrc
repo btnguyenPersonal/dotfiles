@@ -1,4 +1,18 @@
 set nocompatible
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+let g:netrw_winsize=20
+let g:netrw_keep_dir=0
+let g:netrw_localcopydircmd='cp -r'
+let g:autoswap_detect_tmux = 1
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_section_b = '%{strftime("%c")}'
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[1 q"
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -22,7 +36,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'sheerun/vim-polyglot'
 call plug#end()
 colorscheme desert
 filetype plugin on
@@ -65,17 +78,6 @@ set splitright
 set tags=./tags;~
 set bg=dark
 syntax on
-let g:netrw_banner=0
-let g:netrw_liststyle=3
-let g:autoswap_detect_tmux = 1
-let g:SuperTabDefaultCompletionType = "<c-n>"
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_section_b = '%{strftime("%c")}'
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[1 q"
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
@@ -94,6 +96,7 @@ nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
+nnoremap <leader>e :Lexplore<cr>
 fun! TrimWhitespace()
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
@@ -103,6 +106,8 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 nnoremap Y y$
+nnoremap <left> :bp<cr>
+nnoremap <right> :bn<cr>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O

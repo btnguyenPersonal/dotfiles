@@ -42,7 +42,7 @@ rmswp() {
   rm ~/.vim/tmp/"$1".swp
 }
 topdf() {
-  pandoc -f markdown -t pdf -o "$1".pdf *.md
+  pandoc -f markdown -t pdf -o "$2" "$1"
 }
 savedotfiles() {
   cd /home/ben/git/dotfiles

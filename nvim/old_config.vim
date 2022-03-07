@@ -56,8 +56,8 @@ set titlestring=
 " no tabs only spaces
 set expandtab
 set smarttab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 " can use c-a on letters
 set nrformats+=alpha
 " indentation stuff
