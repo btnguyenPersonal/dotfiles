@@ -114,6 +114,7 @@ inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+autocmd filetype markdown :syntax off
 autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
