@@ -1,6 +1,7 @@
 alias ls='ls --color'
 alias ll='ls -alF --color'
 alias nvim='vim'
+alias vim='vim -u NONE'
 alias clearswp='rm ~/.vim/tmp/*'
 
 export EDITOR=/usr/bin/vim
