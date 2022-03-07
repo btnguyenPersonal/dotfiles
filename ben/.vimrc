@@ -9,6 +9,10 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_section_b = '%{strftime("%c")}'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](build|doc|tmp|node_modules)',
+  \ 'file': '\v(package-lock.json)$|(\v\.(d|o|exe|so|dll)$)',
+  \ }
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
