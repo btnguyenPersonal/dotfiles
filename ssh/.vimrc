@@ -88,8 +88,7 @@ nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>s z=
 nnoremap <leader>c ^~
-nnoremap <leader>f :Files<cr>
-nnoremap <leader>r :Rg<cr>
+nnoremap <leader>r :CtrlPLine<cr>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
