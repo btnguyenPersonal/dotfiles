@@ -4,8 +4,8 @@ let g:netrw_liststyle=3
 let g:netrw_winsize=20
 let g:netrw_keep_dir=0
 let g:netrw_localcopydircmd='cp -r'
-let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(tar|gz|zip|d|o|exe|so|dll)$)'
-let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(tar|gz|zip|d|o|exe|so|dll)$)'
+let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
+let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:autoswap_detect_tmux = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
@@ -110,7 +110,7 @@ nnoremap Y y$
 nnoremap <left> :bp<cr>
 nnoremap <right> :bn<cr>
 nnoremap <down> :bdel<cr>
-nnoremap <up> :b<space>
+nnoremap <up> :CtrlPBuffer<cr>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
