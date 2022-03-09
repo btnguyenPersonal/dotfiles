@@ -10,6 +10,10 @@ let g:autoswap_detect_tmux = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -118,14 +122,14 @@ nnoremap <up> :CtrlPBuffer<cr>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
-" inoremap <C-e> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
-" inoremap <C-a> <Esc>?[({"'\[<]<CR>:nohl<CR>i
+inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
+inoremap <C-h> <Esc>?[({"'\[<]<CR>:silent nohl<CR>i
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+command W w
 if v:version + has("patch541") >= 704
   set formatoptions+=j
 endif
-autocmd filetype markdown :syntax off
 autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
