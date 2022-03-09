@@ -1,0 +1,95 @@
+set nocompatible
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+let g:netrw_winsize=20
+let g:netrw_keep_dir=0
+let g:netrw_localcopydircmd='cp -r'
+let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[1 q"
+colorscheme desert
+filetype plugin on
+set hidden
+set updatetime=300
+set wildmenu
+set wildmode=full
+set wildignorecase
+set shortmess+=c
+set expandtab
+set smarttab
+set nrformats+=alpha
+set ttyfast
+set tabstop=4
+set nojoinspaces
+set softtabstop=4
+set shiftwidth=2
+set autoindent
+set copyindent
+set smartindent
+set cindent
+set scrolloff=6
+set incsearch
+set lazyredraw
+set title titlestring=
+set nobackup
+set nowritebackup
+set directory=~/.vim/tmp
+set backspace=eol,start,indent
+set mouse=n
+set ignorecase
+set smartcase
+set number
+set clipboard^=unnamed,unnamedplus
+set virtualedit=block
+set history=500
+set path+=**
+set wildignore=**/node_modules/**
+set timeoutlen=1000
+set ttimeoutlen=5
+set splitbelow
+set splitright
+set tags=./tags;~
+set undofile
+set undolevels=1000
+set undoreload=1000
+syntax on
+highlight Pmenu ctermfg=black ctermbg=gray
+highlight PmenuSel ctermfg=black ctermbg=yellow
+nmap <SPACE> <leader>
+vmap <SPACE> <leader>
+nnoremap <leader>w :call TrimWhitespace()<cr>
+nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
+nnoremap <leader>s z=
+nnoremap <leader>c ^~
+nnoremap <leader>i :setlocal spell!<cr>
+nnoremap <leader>e :Lexplore<cr>
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+nnoremap Q <Nop>
+nnoremap Y y$
+nnoremap <left> :bp<cr>
+nnoremap <right> :bn<cr>
+nnoremap <down> :bdel<cr>
+inoremap {<cr> {<cr>}<esc>O
+inoremap (<cr> (<cr>);<esc>O
+inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
+inoremap <C-h> <Esc>?[({"'\[<]<CR>:silent nohl<CR>i
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+command W w
+if v:version + has("patch541") >= 704
+  set formatoptions+=j
+endif
+autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
+autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+autocmd VimEnter * :norm zz
+autocmd BufWinEnter * :norm zz
+autocmd VimEnter * :norm zR
+autocmd BufWinEnter * :norm zR
