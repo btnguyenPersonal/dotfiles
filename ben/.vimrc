@@ -81,7 +81,8 @@ syntax on
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
-highlight Pmenu ctermbg=gray ctermfg=black
+highlight Pmenu ctermfg=black ctermbg=gray
+highlight PmenuSel ctermfg=black ctermbg=yellow
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
