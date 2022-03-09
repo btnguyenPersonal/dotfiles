@@ -118,6 +118,8 @@ nnoremap <up> :CtrlPBuffer<cr>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
+" inoremap <C-e> <Esc>/[)}"'\]>]<CR>:nohl<CR>a
+" inoremap <C-a> <Esc>?[({"'\[<]<CR>:nohl<CR>i
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
 if v:version + has("patch541") >= 704
