@@ -1250,6 +1250,7 @@ texinfo
 texlive-bin
 texlive-core
 texlive-latexextra
+the_silver_searcher
 thin-provisioning-tools
 threadweaver
 timeshift
