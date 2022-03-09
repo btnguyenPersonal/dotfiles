@@ -47,16 +47,19 @@ set wildignorecase
 set shortmess+=c
 set expandtab
 set smarttab
-set tabstop=2
-set shiftwidth=2
 set nrformats+=alpha
+set ttyfast
+set tabstop=4
+set nojoinspaces
+set softtabstop=4
+set shiftwidth=2
 set autoindent
+set copyindent
 set smartindent
 set cindent
 set scrolloff=6
 set incsearch
 set lazyredraw
-set foldmethod=indent
 set title titlestring=
 set nobackup
 set nowritebackup
@@ -76,7 +79,9 @@ set ttimeoutlen=5
 set splitbelow
 set splitright
 set tags=./tags;~
-set bg=dark
+set undofile
+set undolevels=1000
+set undoreload=1000
 syntax on
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
@@ -115,6 +120,9 @@ inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+if v:version + has("patch541") >= 704
+  set formatoptions+=j
+endif
 autocmd filetype markdown :syntax off
 autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
