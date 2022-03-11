@@ -10,14 +10,18 @@ let g:autoswap_detect_tmux = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_powerline_fonts = 1
+let g:airline_theme="simple"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --ignore build --ignore doc --ignore tmp --ignore node_modules --ignore "package-lock.json" --ignore "tags" --ignore "*.class" --ignore "*.png" --ignore "*.jpg" --ignore "*.tar" --ignore "*.gz" --ignore "*.zip" --ignore "*.d" --ignore "*.o" --ignore "*.exe" --ignore "*.so" --ignore "*.dll" --nocolor -g ""'
 endif
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[1 q"
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -39,10 +43,12 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 colorscheme desert
 filetype plugin on
+set t_Co=256
 set hidden
 set updatetime=300
 set wildmenu
@@ -57,6 +63,7 @@ set nojoinspaces
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set encoding=utf-8
 set autoindent
 set copyindent
 set smartindent
@@ -83,6 +90,7 @@ set ttimeoutlen=5
 set splitbelow
 set splitright
 set tags=./tags;~
+set bg=dark
 set undofile
 set undolevels=1000
 set undoreload=1000
