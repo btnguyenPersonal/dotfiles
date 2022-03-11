@@ -53,8 +53,8 @@ set expandtab
 set smarttab
 set nrformats+=alpha
 set ttyfast
-set tabstop=2
 set nojoinspaces
+set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set autoindent

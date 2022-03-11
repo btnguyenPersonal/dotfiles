@@ -3,7 +3,6 @@
 
 alias ls='ls --color=auto'
 alias ll='ls -ahlF --color=auto'
-alias zip='zip -r'
 alias al='alsamixer'
 alias coms363='cd ~/git/classnotesS2021/coms363'
 alias coms352='cd ~/git/classnotesS2021/coms352'
