@@ -27,7 +27,8 @@ alias mario='games/sm64-port/build/us_pc/sm64.us'
 alias maventests='mvn clean;mvn test;mvn jacoco:restore-instrumented-classes;mvn jacoco:report'
 alias powerfolder='cd /home/ben/git/jacoco-0.8.7/examples/power'
 alias doccomp='cd /home/ben/Docker;sudo docker compose up'
-alias javaastar='javac **/*.java;java **/PuzzleSolver.java'
+alias javaastar='coms472;cd astar;javac **/*.java;java **/PuzzleSolver.java'
+alias javacheckers='coms472;cd checkers;javac **/*.java;java **/Checkers.java'
 sshiastate() {
   if [ -z $TMUX ];
   then;
