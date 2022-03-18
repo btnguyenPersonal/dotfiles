@@ -698,6 +698,7 @@ libimobiledevice
 libinih
 libinput
 libinstpatch
+libisl
 libixion
 libjpeg-turbo
 libkate
