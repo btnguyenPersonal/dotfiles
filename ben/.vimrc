@@ -96,6 +96,7 @@ set undofile
 set undolevels=1000
 set undoreload=1000
 syntax on
+highlight MatchParen cterm=none ctermbg=gray ctermfg=Black
 highlight DiffAdd guibg=#006400
 highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
