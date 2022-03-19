@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
   autocmd VimEnter * PlugInstall | q
 endif
+Plug 'axlebedev/vim-find-my-cursor'
 Plug 'ervandew/supertab'
 Plug 'gioele/vim-autoswap'
 Plug 'godlygeek/tabular'
@@ -101,6 +102,7 @@ highlight DiffChange guibg=#1E1E1E
 highlight Pmenu ctermfg=black ctermbg=gray
 highlight PmenuSel ctermfg=black ctermbg=yellow
 highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
@@ -115,6 +117,8 @@ nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert G
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
 nnoremap <leader>e :Lexplore<cr>
+nnoremap <leader>f <CMD>FindCursor #CC0000 500<CR>
+noremap % %<CMD>FindCursor 0 500<CR>
 fun! TrimWhitespace()
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
