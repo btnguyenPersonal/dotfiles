@@ -48,7 +48,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
-colorscheme desert
+colorscheme koehler
 filetype plugin on
 set t_Co=256
 set hidden
