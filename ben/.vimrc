@@ -13,6 +13,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 let g:airline_theme="simple"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+let g:ctrlp_working_path_mode = 'r'
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --ignore build --ignore doc --ignore tmp --ignore node_modules --ignore "package-lock.json" --ignore "tags" --ignore "*.class" --ignore "*.png" --ignore "*.jpg" --ignore "*.tar" --ignore "*.gz" --ignore "*.zip" --ignore "*.d" --ignore "*.o" --ignore "*.exe" --ignore "*.so" --ignore "*.dll" --nocolor -g ""'
 endif
@@ -53,8 +54,9 @@ set t_Co=256
 set hidden
 set updatetime=300
 set wildmenu
-set wildmode=full
+set wildmode=list:longest
 set wildignorecase
+set wildignore=**/node_modules/**
 set shortmess+=c
 set expandtab
 set smarttab
@@ -85,7 +87,6 @@ set clipboard^=unnamed,unnamedplus
 set virtualedit=block
 set history=500
 set path+=**
-set wildignore=**/node_modules/**
 set timeoutlen=1000
 set ttimeoutlen=5
 set splitbelow
