@@ -32,7 +32,6 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
   autocmd VimEnter * PlugInstall | q
 endif
-Plug 'axlebedev/vim-find-my-cursor'
 Plug 'ervandew/supertab'
 Plug 'gioele/vim-autoswap'
 Plug 'godlygeek/tabular'
@@ -48,7 +47,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
-colorscheme koehler
+colorscheme elflord
 filetype plugin on
 set t_Co=256
 set hidden
@@ -96,6 +95,7 @@ set bg=dark
 set undofile
 set undolevels=1000
 set undoreload=1000
+set showcmd
 syntax on
 highlight MatchParen cterm=none ctermbg=gray ctermfg=Black
 highlight DiffAdd guibg=#006400
@@ -103,8 +103,8 @@ highlight DiffText guibg=#666600
 highlight DiffChange guibg=#1E1E1E
 highlight Pmenu ctermfg=black ctermbg=gray
 highlight PmenuSel ctermfg=black ctermbg=yellow
-highlight CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+highlight CursorLine cterm=NONE ctermbg=black ctermfg=yellow guibg=black guifg=yellow
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=yellow guibg=black guifg=yellow
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
@@ -119,8 +119,6 @@ nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert G
 nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
 nnoremap <leader>e :Lexplore<cr>
-nnoremap <leader>f <CMD>FindCursor #CC0000 500<CR>
-noremap % %<CMD>FindCursor 0 500<CR>
 fun! TrimWhitespace()
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
@@ -135,8 +133,8 @@ nnoremap <right> :bn<cr>
 nnoremap <down> :bdel<cr>
 nnoremap <up> :CtrlPBuffer<cr>
 noremap <plug>(slash-after) zz
-inoremap {<cr> {<cr>}<esc>O
-inoremap (<cr> (<cr>);<esc>O
+inoremap {<cr> {<cr>}<esc>kA
+inoremap (<cr> (<cr>);<esc>kA
 inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
 inoremap <C-h> <Esc>?[({"'\[<]<CR>:silent nohl<CR>i
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'

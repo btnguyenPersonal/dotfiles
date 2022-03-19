@@ -27,8 +27,8 @@ alias mario='games/sm64-port/build/us_pc/sm64.us'
 alias maventests='mvn clean;mvn test;mvn jacoco:restore-instrumented-classes;mvn jacoco:report'
 alias powerfolder='cd /home/ben/git/jacoco-0.8.7/examples/power'
 alias doccomp='cd /home/ben/Docker;sudo docker compose up'
-alias javaastar='coms472;cd astar;javac **/*.java;java **/PuzzleSolver.java'
-alias javacheckers='coms472;cd checkers;javac **/*.java;java **/Checkers.java'
+alias javaastar='export CURDIR=`pwd`;coms472;cd astar;clear;javac **/*.java;java **/PuzzleSolver.java;cd $CURDIR'
+alias javacheckers='export CURDIR=`pwd`;coms472;cd checkers;clear;javac **/*.java;java **/Checkers.java;cd $CURDIR'
 sshiastate() {
   if [ -z $TMUX ];
   then;
@@ -56,6 +56,7 @@ connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
 }
 sn() {
+export CURDIR=`pwd`
 if [ "$1" = "" ]
 then
   cd ~/git/classnotesS2021
@@ -68,6 +69,7 @@ else
   git commit -m "$1"
   git push
 fi
+cd $CURDIR
 }
 flashreader() {
   cd ~/git/FlashReader
