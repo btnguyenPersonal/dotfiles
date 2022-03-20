@@ -11,7 +11,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
-" let g:airline_theme="jellybeans"
 let g:airline_theme="onedark"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_working_path_mode = 'r'
@@ -35,7 +34,6 @@ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
 endif
 Plug 'joshdick/onedark.vim'
 Plug 'ervandew/supertab'
-Plug 'dunstontc/vim-vscode-theme'
 Plug 'gioele/vim-autoswap'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-slash'
@@ -93,14 +91,13 @@ set mouse=n
 set ignorecase
 set smartcase
 set number
+set spell
 set clipboard^=unnamed,unnamedplus
 set virtualedit=block
 set history=500
 set path+=**
 set timeoutlen=1000
 set ttimeoutlen=5
-set splitbelow
-set splitright
 set tags=./tags;~
 set bg=dark
 set undofile
@@ -118,8 +115,8 @@ nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
-nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
-nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+" nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
+" nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
 nnoremap <leader>e :Lexplore<cr>
 fun! TrimWhitespace()
