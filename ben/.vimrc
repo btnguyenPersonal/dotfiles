@@ -11,7 +11,8 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
-let g:airline_theme="jellybeans"
+" let g:airline_theme="jellybeans"
+let g:airline_theme="onedark"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_working_path_mode = 'r'
 if executable('ag')
