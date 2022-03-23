@@ -90,6 +90,9 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
+bindkey "\e[3~" delete-char 
+ 
+set -o emacs
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit

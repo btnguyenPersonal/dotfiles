@@ -964,6 +964,7 @@ nano
 nano-syntax-highlighting
 ncurses
 ndctl
+neo4j-desktop
 neofetch
 neon
 neovim
@@ -1124,6 +1125,7 @@ python-msgpack
 python-npyscreen
 python-pynvim
 python-requests
+python-systemd
 python-urllib3
 python-yaml
 python-zipp

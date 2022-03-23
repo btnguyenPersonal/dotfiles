@@ -71,9 +71,9 @@ set smarttab
 set nrformats+=alpha
 set ttyfast
 set nojoinspaces
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set encoding=utf-8
 set autoindent
 set copyindent
@@ -92,7 +92,6 @@ set ignorecase
 set smartcase
 set number
 set spell
-set clipboard^=unnamed,unnamedplus
 set virtualedit=block
 set history=500
 set path+=**
@@ -110,17 +109,16 @@ vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>s z=
-nnoremap <leader>c ^~
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
-" nnoremap <leader>a <C-w>h:q<cr>:Gwrite<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
-" nnoremap <leader>g :!git add -N .<cr>:Git difftool --name-status<cr>:vert Gdiff :0<cr><C-w>l
 nnoremap <leader>j :GBranches<cr>
 nnoremap <leader>e :Lexplore<cr>
 fun! TrimWhitespace()
+  :norm mg
   :%s/\s\+$//
+  :norm `g
 endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
