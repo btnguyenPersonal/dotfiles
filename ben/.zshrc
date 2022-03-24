@@ -37,7 +37,6 @@ sshiastate() {
         echo "Still in tmux"
     fi
 }
-bindkey -v
 KEYTIMEOUT=5
 rmswp() {
     rm ~/.vim/tmp/"$1".swp
@@ -75,7 +74,6 @@ export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1
 export PATH=$PATH:/home/ben/.scripts
 export PROMPT='%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b '
 export TERM=screen-256color
-
 bindkey "^[[3~" delete-char
 bindkey "^[[F~" end-of-line
 bindkey "^[[H~" beginning-of-line
@@ -83,10 +81,6 @@ bindkey "^[[3;5~" kill-word
 bindkey "^H" backward-kill-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
-bindkey '^A' beginning-of-line
-bindkey '^E' end-of-line
-bindkey "\e[3~" delete-char
-
 set -o emacs
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
@@ -97,7 +91,5 @@ SAVEHIST=1000
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 if [ -z $TMUX ]; then; tmux; fi
