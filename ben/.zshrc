@@ -69,20 +69,14 @@ flashreader() {
     cd ~/git/FlashReader
     npm start
 }
-
+set -o emacs
 export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
 export PATH=$PATH:/home/ben/.scripts
 export PROMPT='%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b '
 export TERM=screen-256color
 bindkey "^[[3~" delete-char
-bindkey "^[[F~" end-of-line
-bindkey "^[[H~" beginning-of-line
 bindkey "^[[3;5~" kill-word
 bindkey "^H" backward-kill-word
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
-set -o emacs
-
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
 HISTFILE=~/.histfile
@@ -91,5 +85,4 @@ SAVEHIST=1000
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 if [ -z $TMUX ]; then; tmux; fi
