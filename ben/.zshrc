@@ -30,54 +30,45 @@ alias doccomp='cd /home/ben/Docker;sudo docker compose up'
 alias javaastar='export CURDIR=`pwd`;coms472;cd astar;clear;javac **/*.java;java **/PuzzleSolver.java;cd $CURDIR'
 alias javacheckers='export CURDIR=`pwd`;coms472;cd checkers;clear;javac **/*.java;java **/Checkers.java;cd $CURDIR'
 sshiastate() {
-  if [ -z $TMUX ];
-  then;
-    ssh btnguyen@pyrite.cs.iastate.edu
-  else;
-    echo "Still in tmux"
-  fi
+    if [ -z $TMUX ];
+    then;
+        ssh btnguyen@pyrite.cs.iastate.edu
+    else;
+        echo "Still in tmux"
+    fi
 }
 bindkey -v
 KEYTIMEOUT=5
 rmswp() {
-  rm ~/.vim/tmp/"$1".swp
+    rm ~/.vim/tmp/"$1".swp
 }
 topdf() {
-  pandoc -f markdown -t pdf -o "$2" "$1"
-}
-savedotfiles() {
-  cd /home/ben/git/dotfiles
-  sudo ./pullfiles.sh
-  git add .
-  git commit -m "$1"
-  git push
+    pandoc -f markdown -t pdf -o "$2" "$1"
 }
 connet() {
-  iwctl station wlan0 connect "$1" --passphrase "$2"
+    iwctl station wlan0 connect "$1" --passphrase "$2"
 }
 
 sn() {
     export CURDIR=`pwd`
-    if [ -z  "$1" ]
+    if [[ $# > 0 ]]
     then
-      cd ~/git/classnotesS2021
-      git add .
-      git commit -m "${date}"
-      git push
-      exit 1
+        cd ~/git/classnotesS2021
+        git add .
+        git commit -m "$1"
+        git push
     else
-      cd ~/git/classnotesS2021
-      git add .
-      git commit -m "$1"
-      git push
-      exit 1
+        cd ~/git/classnotesS2021
+        git add .
+        git commit -m "`date`"
+        git push
     fi
     cd $CURDIR
 }
 
 flashreader() {
-  cd ~/git/FlashReader
-  npm start
+    cd ~/git/FlashReader
+    npm start
 }
 
 export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
@@ -94,8 +85,8 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
-bindkey "\e[3~" delete-char 
- 
+bindkey "\e[3~" delete-char
+
 set -o emacs
 
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
