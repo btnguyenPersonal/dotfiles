@@ -55,22 +55,26 @@ savedotfiles() {
 connet() {
   iwctl station wlan0 connect "$1" --passphrase "$2"
 }
+
 sn() {
-export CURDIR=`pwd`
-if [ "$1" = "" ]
-then
-  cd ~/git/classnotesS2021
-  git add .
-  git commit -m "${date}"
-  git push
-else
-  cd ~/git/classnotesS2021
-  git add .
-  git commit -m "$1"
-  git push
-fi
-cd $CURDIR
+    export CURDIR=`pwd`
+    if [ -z  "$1" ]
+    then
+      cd ~/git/classnotesS2021
+      git add .
+      git commit -m "${date}"
+      git push
+      exit 1
+    else
+      cd ~/git/classnotesS2021
+      git add .
+      git commit -m "$1"
+      git push
+      exit 1
+    fi
+    cd $CURDIR
 }
+
 flashreader() {
   cd ~/git/FlashReader
   npm start
