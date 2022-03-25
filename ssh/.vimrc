@@ -127,7 +127,7 @@ nnoremap Y y$
 nnoremap <left> :bp<cr>
 nnoremap <right> :bn<cr>
 nnoremap <down> :bdel<cr>
-nnoremap <up> :CtrlPBuffer<cr>
+nnoremap <up> :ba<cr>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
@@ -210,6 +210,7 @@ autocmd filetype sql iab containstable     CONTAINSTABLE
 autocmd filetype sql iab continue          CONTINUE
 autocmd filetype sql iab convert           CONVERT
 autocmd filetype sql iab corresponding     CORRESPONDING
+autocmd filetype sql iab count             COUNT
 autocmd filetype sql iab create            CREATE
 autocmd filetype sql iab cross             CROSS
 autocmd filetype sql iab cube              CUBE
