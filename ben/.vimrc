@@ -38,11 +38,8 @@ Plug 'gioele/vim-autoswap'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-slash'
 Plug 'kien/ctrlp.vim'
-Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -50,9 +47,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 call plug#end()
 colorscheme onedark
 highlight MatchParen cterm=none ctermbg=gray ctermfg=Black
-highlight DiffAdd guibg=#006400
-highlight DiffText guibg=#666600
-highlight DiffChange guibg=#1E1E1E
 highlight Pmenu ctermfg=black ctermbg=gray
 highlight PmenuSel ctermfg=black ctermbg=yellow
 highlight CursorLine cterm=NONE ctermbg=black ctermfg=yellow guibg=black guifg=yellow
@@ -111,9 +105,7 @@ nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>s z=
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
-nnoremap <leader>m :Git mergetool<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
-nnoremap <leader>j :GBranches<cr>
 nnoremap <leader>e :Lexplore<cr>
 fun! TrimWhitespace()
   :norm mg
@@ -124,10 +116,6 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 nnoremap Y y$
-nnoremap <left> :bp<cr>
-nnoremap <right> :bn<cr>
-nnoremap <down> :bdel<cr>
-nnoremap <up> :ba<cr>
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O

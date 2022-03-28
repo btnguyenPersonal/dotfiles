@@ -1,5 +1,9 @@
 a52dec
 aalib
+aarch64-linux-gnu-binutils
+aarch64-linux-gnu-gcc
+aarch64-linux-gnu-glibc
+aarch64-linux-gnu-linux-api-headers
 accounts-qml-module
 accountsservice
 acl
@@ -122,6 +126,7 @@ e2fsprogs
 ebook-tools
 ecryptfs-utils
 editorconfig-core-c
+edk2-armvirt
 efibootmgr
 efivar
 electron13
