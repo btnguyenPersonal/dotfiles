@@ -15,7 +15,7 @@ let g:airline_theme="onedark"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_working_path_mode = 'r'
 if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --ignore build --ignore doc --ignore tmp --ignore node_modules --ignore "package-lock.json" --ignore "tags" --ignore "*.class" --ignore "*.png" --ignore "*.jpg" --ignore "*.tar" --ignore "*.gz" --ignore "*.zip" --ignore "*.d" --ignore "*.o" --ignore "*.exe" --ignore "*.so" --ignore "*.dll" --nocolor -g ""'
+    let g:ctrlp_user_command = 'ag %s -l --ignore build --ignore doc --ignore tmp --ignore node_modules --ignore "package-lock.json" --ignore "tags" --ignore "*.class" --ignore "*.png" --ignore "*.jpg" --ignore "*.tar" --ignore "*.gz" --ignore "*.zip" --ignore "*.d" --ignore "*.o" --ignore "*.exe" --ignore "*.so" --ignore "*.dll" --nocolor -g ""'
 endif
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
@@ -24,13 +24,13 @@ let &t_te.="\e[1 q"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
-  autocmd VimEnter * PlugInstall | q
+    autocmd VimEnter * PlugInstall | q
 endif
 Plug 'joshdick/onedark.vim'
 Plug 'ervandew/supertab'
@@ -73,7 +73,7 @@ set autoindent
 set copyindent
 set smartindent
 set cindent
-set scrolloff=6
+set scrolloff=30
 set incsearch
 set lazyredraw
 set title titlestring=
@@ -101,16 +101,30 @@ syntax on
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
+nnoremap <leader>l :call Format()<cr>
 nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>s z=
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>e :Lexplore<cr>
+autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < size; count++) {<esc>ddk:call ForLoop()<cr>/size<cr>ciw
+autocmd filetype js nmap <leader>f ofor(let count = 0; count < size; count++) {<esc>ddk:call ForLoop()<cr>/size<cr>ciw
+fun! ForLoop()
+    call inputsave()
+    let varname = input('var_name? ')
+    call inputrestore()
+    exec 's/count/' . varname . '/g'
+endfun
 fun! TrimWhitespace()
-  :norm mg
-  :%s/\s\+$//
-  :norm `g
+    :norm mg
+    :%s/\s\+$//
+    :norm `g
+endfun
+fun! Format()
+    :norm mg
+    :norm gg=G
+    :norm `g
 endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -125,7 +139,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
 command W w
 if v:version + has("patch541") >= 704
-  set formatoptions+=j
+    set formatoptions+=j
 endif
 autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"

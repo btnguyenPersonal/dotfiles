@@ -972,7 +972,6 @@ ndctl
 neo4j-desktop
 neofetch
 neon
-neovim
 nerd-fonts-noto-sans-mono
 nettle
 networkmanager
