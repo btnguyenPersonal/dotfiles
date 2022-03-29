@@ -109,7 +109,7 @@ nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>e :Lexplore<cr>
 autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < size; count++) {<esc>ddk:call ForLoop()<cr>/size<cr>ciw
-autocmd filetype js nmap <leader>f ofor(let count = 0; count < size; count++) {<esc>ddk:call ForLoop()<cr>/size<cr>ciw
+autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {<esc>ddk:call ForLoop()<cr>/_iteration_size<cr>ciw
 fun! ForLoop()
     call inputsave()
     let varname = input('var_name? ')
