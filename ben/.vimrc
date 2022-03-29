@@ -46,11 +46,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 colorscheme onedark
-highlight MatchParen cterm=none ctermbg=gray ctermfg=Black
-highlight Pmenu ctermfg=black ctermbg=gray
-highlight PmenuSel ctermfg=black ctermbg=yellow
-highlight CursorLine cterm=NONE ctermbg=black ctermfg=yellow guibg=black guifg=yellow
-highlight CursorColumn cterm=NONE ctermbg=black ctermfg=yellow guibg=black guifg=yellow
 filetype plugin on
 set t_Co=256
 set hidden
@@ -108,7 +103,7 @@ nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>e :Lexplore<cr>
-autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < size; count++) {<esc>ddk:call ForLoop()<cr>/size<cr>ciw
+autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {<esc>ddk:call ForLoop()<cr>/_iteration_size<cr>ciw
 autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {<esc>ddk:call ForLoop()<cr>/_iteration_size<cr>ciw
 fun! ForLoop()
     call inputsave()
@@ -130,6 +125,7 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 nnoremap Y y$
+nnoremap S 0C
 noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
