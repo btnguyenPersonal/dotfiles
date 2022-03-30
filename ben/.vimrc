@@ -6,19 +6,15 @@ let g:netrw_keep_dir=0
 let g:netrw_localcopydircmd='cp -r'
 let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
-let g:SuperTabDefaultCompletionType = "<c-n>"
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_powerline_fonts = 1
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_working_path_mode = 'r'
 if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --ignore build --ignore doc --ignore tmp --ignore node_modules --ignore "package-lock.json" --ignore "tags" --ignore "*.class" --ignore "*.png" --ignore "*.jpg" --ignore "*.tar" --ignore "*.gz" --ignore "*.zip" --ignore "*.d" --ignore "*.o" --ignore "*.exe" --ignore "*.so" --ignore "*.dll" --nocolor -g ""'
 endif
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[1 q"
+let &t_ti.="\e[2 q"
+let &t_SI.="\e[6 q"
+let &t_EI.="\e[2 q"
+let &t_te.="\e[2 q"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -30,12 +26,9 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
-Plug 'ervandew/supertab'
-Plug 'junegunn/vim-slash'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'joshdick/onedark.vim'
-Plug 'vim-airline/vim-airline'
 Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
@@ -58,11 +51,11 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set encoding=utf-8
+set hls
 set autoindent
 set copyindent
 set smartindent
 set cindent
-set scrolloff=30
 set incsearch
 set lazyredraw
 set title titlestring=
@@ -73,6 +66,7 @@ set backspace=eol,start,indent
 set mouse=n
 set ignorecase
 set smartcase
+set laststatus=0
 set number
 set spell
 set virtualedit=block
@@ -130,6 +124,7 @@ nnoremap ]t :tnext
 nnoremap [T :tfirst
 nnoremap ]T :tlast
 nnoremap Q <Nop>
+nnoremap <C-L> :nohls<cr>
 nnoremap Y y$
 nnoremap S ^C
 noremap <plug>(slash-after) zz

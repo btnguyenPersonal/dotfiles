@@ -13,9 +13,9 @@ alias conia='iwctl station wlan0 connect "IASTATE"'
 alias conhome='iwctl station wlan0 connect CenturyLink1230_5G --passphrase tfcda7343cb3'
 alias getnet='iwctl station wlan0 get-networks'
 alias scannet='iwctl station wlan0 get-networks'
-alias initvim='nvim ~/.config/nvim/old_config.vim'
-alias initlua='nvim ~/.config/nvim/init.lua'
-alias initala='nvim ~/.config/alacritty/alacritty.yml'
+alias initvim='vim ~/.config/nvim/old_config.vim'
+alias initlua='vim ~/.config/nvim/init.lua'
+alias initala='vim ~/.config/alacritty/alacritty.yml'
 alias battle='cd ~/git/classnotes/coms319/g07/battle-of-boats;npm start'
 alias updategrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias zt='zathura'
@@ -74,7 +74,7 @@ set -o emacs
 export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1;35:*.txt=0;33:*.java=0;34:*.css=4;32:*.c=0;31:*.js=1;94:*.cpp=0;31:*.pdf=1;95:*.docx=0;93:*.zip=0;91'
 export PATH=$PATH:/home/ben/.scripts
 export PROMPT='%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b '
-export TERM=screen-256color
+export TERM=xterm-256color
 bindkey "^[[3~" delete-char
 bindkey "^[[3;5~" kill-word
 bindkey "^H" backward-kill-word
