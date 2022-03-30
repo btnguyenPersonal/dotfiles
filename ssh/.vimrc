@@ -6,12 +6,10 @@ let g:netrw_keep_dir=0
 let g:netrw_localcopydircmd='cp -r'
 let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
-let g:autoswap_detect_tmux = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
-let g:airline_theme="onedark"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_working_path_mode = 'r'
 if executable('ag')
@@ -32,17 +30,13 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
-Plug 'joshdick/onedark.vim'
 Plug 'ervandew/supertab'
-Plug 'gioele/vim-autoswap'
-Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-slash'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-unimpaired'
+Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 colorscheme onedark
@@ -123,6 +117,18 @@ fun! Format()
 endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
+nnoremap [b :bp
+nnoremap ]b :bn
+nnoremap [B :bfirst
+nnoremap ]B :blast
+nnoremap [q :cp
+nnoremap ]q :cn
+nnoremap [Q :cfirst
+nnoremap ]Q :clast
+nnoremap [t :tprevious
+nnoremap ]t :tnext
+nnoremap [T :tfirst
+nnoremap ]T :tlast
 nnoremap Q <Nop>
 nnoremap Y y$
 nnoremap S ^C
