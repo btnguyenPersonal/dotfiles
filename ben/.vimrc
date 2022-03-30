@@ -7,13 +7,10 @@ let g:netrw_localcopydircmd='cp -r'
 let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -l --ignore build --ignore doc --ignore tmp --ignore node_modules --ignore "package-lock.json" --ignore "tags" --ignore "*.class" --ignore "*.png" --ignore "*.jpg" --ignore "*.tar" --ignore "*.gz" --ignore "*.zip" --ignore "*.d" --ignore "*.o" --ignore "*.exe" --ignore "*.so" --ignore "*.dll" --nocolor -g ""'
-endif
-let &t_ti.="\e[2 q"
-let &t_SI.="\e[6 q"
-let &t_EI.="\e[2 q"
-let &t_te.="\e[2 q"
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[1 q"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 if empty(glob('~/.vim/autoload/plug.vim'))
