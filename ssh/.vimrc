@@ -143,6 +143,7 @@ autocmd VimEnter * :norm zz
 autocmd BufWinEnter * :norm zz
 autocmd VimEnter * :norm zR
 autocmd BufWinEnter * :norm zR
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
 autocmd filetype sql iab a                      A
 autocmd filetype sql iab abort                  ABORT
 autocmd filetype sql iab abs                    ABS
