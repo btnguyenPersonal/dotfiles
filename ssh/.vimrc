@@ -86,7 +86,6 @@ vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>l :call Format()<cr>
 nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
-nnoremap <leader>s z=
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
@@ -124,7 +123,7 @@ nnoremap ]t :tnext
 nnoremap [T :tfirst
 nnoremap ]T :tlast
 nnoremap Q <Nop>
-nnoremap <C-L> :nohls<cr>
+nnoremap <C-l> :nohls<cr>
 nnoremap Y y$
 nnoremap S ^C
 noremap <plug>(slash-after) zz
