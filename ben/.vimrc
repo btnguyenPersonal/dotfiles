@@ -28,7 +28,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'mhartington/oceanic-next'
 Plug 'godlygeek/tabular'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 colorscheme OceanicNext
