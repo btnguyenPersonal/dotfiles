@@ -90,8 +90,8 @@ nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>e :Lexplore<cr>
-autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {<esc>ddk:call ForLoop()<cr>/_iteration_size<cr>ciw
-autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {<esc>ddk:call ForLoop()<cr>/_iteration_size<cr>ciw
+autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
+autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 fun! ForLoop()
     call inputsave()
     let varname = input('var_name? ')
