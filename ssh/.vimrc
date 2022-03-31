@@ -29,7 +29,7 @@ Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 colorscheme onedark
-filetype plugin on
+filetype indent plugin on
 set t_Co=256
 set hidden
 set updatetime=300
