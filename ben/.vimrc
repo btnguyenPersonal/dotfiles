@@ -44,8 +44,8 @@ set nrformats+=alpha
 set ttyfast
 set nojoinspaces
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
+set softtabstop=-1
 set encoding=utf-8
 set hls
 set autoindent
