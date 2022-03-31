@@ -29,6 +29,7 @@ Plug 'tpope/vim-commentary'
 Plug 'mhartington/oceanic-next'
 Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'spolu/dwm.vim'
 call plug#end()
 colorscheme OceanicNext
 filetype indent plugin on
@@ -81,6 +82,10 @@ set undoreload=1000
 set showcmd
 syntax on
 highlight SpellBad cterm=underline ctermbg=NONE ctermfg=yellow
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
@@ -90,6 +95,7 @@ nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>e :Lexplore<cr>
+nnoremap <leader>b :source $MYVIMRC<cr>
 autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 fun! ForLoop()
@@ -143,7 +149,6 @@ autocmd VimEnter * :norm zz
 autocmd BufWinEnter * :norm zz
 autocmd VimEnter * :norm zR
 autocmd BufWinEnter * :norm zR
-autocmd BufWritePost $MYVIMRC source $MYVIMRC
 autocmd filetype sql iab a                      A
 autocmd filetype sql iab abort                  ABORT
 autocmd filetype sql iab abs                    ABS
