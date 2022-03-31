@@ -81,6 +81,7 @@ set undolevels=1000
 set undoreload=1000
 set showcmd
 syntax on
+highlight SpellBad cterm=underline ctermbg=NONE ctermfg=yellow
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
@@ -126,7 +127,6 @@ nnoremap Q <Nop>
 nnoremap <C-l> :nohls<cr>
 nnoremap Y y$
 nnoremap S ^C
-noremap <plug>(slash-after) zz
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
 inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
