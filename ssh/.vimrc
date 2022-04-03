@@ -129,7 +129,7 @@ nnoremap ]t :tnext<cr>
 nnoremap [T :tfirst<cr>
 nnoremap ]T :tlast<cr>
 nnoremap Q <Nop>
-nnoremap <C-l> :nohls<cr>
+nnoremap gh :nohls<cr><c-g>
 nnoremap Y y$
 nnoremap S ^C
 inoremap {<cr> {<cr>}<esc>O
