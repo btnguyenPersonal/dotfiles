@@ -43,7 +43,6 @@ set wildignore=**/node_modules/**
 set shortmess+=c
 set expandtab
 set smarttab
-set nrformats+=alpha
 set ttyfast
 set nojoinspaces
 set tabstop=4
