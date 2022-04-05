@@ -75,7 +75,9 @@ set timeoutlen=1000
 set ttimeoutlen=5
 set tags=./tags;~
 set bg=dark
+set nostartofline
 set termguicolors
+set undodir=~/.vim/undo
 set undofile
 set undolevels=1000
 set undoreload=1000
