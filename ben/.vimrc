@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
+Plug 'vim-autoformat/vim-autoformat'
 Plug 'rhysd/vim-grammarous'
 Plug 'tpope/vim-unimpaired'
 Plug 'kien/ctrlp.vim'
@@ -100,6 +101,7 @@ nnoremap <leader>l :call Format()<cr>
 nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
+nnoremap <leader>k :Autoformat<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
