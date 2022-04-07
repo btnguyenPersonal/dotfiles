@@ -123,7 +123,7 @@ endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
-nnoremap gh :nohls<cr><c-g>
+nnoremap gh :nohls<cr>
 nnoremap Y y$
 nnoremap S ^C
 inoremap {<cr> {<cr>}<esc>O
