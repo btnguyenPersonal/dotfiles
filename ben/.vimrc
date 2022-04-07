@@ -83,6 +83,7 @@ set undofile
 set undolevels=1000
 set undoreload=1000
 set showcmd
+set display+=lastline
 syntax on
 highlight SpellBad cterm=underline gui=underline guibg=NONE ctermbg=NONE ctermfg=yellow guifg=NONE
 highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
