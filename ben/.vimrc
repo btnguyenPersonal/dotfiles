@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
+Plug 'tpope/vim-unimpaired'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'mhartington/oceanic-next'
@@ -82,7 +83,10 @@ set undolevels=1000
 set undoreload=1000
 set showcmd
 syntax on
-highlight SpellBad cterm=underline ctermbg=NONE ctermfg=yellow
+highlight SpellBad cterm=underline gui=underline guibg=NONE ctermbg=NONE ctermfg=yellow guifg=NONE
+highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
+highlight QuickFixLine cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
+highlight Search cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
 hi SignColumn guibg=NONE ctermbg=NONE
@@ -118,18 +122,6 @@ fun! Format()
 endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-nnoremap [b :bp<cr>
-nnoremap ]b :bn<cr>
-nnoremap [B :bfirst<cr>
-nnoremap ]B :blast<cr>
-nnoremap [q :cp<cr>
-nnoremap ]q :cn<cr>
-nnoremap [Q :cfirst<cr>
-nnoremap ]Q :clast<cr>
-nnoremap [t :tprevious<cr>
-nnoremap ]t :tnext<cr>
-nnoremap [T :tfirst<cr>
-nnoremap ]T :tlast<cr>
 nnoremap Q <Nop>
 nnoremap gh :nohls<cr><c-g>
 nnoremap Y y$
