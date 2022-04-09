@@ -28,7 +28,7 @@ alias maventests='mvn clean;mvn test;mvn jacoco:restore-instrumented-classes;mvn
 alias powerfolder='cd /home/ben/git/jacoco-0.8.7/examples/power'
 alias doccomp='cd /home/ben/Docker;sudo docker compose up'
 alias javaastar='export CURDIR=`pwd`;coms472;cd astar;clear;javac **/*.java;java **/PuzzleSolver.java;cd $CURDIR'
-alias javacheckers='export CURDIR=`pwd`;coms472;cd checkers;clear;javac **/*.java;java **/Checkers.java;cd $CURDIR'
+alias javacheckers='export CURDIR=`pwd`;cd ~/git/checkers;clear;javac **/Checkers.java;java **/Checkers.java;cd $CURDIR'
 alias vi='vim -u ~/.sshvimrc'
 sshiastate() {
     if [ -z $TMUX ];

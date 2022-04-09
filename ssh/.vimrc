@@ -131,6 +131,8 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
 nnoremap gh :nohls<cr>
+nnoremap gt :bn<cr>
+nnoremap gT :bp<cr>
 nnoremap Y y$
 nnoremap S ^C
 inoremap {<cr> {<cr>}<esc>O
