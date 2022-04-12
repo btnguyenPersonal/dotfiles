@@ -9,6 +9,7 @@ let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.js
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
+let g:dwm_map_keys=1
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -67,7 +68,7 @@ set backspace=eol,start,indent
 set mouse=n
 set ignorecase
 set smartcase
-set laststatus=0
+set laststatus=2
 set number
 set spell
 set virtualedit=block
@@ -90,6 +91,7 @@ highlight SpellBad cterm=underline gui=underline guibg=NONE ctermbg=NONE ctermfg
 highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
 highlight QuickFixLine cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
 highlight Search cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
+highlight StatusLine guibg=black guifg=white ctermbg=black ctermfg=white
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
 hi SignColumn guibg=NONE ctermbg=NONE
@@ -130,13 +132,18 @@ endfun
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
-nnoremap gh :nohls<cr>
 nnoremap gt :bn<cr>
 nnoremap gT :bp<cr>
 nnoremap Y y$
 nnoremap S ^C
 inoremap {<cr> {<cr>}<esc>O
 inoremap (<cr> (<cr>);<esc>O
+nmap <CR>   <Plug>DWMFocus
+nmap <C-C>  <Plug>DWMClose
+nmap <C-N>  <Plug>DWMNew
+nnoremap <C-K>  <C-W>W
+nnoremap <C-J>  <C-W>w
+nnoremap <C-l> :nohls<cr>
 inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
 inoremap <C-h> <Esc>?[({"'\[<]<CR>:silent nohl<CR>i
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
