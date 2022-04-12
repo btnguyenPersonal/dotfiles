@@ -141,6 +141,7 @@ inoremap (<cr> (<cr>);<esc>O
 nmap <CR>   <Plug>DWMFocus
 nmap <C-C>  <Plug>DWMClose
 nmap <C-N>  <Plug>DWMNew
+nnoremap gl <cr>
 nnoremap <C-K>  <C-W>W
 nnoremap <C-J>  <C-W>w
 nnoremap <C-l> :nohls<cr>
