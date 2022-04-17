@@ -9,7 +9,7 @@ let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.js
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
-let g:dwm_map_keys=1
+let g:dwm_map_keys=0
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -48,6 +48,7 @@ set shortmess+=c
 set expandtab
 set smarttab
 set ttyfast
+set nrformats=alpha
 set nojoinspaces
 set tabstop=4
 set shiftwidth=4
@@ -110,6 +111,7 @@ nnoremap <leader>b :source $MYVIMRC<cr>
 nnoremap <leader>gc :GrammarousCheck<cr>
 vnoremap <leader>gc :GrammarousCheck<cr>
 nnoremap <leader>gr :GrammarousReset<cr>
+nnoremap <leader>ij OID: peterax1LANG: JAVATASK:*/<esc>ggO/*<esc>/TASK:<cr>A <c-r>%<esc>F.DG:nohls<cr>A
 nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw

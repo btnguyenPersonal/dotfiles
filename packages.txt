@@ -91,7 +91,6 @@ containerd
 convertlit
 coreutils
 cpupower
-crda
 cronie
 cryptsetup
 ctags
@@ -131,6 +130,7 @@ edk2-armvirt
 efibootmgr
 efivar
 electron13
+electron17
 elfutils
 ell
 enchant
@@ -145,6 +145,7 @@ faac
 faad2
 fakeroot
 faudio
+ffcall
 ffmpeg
 ffmpegthumbs
 fftw
@@ -303,9 +304,16 @@ haskell-haddock-library
 haskell-hashable
 haskell-hourglass
 haskell-hslua
+haskell-hslua-aeson
+haskell-hslua-classes
+haskell-hslua-core
+haskell-hslua-marshalling
 haskell-hslua-module-path
 haskell-hslua-module-system
 haskell-hslua-module-text
+haskell-hslua-module-version
+haskell-hslua-objectorientation
+haskell-hslua-packaging
 haskell-hsyaml
 haskell-http
 haskell-http-client
@@ -317,6 +325,10 @@ haskell-iproute
 haskell-ipynb
 haskell-jira-wiki-markup
 haskell-juicypixels
+haskell-lexer
+haskell-libyaml
+haskell-lpeg
+haskell-lua
 haskell-memory
 haskell-mime-types
 haskell-mono-traversable
@@ -324,8 +336,10 @@ haskell-network
 haskell-network-uri
 haskell-old-locale
 haskell-old-time
+haskell-pandoc-lua-marshal
 haskell-pandoc-types
 haskell-pem
+haskell-pretty-show
 haskell-primitive
 haskell-quickcheck
 haskell-random
@@ -373,6 +387,7 @@ haskell-x509-validation
 haskell-xml
 haskell-xml-conduit
 haskell-xml-types
+haskell-yaml
 haskell-zip-archive
 haskell-zlib
 haveged
@@ -918,6 +933,7 @@ lsof
 lua
 lua52
 lua53
+lua53-lpeg
 luajit
 luit
 lv2
@@ -1099,6 +1115,7 @@ plasma-systemmonitor
 plasma-workspace
 plasma5-themes-breath
 plasma5-themes-breath-migration
+plocate
 polkit
 polkit-kde-agent
 polkit-qt5
