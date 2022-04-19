@@ -94,10 +94,10 @@ highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
 highlight QuickFixLine cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
 highlight Search cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
 highlight StatusLine guibg=black guifg=white ctermbg=black ctermfg=white
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
+highlight Normal guibg=NONE ctermbg=NONE
+highlight LineNr guibg=NONE ctermbg=NONE
+highlight SignColumn guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>

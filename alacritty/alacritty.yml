@@ -1,5 +1,5 @@
 font:
-  size: 10.0
+  size: 9.0
   normal:
     family: Hack
 draw_bold_text_with_bright_colors: false
