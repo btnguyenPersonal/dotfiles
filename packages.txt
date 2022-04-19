@@ -179,6 +179,7 @@ gdbm
 gdk-pixbuf2
 geoclue
 geocode-glib
+gestures
 gettext
 ghc-libs
 ghostscript
@@ -734,6 +735,7 @@ libiec61883
 libimobiledevice
 libinih
 libinput
+libinput-gestures
 libinstpatch
 libisl
 libixion
@@ -963,6 +965,7 @@ manjaro-system
 manjaro-zsh-config
 mariadb
 mariadb-clients
+mariadb-jdbc
 mariadb-libs
 maven
 md4c

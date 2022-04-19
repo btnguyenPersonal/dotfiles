@@ -10,6 +10,7 @@ let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 let g:dwm_map_keys=0
+let g:mkdp_browser = 'microsoft-edge-stable'
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
