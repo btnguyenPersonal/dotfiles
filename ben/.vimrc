@@ -163,3 +163,4 @@ autocmd VimEnter * :norm zz
 autocmd BufWinEnter * :norm zz
 autocmd VimEnter * :norm zR
 autocmd BufWinEnter * :norm zR
+autocmd filetype markdown set nocopyindent noautoindent nosmartindent nocindent
