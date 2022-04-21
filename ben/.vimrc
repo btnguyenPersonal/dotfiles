@@ -98,7 +98,6 @@ nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>l :call Format()<cr>
-nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>k :Autoformat<cr>
