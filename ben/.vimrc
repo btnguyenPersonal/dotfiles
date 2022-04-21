@@ -7,10 +7,10 @@ let g:netrw_localcopydircmd='cp -r'
 let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
 let g:dwm_map_keys=0
-let g:mkdp_browser = 'microsoft-edge-stable'
+let g:mkdp_browser='microsoft-edge-stable'
+let g:easytags_always_enabled = 1
+let g:easytags_async=1
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -26,8 +26,8 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
-Plug 'vim-autoformat/vim-autoformat'
-Plug 'rhysd/vim-grammarous'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'godlygeek/tabular'
