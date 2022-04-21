@@ -12,6 +12,7 @@ let g:dwm_map_keys=0
 let g:mkdp_browser='microsoft-edge-stable'
 let g:easytags_always_enabled = 1
 let g:easytags_async=1
+let g:easytags_file = '~/.vim/tags'
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -179,7 +180,6 @@ nnoremap <C-l> :nohls<cr>
 inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
 inoremap <C-h> <Esc>?[({"'\[<]<CR>:silent nohl<CR>i
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
 command W w
 if v:version + has("patch541") >= 704
     set formatoptions+=j
@@ -189,6 +189,4 @@ autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd VimEnter * :norm zz
 autocmd BufWinEnter * :norm zz
-autocmd VimEnter * :norm zR
-autocmd BufWinEnter * :norm zR
 autocmd filetype markdown set nocopyindent noautoindent nosmartindent nocindent
