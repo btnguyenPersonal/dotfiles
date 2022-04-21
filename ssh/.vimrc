@@ -13,6 +13,7 @@ let g:mkdp_browser='microsoft-edge-stable'
 let g:easytags_always_enabled = 1
 let g:easytags_async=1
 let g:easytags_file = '~/.vim/tags'
+let g:easytags_auto_update = 0
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -28,6 +29,7 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
+Plug 'vim-scripts/taglist.vim'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 Plug 'kien/ctrlp.vim'
@@ -73,7 +75,8 @@ set ignorecase
 set smartcase
 set laststatus=0
 set number
-set spell
+set nospell
+autocmd Filetype markdown, text set spell
 set virtualedit=block
 set history=500
 set path+=**
@@ -106,6 +109,8 @@ nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>l :call Format()<cr>
+nnoremap <leader>t :UpdateTags<cr>
+nnoremap <leader>d :TlistToggle<cr>
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>k :Autoformat<cr>
@@ -184,7 +189,6 @@ command W w
 if v:version + has("patch541") >= 704
     set formatoptions+=j
 endif
-autocmd BufWritePost *.c,*.h,*.cpp silent! :Maketags
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd VimEnter * :norm zz
