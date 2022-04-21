@@ -76,7 +76,8 @@ set smartcase
 set laststatus=0
 set number
 set nospell
-autocmd Filetype markdown, text set spell
+autocmd Filetype markdown setlocal spell
+autocmd Filetype text setlocal spell
 set virtualedit=block
 set history=500
 set path+=**
