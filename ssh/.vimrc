@@ -69,7 +69,7 @@ set backspace=eol,start,indent
 set mouse=n
 set ignorecase
 set smartcase
-set laststatus=2
+set laststatus=0
 set number
 set spell
 set virtualedit=block
@@ -90,7 +90,6 @@ set display+=lastline
 syntax on
 highlight SpellBad cterm=underline gui=underline guibg=NONE ctermbg=NONE ctermfg=yellow guifg=NONE
 highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
-highlight StatusLine guibg=black guifg=white ctermbg=black ctermfg=white
 highlight Normal guibg=NONE ctermbg=NONE
 highlight LineNr guibg=NONE ctermbg=NONE guifg=gray ctermfg=gray gui=italic cterm=italic
 highlight SignColumn guibg=NONE ctermbg=NONE
