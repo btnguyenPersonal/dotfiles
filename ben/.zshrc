@@ -87,38 +87,15 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
 if [ -z $TMUX ]; then; tmux; fi
-neofetch --ascii_distro Windows7 --color_blocks off
-#echo "        ,.=:!!t3Z3z.,                                          'c."       
-#echo "       :tt:::tt333EE3                                       ,xNMM."       
-#echo "       Et:::ztt33EEEL @Ee.,      ..,                      .OMMMMo"        
-#echo "      ;tt:::tt333EE7 ;EEEEEEttttt33#                      OMMM0,"         
-#echo "     :Et:::zt333EEQ. \$EEEEEttttt33QL            .;loddo:' loolloddol;."   
-#echo "     it::::tt333EEF @EEEEEEttttt33F           cKMMMMMMMMMMNWMMMMMMMMMM0:" 
-#echo "    ;3=*^\`\`\`\"*4EEV :EEEEEEttttt33@.         .KMMMMMMMMMMMMMMMMMMMMMMMWd." 
-#echo "    ,.=::::!t=., \` @EEEEEEtttz33QF          XMMMMMMMMMMMMMMMMMMMMMMMX."   
-#echo "   ;::::::::zt33)   \"4EEEtttji3P*          ;MMMMMMMMMMMMMMMMMMMMMMMM:"    
-#echo "  :t::::::::tt33.:Z3z..  `` ,..g.          :MMMMMMMMMMMMMMMMMMMMMMMM:"    
-#echo "  i::::::::zt33F AEEEtttt::::ztF           .MMMMMMMMMMMMMMMMMMMMMMMMX."   
-#echo " ;:::::::::t33V ;EEEttttt::::t3             kMMMMMMMMMMMMMMMMMMMMMMMMWd." 
-#echo " E::::::::zt33L @EEEtttt::::z3F             .XMMMMMMMMMMMMMMMMMMMMMMMMMMk"
-#echo "\{3=*^\`\`\`\"*4E3) ;EEEtttt:::::tZ\`              .XMMMMMMMMMMMMMMMMMMMMMMMMK."
-#echo "             \` :EEEEtttt::::z7                 kMMMMMMMMMMMMMMMMMMMMMMd"  
-#echo "                 \"VEzjt:;;z>*\`                  ;KMMMMMMMWXXWMMMMMMMk."   
-#echo "                                                   .cooc,.    .,coo:."     
-                                                                                            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+R=$(($RANDOM%5))
+if [ $R -eq 0 ]; then
+neofetch --color_blocks off --ascii_distro Windows7
+elif [ $R -eq 1 ]; then
+neofetch --color_blocks off --ascii_distro Arch
+elif [ $R -eq 2 ]; then
+neofetch --color_blocks off --ascii_distro macos
+elif [ $R -eq 3 ]; then
+neofetch --color_blocks off --ascii_distro gentoo
+elif [ $R -eq 4 ]; then
+neofetch --color_blocks off --ascii_distro artix
+fi
