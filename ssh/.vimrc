@@ -34,7 +34,7 @@ Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'spolu/dwm.vim'
 call plug#end()
-colorscheme industry
+colorscheme darkblue
 filetype indent plugin on
 set t_Co=256
 set hidden
@@ -89,11 +89,9 @@ set display+=lastline
 syntax on
 highlight SpellBad cterm=underline gui=underline guibg=NONE ctermbg=NONE ctermfg=yellow guifg=NONE
 highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
-highlight QuickFixLine cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
-highlight Search cterm=underline gui=underline guibg=NONE guifg=green ctermbg=NONE ctermfg=green
 highlight StatusLine guibg=black guifg=white ctermbg=black ctermfg=white
 highlight Normal guibg=NONE ctermbg=NONE
-highlight LineNr guibg=NONE ctermbg=NONE
+highlight LineNr guibg=NONE ctermbg=NONE guifg=gray ctermfg=gray gui=italic cterm=italic
 highlight SignColumn guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 nmap <SPACE> <leader>
