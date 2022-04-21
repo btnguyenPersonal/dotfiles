@@ -34,6 +34,7 @@ Plug 'tpope/vim-commentary'
 Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'spolu/dwm.vim'
+Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
 colorscheme darkblue
 filetype indent plugin on
@@ -95,6 +96,10 @@ highlight LineNr guibg=NONE ctermbg=NONE guifg=gray ctermfg=gray gui=italic cter
 highlight SignColumn guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
 highlight link markdownError Normal
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 autocmd FileType markdown match none
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
