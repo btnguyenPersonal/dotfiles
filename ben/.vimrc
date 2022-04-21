@@ -28,7 +28,6 @@ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
 endif
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'rhysd/vim-grammarous'
-Plug 'tpope/vim-unimpaired'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'godlygeek/tabular'
@@ -131,6 +130,32 @@ fun! Format()
     :norm gg=G
     :norm `g
 endfun
+noremap [a     :previous<cr>
+noremap ]a     :next<cr>
+noremap [A     :first<cr>
+noremap ]A     :last<cr>
+noremap [b     :bprevious<cr>
+noremap ]b     :bnext<cr>
+noremap [B     :bfirst<cr>
+noremap ]B     :blast<cr>
+noremap [l     :lprevious<cr>
+noremap ]l     :lnext<cr>
+noremap [L     :lfirst<cr>
+noremap ]L     :llast<cr>
+noremap [<C-L> :lpfile<cr>
+noremap ]<C-L> :lnfile<cr>
+noremap [q     :cprevious<cr>
+noremap ]q     :cnext<cr>
+noremap [Q     :cfirst<cr>
+noremap ]Q     :clast<cr>
+noremap [<C-Q> :cpfile<cr>
+noremap ]<C-Q> :cnfile<cr>
+noremap [t     :tprevious<cr>
+noremap ]t     :tnext<cr>
+noremap [T     :tfirst<cr>
+noremap ]T     :tlast<cr>
+noremap [<C-T> :ptprevious<cr>
+noremap ]<C-T> :ptnext<cr>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 nnoremap Q <Nop>
