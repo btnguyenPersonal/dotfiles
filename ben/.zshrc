@@ -87,15 +87,4 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
 if [ -z $TMUX ]; then; tmux; fi
-R=$(($RANDOM%5))
-if [ $R -eq 0 ]; then
 neofetch --color_blocks off --ascii_distro Windows7
-elif [ $R -eq 1 ]; then
-neofetch --color_blocks off --ascii_distro Arch
-elif [ $R -eq 2 ]; then
-neofetch --color_blocks off --ascii_distro macos
-elif [ $R -eq 3 ]; then
-neofetch --color_blocks off --ascii_distro gentoo
-elif [ $R -eq 4 ]; then
-neofetch --color_blocks off --ascii_distro artix
-fi
