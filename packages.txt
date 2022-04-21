@@ -84,6 +84,7 @@ cifs-utils
 ckbcomp
 clang
 clucene
+cmake
 code
 compiler-rt
 confuse
@@ -140,6 +141,7 @@ exempi
 exfat-utils
 exiv2
 expat
+extra-cmake-modules
 f2fs-tools
 faac
 faad2
@@ -434,6 +436,7 @@ jre-openjdk-headless
 js78
 json-c
 json-glib
+jsoncpp
 kaccounts-integration
 kaccounts-providers
 kactivities
@@ -1205,6 +1208,7 @@ readline
 redland
 reiserfsprogs
 rest
+rhash
 ripgrep
 riscv64-linux-gnu-binutils
 riscv64-linux-gnu-gcc
@@ -1302,6 +1306,7 @@ timeshift-autosnap-manjaro
 tlp
 tmux
 tpm2-tss
+traceroute
 tracker3
 tree
 tree-sitter

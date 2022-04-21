@@ -31,12 +31,11 @@ Plug 'rhysd/vim-grammarous'
 Plug 'tpope/vim-unimpaired'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-commentary'
-Plug 'mhartington/oceanic-next'
 Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'spolu/dwm.vim'
 call plug#end()
-colorscheme OceanicNext
+colorscheme industry
 filetype indent plugin on
 set t_Co=256
 set hidden
