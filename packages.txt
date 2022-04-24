@@ -415,6 +415,7 @@ imlib2
 inetutils
 iniparser
 intel-ucode
+intellij-idea-community-edition
 inxi
 iproute2
 iptables
@@ -429,10 +430,13 @@ java-environment-common
 java-runtime-common
 jbig2dec
 jdk-openjdk
+jdk11-openjdk
 jemalloc
 jfsutils
 jre-openjdk
 jre-openjdk-headless
+jre11-openjdk
+jre11-openjdk-headless
 js78
 json-c
 json-glib

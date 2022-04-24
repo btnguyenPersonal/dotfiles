@@ -8,12 +8,7 @@ let g:netrw_list_hide='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$
 let g:ctrlp_custom_ignore='\v[\/](build|doc|tmp|node_modules)|\v(package-lock.json)$|(\v\.(class|png|jpg|tar|gz|zip|d|o|exe|so|dll)$)'
 let g:ctrlp_cache_dir = '$HOME/.cache/ctrlp'
 let g:ctrlp_clear_cache_on_exit = 0
-let g:dwm_map_keys=0
 let g:mkdp_browser='microsoft-edge-stable'
-let g:easytags_always_enabled = 1
-let g:easytags_async=1
-let g:easytags_file = '~/.vim/tags'
-let g:easytags_auto_update = 0
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
@@ -29,14 +24,8 @@ call plug#begin('~/.vim/plugged')
 if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
     autocmd VimEnter * PlugInstall | q
 endif
-Plug 'vim-scripts/taglist.vim'
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
 Plug 'kien/ctrlp.vim'
-Plug 'tpope/vim-commentary'
-Plug 'godlygeek/tabular'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'spolu/dwm.vim'
 Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
 colorscheme darkblue
@@ -110,18 +99,14 @@ nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :call TrimWhitespace()<cr>
 nnoremap <leader>l :call Format()<cr>
-nnoremap <leader>t :UpdateTags<cr>
 nnoremap <leader>d :TlistToggle<cr>
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>i :setlocal spell!<cr>
 nnoremap <leader>k :Autoformat<cr>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
+nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
-nnoremap <leader>gc :GrammarousCheck<cr>
-vnoremap <leader>gc :GrammarousCheck<cr>
-nnoremap <leader>gr :GrammarousReset<cr>
-nnoremap <leader>ij OID: peterax1LANG: JAVATASK:*/<esc>ggO/*<esc>/TASK:<cr>A <c-r>%<esc>F.DG:nohls<cr>A
 nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 autocmd filetype java,c,cpp nmap <leader>f ofor(int count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
 autocmd filetype js nmap <leader>f ofor(let count = 0; count < _iteration_size; count++) {}<left><esc>k:call ForLoop()<cr>/_iteration_size<cr>"_ciw
@@ -141,51 +126,12 @@ fun! Format()
     :norm gg=G
     :norm `g
 endfun
-noremap [a     :previous<cr>
-noremap ]a     :next<cr>
-noremap [A     :first<cr>
-noremap ]A     :last<cr>
-noremap [b     :bprevious<cr>
-noremap ]b     :bnext<cr>
-noremap [B     :bfirst<cr>
-noremap ]B     :blast<cr>
-noremap [l     :lprevious<cr>
-noremap ]l     :lnext<cr>
-noremap [L     :lfirst<cr>
-noremap ]L     :llast<cr>
-noremap [<C-L> :lpfile<cr>
-noremap ]<C-L> :lnfile<cr>
-noremap [q     :cprevious<cr>
-noremap ]q     :cnext<cr>
-noremap [Q     :cfirst<cr>
-noremap ]Q     :clast<cr>
-noremap [<C-Q> :cpfile<cr>
-noremap ]<C-Q> :cnfile<cr>
-noremap [t     :tprevious<cr>
-noremap ]t     :tnext<cr>
-noremap [T     :tfirst<cr>
-noremap ]T     :tlast<cr>
-noremap [<C-T> :ptprevious<cr>
-noremap ]<C-T> :ptnext<cr>
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-nnoremap Q <Nop>
-nnoremap gt :bn<cr>
-nnoremap gT :bp<cr>
 nnoremap Y y$
 nnoremap S ^C
 inoremap {<cr> {<cr>}<esc>O
-inoremap (<cr> (<cr>);<esc>O
-nmap <CR>   <Plug>DWMFocus
-nmap <C-C>  <Plug>DWMClose
-nmap <C-N>  <Plug>DWMNew
-nnoremap gl <cr>
-nnoremap <C-K>  <C-W>W
-nnoremap <C-J>  <C-W>w
 nnoremap <C-l> :nohls<cr>
-inoremap <C-l> <Esc>/[)}"'\]>]<CR>:silent nohl<CR>a
-inoremap <C-h> <Esc>?[({"'\[<]<CR>:silent nohl<CR>i
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
 command W w
 if v:version + has("patch541") >= 704
     set formatoptions+=j
