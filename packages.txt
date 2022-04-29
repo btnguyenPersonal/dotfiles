@@ -57,6 +57,7 @@ bluez-libs
 bluez-qt
 boost-libs
 box2d
+brave-browser
 breeze
 breeze-gtk
 breeze-icons
