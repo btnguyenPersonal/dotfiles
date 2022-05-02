@@ -142,6 +142,7 @@ exempi
 exfat-utils
 exiv2
 expat
+expect
 extra-cmake-modules
 f2fs-tools
 faac
