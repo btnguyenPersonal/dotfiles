@@ -61,6 +61,7 @@ autocmd Filetype text setlocal spell
 set virtualedit=block
 set history=500
 set path+=**
+set formatoptions+=j
 set timeoutlen=1000
 set ttimeoutlen=5
 set tags=./tags;~
@@ -95,9 +96,6 @@ nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
-if v:version + has("patch541") >= 704
-    set formatoptions+=j
-endif
 autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 autocmd filetype markdown set nocopyindent noautoindent nosmartindent nocindent

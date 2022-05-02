@@ -78,6 +78,7 @@ ccls
 cdparanoia
 celt
 ceph-libs
+cerebro-git
 cfitsio
 chromaprint
 chromium
@@ -101,6 +102,7 @@ dav1d
 db
 dbus
 dbus-glib
+dbus-python
 dconf
 desktop-file-utils
 device-mapper
@@ -111,6 +113,7 @@ ding-libs
 discord
 discount
 djvulibre
+dmenu
 dmidecode
 dmraid
 dnsmasq
@@ -418,6 +421,7 @@ inetutils
 iniparser
 intel-ucode
 intellij-idea-community-edition
+intltool
 inxi
 iproute2
 iptables
@@ -754,6 +758,7 @@ libjpeg-turbo
 libkate
 libkdcraw
 libkexiv2
+libkeybinder3
 libkipi
 libksba
 libkscreen
@@ -1163,8 +1168,11 @@ purpose
 putty
 pyside6
 python
+python-appdirs
+python-cairo
 python-certifi
 python-chardet
+python-distutils-extra
 python-dnspython
 python-docopt
 python-gobject
@@ -1172,14 +1180,24 @@ python-greenlet
 python-idna
 python-importlib-metadata
 python-keyutils
+python-levenshtein
 python-manjaro-sdk
 python-markdown
+python-more-itertools
 python-msgpack
 python-npyscreen
+python-ordered-set
+python-packaging
+python-pyinotify
 python-pynvim
+python-pyparsing
+python-pyxdg
 python-requests
+python-setuptools
+python-six
 python-systemd
 python-urllib3
+python-websocket-client
 python-yaml
 python-zipp
 qca-qt5
@@ -1328,6 +1346,7 @@ tzdata
 uchardet
 udiskie
 udisks2
+ulauncher
 unarchiver
 unibilium
 unixodbc
