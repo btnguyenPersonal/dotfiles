@@ -64,7 +64,6 @@ set path+=**
 set formatoptions+=j
 set timeoutlen=1000
 set ttimeoutlen=5
-set tags=./tags;~
 set bg=dark
 set nostartofline
 set termguicolors
