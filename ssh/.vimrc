@@ -55,7 +55,7 @@ set mouse=n
 set ignorecase
 set smartcase
 set laststatus=0
-set number
+set number relativenumber
 set nospell
 set cursorline
 autocmd Filetype markdown setlocal spell
@@ -75,6 +75,8 @@ set undoreload=1000
 set showcmd
 set display+=lastline
 syntax on
+au InsertEnter * set number norelativenumber
+au InsertLeave * set number relativenumber
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
