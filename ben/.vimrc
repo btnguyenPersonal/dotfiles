@@ -16,6 +16,7 @@ let &t_te.="\e[1 q"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 call plug#begin('~/.vim/plugged')
+Plug 'rhysd/conflict-marker.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -85,7 +86,7 @@ vmap <SPACE> <leader>
 nnoremap <leader>w :%s/\s\+$//g<cr>
 nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left><left><left>
 nnoremap <leader>n :MarkdownPreviewToggle<cr>
-nnoremap <leader>t :silent Maketags<cr>:redraw!<cr>
+nnoremap <leader>t :Maketags<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
