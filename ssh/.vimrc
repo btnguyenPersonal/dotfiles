@@ -16,7 +16,6 @@ let &t_te.="\e[1 q"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 call plug#begin('~/.vim/plugged')
-Plug 'rhysd/conflict-marker.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
