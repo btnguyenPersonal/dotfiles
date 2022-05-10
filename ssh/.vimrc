@@ -16,11 +16,12 @@ let &t_te.="\e[1 q"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 call plug#begin('~/.vim/plugged')
+Plug 'joshdick/onedark.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
-colorscheme darkblue
+colorscheme onedark
 filetype indent plugin on
 set t_Co=256
 set hidden
@@ -56,6 +57,7 @@ set smartcase
 set laststatus=0
 set number
 set nospell
+set cursorline
 autocmd Filetype markdown setlocal spell
 autocmd Filetype text setlocal spell
 set virtualedit=block
@@ -64,7 +66,6 @@ set path+=**
 set formatoptions+=j
 set timeoutlen=1000
 set ttimeoutlen=5
-set bg=dark
 set nostartofline
 set termguicolors
 set undodir=~/.vim/undo
@@ -74,13 +75,6 @@ set undoreload=1000
 set showcmd
 set display+=lastline
 syntax on
-highlight SpellBad cterm=underline gui=underline guibg=NONE ctermbg=NONE ctermfg=yellow guifg=NONE
-highlight SpellCap guibg=NONE ctermbg=NONE ctermfg=NONE guifg=NONE
-highlight Normal guibg=NONE ctermbg=NONE
-highlight LineNr guibg=NONE ctermbg=NONE guifg=gray ctermfg=gray gui=italic cterm=italic
-highlight SignColumn guibg=NONE ctermbg=NONE
-highlight EndOfBuffer guibg=NONE ctermbg=NONE
-highlight link markdownError Normal
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
