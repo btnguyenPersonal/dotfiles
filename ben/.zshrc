@@ -87,4 +87,3 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
 if [ -z $TMUX ]; then; tmux; fi
-neofetch --color_blocks off --ascii_distro Windows7
