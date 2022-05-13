@@ -939,6 +939,7 @@ linux-api-headers
 linux-firmware
 linux-firmware-whence
 linux515
+linux515-virtualbox-host-modules
 lirc
 llvm
 llvm-libs
@@ -1260,6 +1261,7 @@ sbc
 sddm
 sddm-breath-theme
 sddm-kcm
+sdl
 sdl2
 sdl2_image
 seabios
@@ -1366,6 +1368,7 @@ vid.stab
 vim-runtime
 vim-spell-en
 virglrenderer
+virtualbox
 vmaf
 volume_key
 vpnc
