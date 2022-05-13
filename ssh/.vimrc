@@ -3,7 +3,7 @@ let g:netrw_banner=0
 let g:netrw_liststyle=3
 let g:netrw_winsize=20
 let g:netrw_keep_dir=0
-colorscheme darkblue
+colorscheme desert
 filetype indent plugin on
 set hidden
 set updatetime=300
@@ -24,16 +24,11 @@ set smartindent
 set cindent
 set incsearch
 set lazyredraw
-set directory=~/.vim/tmp
-set undodir=~/.vim/undo
-set undofile
-set undolevels=1000
-set undoreload=1000
 set mouse=n
 set ignorecase
 set smartcase
 set laststatus=0
-set number norelativenumber
+set number
 set history=500
 set formatoptions+=j
 set timeoutlen=1000
@@ -51,5 +46,3 @@ nnoremap <leader>t :Maketags<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
-autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
-autocmd bufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
