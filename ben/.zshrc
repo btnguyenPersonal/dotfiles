@@ -23,4 +23,3 @@ SAVEHIST=1000
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
-if [ -z $TMUX ]; then; tmux; fi

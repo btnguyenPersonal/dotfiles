@@ -4,6 +4,9 @@ let g:netrw_liststyle=3
 let g:netrw_winsize=20
 let g:netrw_keep_dir=0
 colorscheme desert
+call plug#begin()
+Plug 'kien/ctrlp.vim'
+call plug#end()
 filetype indent plugin on
 set hidden
 set updatetime=300
@@ -45,4 +48,4 @@ nnoremap <leader>r :grep -F '' **/*.* <left><left><left><left><left><left><left>
 nnoremap <leader>t :Maketags<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
-command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+command! Maketags :!ctags --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
