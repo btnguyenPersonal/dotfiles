@@ -37,10 +37,10 @@ set formatoptions+=j
 set timeoutlen=1000
 set ttimeoutlen=5
 set nostartofline
-set termguicolors
 set showcmd
 set display+=lastline
 syntax on
+imap kj <esc>
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :%s/\s\+$//g<cr>
