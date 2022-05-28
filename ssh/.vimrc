@@ -42,7 +42,6 @@ set ttimeoutlen=5
 set nostartofline
 set showcmd
 set display+=lastline
-set termguicolors
 imap kj <esc>
 nmap S ^C
 nmap <SPACE> <leader>
