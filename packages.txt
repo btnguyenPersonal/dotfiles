@@ -49,6 +49,7 @@ baloo
 baloo-widgets
 bash
 bashrc-manjaro
+bat
 bc
 binutils
 bluedevil
@@ -1059,6 +1060,7 @@ numactl
 numlockx
 oath-toolkit
 okular
+oniguruma
 openal
 openconnect
 opencore-amr
@@ -1354,6 +1356,7 @@ sonnet
 sord
 sound-theme-freedesktop
 soundtouch
+source-highlight
 spandsp
 spectacle
 spectre-meltdown-checker
@@ -1461,6 +1464,7 @@ wireless-regdb
 wl-clipboard
 wmctrl
 woff2
+wolfssl
 wpa_supplicant
 wpebackend-fdo
 wxgtk-common
