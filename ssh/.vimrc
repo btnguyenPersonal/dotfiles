@@ -54,3 +54,7 @@ nnoremap <leader>t :Maketags<cr>
 nnoremap <leader>e :Lexplore<cr>
 nnoremap <leader>b :source $MYVIMRC<cr>
 command! Maketags :!ctags -R --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log .
+" brew install ctags
+" alias ctags="`brew --prefix`/bin/ctags"
+" alias ctags >> ~/.zshrc
+" echo "set tags=tags" >> ~/.vimrc
