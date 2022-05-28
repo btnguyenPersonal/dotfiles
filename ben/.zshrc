@@ -10,8 +10,6 @@ export LS_COLORS='di=1;33:*.html=1;31:*.json=0;35:*.jpg=1;35:*.jpeg=1;35:*.png=1
 export PATH=$PATH:/home/ben/.scripts
 export PROMPT="%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b "
 export TERM=xterm-256color
-bindkey "^[[3~" delete-char
-bindkey "^[[3;5~" kill-word
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
 HISTFILE=~/.histfile
