@@ -41,9 +41,11 @@ set timeoutlen=1000
 set ttimeoutlen=5
 set nostartofline
 set showcmd
+set scrolloff=6
 set display+=lastline
 imap kj <esc>
 nmap S ^C
+nmap Y y$
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 nnoremap <leader>w :%s/\s\+$//g<cr>
