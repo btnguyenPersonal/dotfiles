@@ -8,8 +8,9 @@ let g:ctrlp_custom_ignore='\v[\/](build|dist|doc|tmp|node_modules)|\v(package-lo
 let g:loaded_matchparen=1
 call plug#begin()
 Plug 'kien/ctrlp.vim'
+Plug 'romgrk/github-light.vim'
 call plug#end()
-colorscheme desert
+colorscheme github-light
 filetype indent plugin on
 set hidden
 set updatetime=300
