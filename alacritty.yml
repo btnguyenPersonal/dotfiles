@@ -32,14 +32,14 @@ colors:
     cyan:    '0x3e953a'
     white:   '0xffffff'
 
-  key_bindings:
-    - { key: Comma, mods: Command, chars: "\x02\x2c" }
-    - { key: Period, mods: Command, chars: "\x02\x2e" }
-    - { key: J, mods: Command, chars: "\x02\x6a" }
-    - { key: K, mods: Command, chars: "\x02\x6b" }
-    - { key: T, mods: Command, chars: "\x02\x6e" }
-    - { key: N, mods: Command, chars: "\x02\x6e" }
-    - { key: W, mods: Command, chars: "\x02\x63" }
-    - { key: Return, mods: Command, chars: "\x02\x6f" }
-    - { key: F, mods: Command, chars: "\x02\x66" }
-    - { key: Y, mods: Command, chars: "\x02\x79" }
+key_bindings:
+  - { key: Comma, mods: Command, chars: "\x02\x2c" }
+  - { key: Period, mods: Command, chars: "\x02\x2e" }
+  - { key: J, mods: Command, chars: "\x02\x6a" }
+  - { key: K, mods: Command, chars: "\x02\x6b" }
+  - { key: T, mods: Command, chars: "\x02\x6e" }
+  - { key: N, mods: Command, chars: "\x02\x6e" }
+  - { key: W, mods: Command, chars: "\x02\x63" }
+  - { key: Return, mods: Command, chars: "\x02\x6f" }
+  - { key: F, mods: Command, chars: "\x02\x66" }
+  - { key: Y, mods: Command, chars: "\x02\x79" }
