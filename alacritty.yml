@@ -8,6 +8,7 @@ cursor:
   style:
     shape: Block
 colors:
+  use_thin_strokes: true
   primary:
     background: '0xf8f8f8'
     foreground: '0x2a2b33'
@@ -43,3 +44,4 @@ key_bindings:
   - { key: Return, mods: Command, chars: "\x02\x6f" }
   - { key: F, mods: Command, chars: "\x02\x66" }
   - { key: Y, mods: Command, chars: "\x02\x79" }
+  - { key: P, mods: Command, chars: "\x10" }
