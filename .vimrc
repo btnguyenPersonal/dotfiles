@@ -11,6 +11,8 @@ let g:loaded_matchparen=1
 call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
+Plug 'sheerun/vim-polyglot'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 filetype indent plugin on
 hi LineNr ctermfg=gray ctermbg=NONE
@@ -38,9 +40,10 @@ set ttimeoutlen=1
 set undofile
 set undodir=~/.vim/undodir
 set directory=$HOME/.vim/swapfiles//
+set mouse=n
+set confirm
 syntax on
-nmap S ^C
-nmap Y y$
+nnoremap <c-l> :noh<cr>
 inoremap kj <esc>
-command! Tags :!ctags -R --exclude=coverage --exclude=tmp --exclude=coverage --exclude=.git --exclude=vendor --exclude=package-lock.json --exclude=node_modules --exclude=db --exclude=log --exclude=dist --exclude=build .
+command! Tags :!ctags -R .
 command! Trim :%s/\s\+$//g

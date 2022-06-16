@@ -1,5 +1,4 @@
 alias ls='ls --color=auto'
-alias ll='ls -ahlF --color=auto'
 KEYTIMEOUT=5
 set -o emacs
 export PROMPT="%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b "
@@ -16,12 +15,15 @@ setopt hist_ignore_space
 setopt appendhistory
 export NVM_DIR=~/.nvm
 export PATH="/usr/local/bin:/usr/bin:$PATH"
-export GOOGLE_APPLICATION_CREDENTIALS=~/keys/cx-web-firestore-test-f2e0b635-e92db4de622f.json
+# export GOOGLE_APPLICATION_CREDENTIALS=~/keys/cx-web-firestore-test-f2e0b635-e92db4de622f.json
+# gcloud config set core/custom_ca_certs_file /etc/ssl/certs/pfg-ca-bundle.crt
 export AWS_CA_BUNDLE=/etc/ssl/certs/pfg-ca-bundle.crt
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/pfg-ca-bundle.crt
 export NODE_EXTRA_CA_CERTS=/etc/ssl/certs/pfg-ca-bundle.crt
 export CURL_CA_BUNDLE=/etc/ssl/certs/pfg-ca-bundle.crt
 export SSL_CERT_FILE=/etc/ssl/certs/pfg-ca-bundle.crt
+# export HTTP_PROXY=http://proxypac.principal.com/proxy.pac
+# export HTTPS_PROXY=http://proxypac.principal.com/proxy.pac
 # npm config set cafile /etc/ssl/certs/pfg-ca-bundle.crt
 if [ -s "$HOME/.nvm/nvm.sh" ]; then
   export NVM_DIR="$HOME/.nvm"
