@@ -17,11 +17,8 @@ set ttyfast
 set nrformats=alpha
 set tabstop=4
 set shiftwidth=4
-set autoindent
 set copyindent
-set smartindent
 set hlsearch
-set cindent
 set incsearch
 set lazyredraw
 set ignorecase
