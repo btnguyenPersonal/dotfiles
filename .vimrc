@@ -33,6 +33,7 @@ set ttimeoutlen=1
 set mouse=n
 syntax on
 nnoremap <c-l> :noh<cr>
+nnoremap Q <nop>
 inoremap kj <esc>
 command! Tags :!ctags -R .
 command! Trim :%s/\s\+$//g
