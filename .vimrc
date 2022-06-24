@@ -10,7 +10,6 @@ call plug#end()
 filetype indent plugin on
 hi LineNr ctermfg=gray ctermbg=NONE
 set hidden
-set bs=2
 set wildmenu
 set wildignorecase
 set expandtab
