@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'sheerun/vim-polyglot'
+Plug 'wikitopian/hardmode'
 call plug#end()
 filetype indent plugin on
 hi LineNr ctermfg=gray ctermbg=NONE
@@ -35,3 +36,4 @@ nnoremap <c-l> :noh<cr>
 inoremap kj <esc>
 command! Tags :!ctags -R .
 command! Trim :%s/\s\+$//g
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
