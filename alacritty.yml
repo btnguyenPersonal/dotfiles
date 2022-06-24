@@ -1,3 +1,5 @@
+window:
+  title: ""
 font:
   size: 16
 custom_cursor_colors: true
@@ -5,17 +7,17 @@ cursor:
   style:
     shape: Block
 colors:
-  use_thin_strokes: true
-  primary:
-    background: '0xf8f8f8'
-    foreground: '0x2a2b33'
+ use_thin_strokes: true
+ primary:
+   background: '0xf8f8f8'
+   foreground: '0x2a2b33'
 
-  normal:
-    black:   '0x000000'
-    red:     '0xde3d35'
-    green:   '0x3e953a'
-    yellow:  '0xd2b67b'
-    blue:    '0x2f5af3'
-    magenta: '0xa00095'
-    cyan:    '0x3e953a'
-    white:   '0xbbbbbb'
+ normal:
+   black:   '0x000000'
+   red:     '0xde3d35'
+   green:   '0x3e953a'
+   yellow:  '0xd2b67b'
+   blue:    '0x2f5af3'
+   magenta: '0xa00095'
+   cyan:    '0x3e953a'
+   white:   '0xbbbbbb'
