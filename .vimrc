@@ -2,7 +2,6 @@ set nocompatible
 syntax on
 filetype indent plugin on
 hi LineNr ctermfg=gray
-hi Comment ctermfg=darkgreen
 set hidden
 set wildmenu
 set wildignorecase
