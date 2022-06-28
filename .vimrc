@@ -34,6 +34,7 @@ set cindent
 set nobackup
 set nowb
 set noswapfile
+set nowrap sidescroll=1
 syntax on
 nnoremap <c-l> :noh<cr>
 nnoremap Q <nop>
