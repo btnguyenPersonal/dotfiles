@@ -19,6 +19,7 @@ set shiftwidth=4
 set smartindent
 set incsearch
 set lazyredraw
+set ignorecase
 set smartcase
 set number
 set tags=tags
@@ -40,4 +41,4 @@ nnoremap <c-l> :noh<cr>
 nnoremap Q <nop>
 inoremap kj <esc>
 command! Tags :!ctags -R .
-command! Trim :%s/\s\+$//g
+command! Trim :%s!\s\+$!!g
