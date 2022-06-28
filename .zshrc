@@ -15,33 +15,6 @@ SAVEHIST=1000
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
-export NVM_DIR=~/.nvm
-export PATH="/usr/local/bin:/usr/bin:$PATH"
-# export GOOGLE_APPLICATION_CREDENTIALS=~/keys/cx-web-firestore-test-f2e0b635-e92db4de622f.json
-# gcloud config set core/custom_ca_certs_file /etc/ssl/certs/pfg-ca-bundle.crt
-export AWS_CA_BUNDLE=/etc/ssl/certs/pfg-ca-bundle.crt
-export REQUESTS_CA_BUNDLE=/etc/ssl/certs/pfg-ca-bundle.crt
-export NODE_EXTRA_CA_CERTS=/etc/ssl/certs/pfg-ca-bundle.crt
-export CURL_CA_BUNDLE=/etc/ssl/certs/pfg-ca-bundle.crt
-export SSL_CERT_FILE=/etc/ssl/certs/pfg-ca-bundle.crt
-# npm config set cafile /etc/ssl/certs/pfg-ca-bundle.crt
-if [ -s "$HOME/.nvm/nvm.sh" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  alias nvm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && nvm'
-  alias node='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && node'
-  alias npm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && npm'
-fi
-lg()
-{
-    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
-
-    lazygit "$@"
-
-    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
-            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
-            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
-    fi
-}
 # configure key keybindings
 bindkey -e                                        # emacs key bindings
 bindkey ' ' magic-space                           # do history expansion on space
@@ -55,3 +28,4 @@ bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
+setxkbmap -option ctrl:nocaps
