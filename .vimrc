@@ -2,6 +2,7 @@ set nocompatible
 syntax on
 set hidden
 set expandtab
+set bg=dark
 set tabstop=4
 set shiftwidth=4
 set autoindent
