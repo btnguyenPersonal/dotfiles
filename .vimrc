@@ -10,6 +10,7 @@ set ignorecase
 set number
 set timeoutlen=1000
 set ttimeoutlen=1
+set laststatus=0
 nnoremap Q <nop>
 inoremap kj <esc>
 command! Tags :!ctags -R .

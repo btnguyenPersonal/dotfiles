@@ -1,6 +1,12 @@
 alias ls='ls --color=auto'
 alias ll='ls -alF --color=auto'
+alias zf='fzf --reverse --height=7 | xargs nvim'
+alias vim='nvim'
 alias grep='grep --color'
+function finder() {
+    grep -nr "$1" "$2" | vim - -c "silent! /$1\\C" -c ":w! ~/.finder"
+}
+export FZF_DEFAULT_COMMAND='fd --type f --exclude .git'
 KEYTIMEOUT=5
 set -o emacs
 export PROMPT="%B%F{blue}[%f%F{green}%~%f%F{blue}]%f%F{red}$%f%b "
@@ -15,6 +21,7 @@ SAVEHIST=1000
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 setopt appendhistory
+export PATH="/usr/local/bin:/usr/bin:$PATH"
 # configure key keybindings
 bindkey -e                                        # emacs key bindings
 bindkey ' ' magic-space                           # do history expansion on space
@@ -28,4 +35,3 @@ bindkey '^[[6~' end-of-buffer-or-history          # page down
 bindkey '^[[H' beginning-of-line                  # home
 bindkey '^[[F' end-of-line                        # end
 bindkey '^[[Z' undo                               # shift + tab undo last action
-setxkbmap -option ctrl:nocaps

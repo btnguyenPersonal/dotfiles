@@ -5,6 +5,8 @@ font:
     family: Hack
   size: 12
 custom_cursor_colors: true
+scrolling:
+  multiplier: 0
 cursor:
   style:
     shape: Block
