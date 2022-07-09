@@ -1,6 +1,6 @@
 alias ls='ls --color=auto'
 alias ll='ls -alF --color=auto'
-alias zf='fzf --reverse --height=7 | xargs nvim'
+alias zf='fzf --reverse --height=7 | xargs -r nvim'
 alias vim='nvim'
 alias grep='grep --color'
 function finder() {
