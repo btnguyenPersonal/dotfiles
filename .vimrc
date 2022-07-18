@@ -6,6 +6,7 @@ Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 hi LineNr ctermfg=gray
 set hidden
