@@ -1,0 +1,83 @@
+{
+    "editor.fontFamily": "Hack",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "files.autoSave": "afterDelay",
+    "editor.fastScrollSensitivity": 1,
+    "editor.suggest.showStatusBar": true,
+    "terminal.explorerKind": "external",
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.tabs.enableAnimation": false,
+    "terminal.integrated.tabs.location": "left",
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "terminal.integrated.tabs.hideCondition": "never",
+    "terminal.integrated.tabs.showActions": "never",
+    "terminal.integrated.tabs.showActiveTerminal": "never",
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "none",
+    "editor.selectionHighlight": false,
+    "vim.highlightedyank.duration": 1,
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "sh": {
+            "path": "/bin/sh"
+        }
+    },
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Y"],
+            "after": ["y", "$"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "<"]
+        },
+        {
+            "before": [">"],
+            "after": [">", ">"]
+        },
+        {
+            "before": ["g", "V"],
+            "after": ["`", "[", "v", "`", "]"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
+        },
+        {
+            "before": ["x"],
+            "after": ["\"", "_", "d"]
+        }
+    ]
+}

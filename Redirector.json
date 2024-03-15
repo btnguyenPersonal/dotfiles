@@ -1,0 +1,40 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2024-01-27T13:15:43.414Z",
+    "redirects": [
+        {
+            "description": "",
+            "exampleUrl": "https://www.youtube.com/*",
+            "exampleResult": "https://i.pinimg.com/originals/4f/ac/e3/4face340e01a5884bceadcfeef150b3d.gif",
+            "error": null,
+            "includePattern": "https://www.youtube.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://i.pinimg.com/originals/4f/ac/e3/4face340e01a5884bceadcfeef150b3d.gif",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "",
+            "exampleUrl": "https://www.twitch.tv/*",
+            "exampleResult": "https://i.pinimg.com/originals/4f/ac/e3/4face340e01a5884bceadcfeef150b3d.gif",
+            "error": null,
+            "includePattern": "https://www.twitch.tv/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "https://i.pinimg.com/originals/4f/ac/e3/4face340e01a5884bceadcfeef150b3d.gif",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
