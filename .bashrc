@@ -9,9 +9,9 @@ SAVEHIST=1000
 export PATH="/usr/local/bin:/usr/bin:$PATH"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-function moc {  
+function moc {
     npx mocha ./test/**/$1*.spec.* --exit
-} 
+}
 function updn {
     $(which npm) i $1@latest
 }
@@ -24,8 +24,8 @@ function ddoc {
 function testcy {
     sed -ie "s/retries: 2,/&\renv: {\raccountPassword: \'v112233#\'\r},/" cypress.config.js && rm cypress.config.jse
 }
-__git_files () { 
-    _wanted files expl 'local files' _files     
+__git_files () {
+    _wanted files expl 'local files' _files
 }
 alias rmcarrot="sed -ie 's/\^//' package.json && rm package.jsone"
 alias vi='nvim'
@@ -36,21 +36,21 @@ PROMPT_COMMAND=__prompt_command    # Function to generate PS1 after CMDs
 __prompt_command() {
     local EXIT="$?"                # This needs to be first
     PS1=""
-    
+
     local RCol='\[\e[0m\]'
-    
+
     local Red='\[\e[0;31m\]'
     local Gre='\[\e[0;32m\]'
     local BYel='\[\e[1;33m\]'
     local BBlu='\[\e[1;34m\]'
     local Pur='\[\e[0;35m\]'
-    
+
     if [ $EXIT != 0 ]; then
     PS1+="\n${Red}\u${RCol}"        # Add red if exit code non 0
     else
     PS1+="\n${Gre}\u${RCol}"
     fi
-    
+
     PS1+="${RCol}@${BBlu}\h:${BYel}\w\n${Pur}$ ${RCol}"
 }
 function ga () {
@@ -96,4 +96,6 @@ function gld() {
     ) | less -R
 }
 
-
+download() {
+    python3 /usr/local/bin/youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$1"
+}
