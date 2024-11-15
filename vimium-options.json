@@ -1,0 +1,6 @@
+{
+  "keyMappings": "unmapAll\nmap gg scrollToTop\nmap G scrollToBottom\nmap d scrollPageDown\nmap u scrollPageUp\nmap r reload\nmap i enterInsertMode\nmap B Vomnibar.activateBookmarksInNewTab\nmap gi focusInput\nmap t createTab\nmap h goBack\nmap l goForward\nmap j scrollDown\nmap k scrollUp\nmap <c-w> previousTab\nmap <c-e> nextTab\nmap <c-x> removeTab",
+  "smoothScroll": false,
+  "searchEngines": "",
+  "settingsVersion": "2.1.2"
+}
