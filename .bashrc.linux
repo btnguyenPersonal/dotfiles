@@ -119,13 +119,18 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-alias e="node ~/git/release_edit/build/out.cjs"
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 alias gtree='git ls-tree -r --name-only HEAD | tree --fromfile'
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 export TERM=xterm-256color
-PROMPT_COMMAND=__prompt_command    # Function to generate PS1 after CMDs
+. "$HOME/.cargo/env"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+export PATH="~/.local/scripts:$PATH"
+export PATH="~/development/flutter/bin:$PATH"
+export PATH="~/development/android-studio/bin:$PATH"
+alias glog="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
+
+PROMPT_COMMAND=__prompt_command    # Function to generate PS1 after CMDs
 __prompt_command() {
     local EXIT="$?"                # This needs to be first
     PS1=""
@@ -139,12 +144,79 @@ __prompt_command() {
     local Pur='\[\e[0;35m\]'
 
     if [ $EXIT != 0 ]; then
-        PS1+="\n${Red}\u${RCol}"        # Add red if exit code non 0
+    PS1+="\n${Red}\u${RCol}"        # Add red if exit code non 0
     else
-        PS1+="\n${Gre}\u${RCol}"
+    PS1+="\n${Gre}\u${RCol}"
     fi
 
     PS1+="${RCol}@${BBlu}\h:${BYel}\w\n${Pur}$ ${RCol}"
 }
-. "$HOME/.cargo/env"
+function ga () {
+    git add :/
+}
+function gc () {
+    git commit -am "$1"
+}
+function gp () {
+    git push
+}
+function grs () {
+    git restore --staged :/
+}
+function gr () {
+    git restore :/
+}
+function g () {
+    git pull
+}
+function gs () {
+    git status
+}
+function ed () {
+    /usr/bin/e `fzf`
+}
+function gh () {
+    git checkout "$@"
+}
+function gd () {
+    git diff
+}
+function cdg () {
+    cd $(git rev-parse --show-toplevel)
+}
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+function gld() {
+    (
+        local git_color_args="--color=always"
+        local commits=$(git log --pretty=format:"%H")
+
+        for commit in $commits; do
+            git show $git_color_args --quiet $commit
+
+            if [ "$commit" != "$(git rev-list --max-parents=0 HEAD)" ]; then
+                echo ""
+                git diff $git_color_args $commit^ $commit
+            fi
+
+            echo "--------------------------------------------------"
+        done
+    ) | less -R
+}
+
+export ESCDELAY=0
+
+download() {
+    python3 /usr/local/bin/youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$1"
+}
+
+mania() {
+    flatpak run com.stepmania.StepMania
+}
+
+addmap() {
+    cp "$1" ~/snap/steam/common/.local/share/Steam/steamapps/common/Team\ Fortress\ 2/tf/maps
+}
