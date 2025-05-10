@@ -15,8 +15,12 @@ battery() {
   fi
 }
 
+audio() {
+  amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'
+}
+
 while true; do
-  xprop -root -set WM_NAME " $(battery) | $(date '+%a %B %-d | %-I:%M %p')"
+  xprop -root -set WM_NAME " $(audio) | $(battery) | $(date '+%a %B %-d | %-I:%M %p')"
   sleep 15
 done &
 
