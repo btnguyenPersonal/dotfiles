@@ -19,8 +19,12 @@ audio() {
   amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'
 }
 
+brightness() {
+  echo $(( ($(brightnessctl g) * 100) / $(brightnessctl m) ))
+}
+
 while true; do
-  xprop -root -set WM_NAME " $(audio) | $(battery) | $(date '+%a %B %-d | %-I:%M %p')"
+  xprop -root -set WM_NAME " $(brightness) | $(audio) | $(battery) | $(date '+%a %B %-d | %-I:%M %p')"
   sleep 15
 done &
 
