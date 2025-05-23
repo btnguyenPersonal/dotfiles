@@ -5,11 +5,15 @@ battery() {
   battery='/sys/class/power_supply/BAT0'
 
   if [ -d "$battery" ]; then
+    if [ $(cat "$battery/capacity") -le 15 ]; then
+      echo -n 'LOW BATTERY '
+    fi
+
     if grep -q 'Charging' "$battery/status"; then
       echo -n '+'
     fi
 
-    tr -d '\n' <"$battery/capacity"
+    tr -d '\n' < "$battery/capacity"
 
     echo '%'
   fi
