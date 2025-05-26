@@ -5,7 +5,7 @@ battery() {
   battery='/sys/class/power_supply/BAT0'
 
   if [ -d "$battery" ]; then
-    if [ $(cat "$battery/capacity") -le 15 ]; then
+    if [ $(cat "$battery/capacity") -le 20 ]; then
       echo -n 'LOW BATTERY '
     fi
 
