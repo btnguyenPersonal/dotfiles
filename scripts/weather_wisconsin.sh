@@ -1,1 +1,0 @@
-mpv --loop https://radar.weather.gov/ridge/standard/CENTGRLAKES_loop.gif
