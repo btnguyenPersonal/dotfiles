@@ -1,6 +1,7 @@
 #!/bin/bash
 
 declare -A codes=(
+    ["US"]="CONUS-LARGE"
     ["Aberdeen"]="KABR"
     ["Amarillo"]="KAMA"
     ["Austin/San Antonio"]="KEWX"
