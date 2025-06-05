@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 declare -A codes=(
     ["US"]="CONUS-LARGE"
@@ -102,4 +102,4 @@ fi
 
 url="https://radar.weather.gov/ridge/standard/${codes[$city]}_loop.gif"
 
-mpv --loop $url
+mpv --loop --geometry=100%x100%+50%+50% $url
