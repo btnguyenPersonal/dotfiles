@@ -78,6 +78,10 @@ function gd () {
     git diff
 }
 
+function ll () {
+	ls -al "$@"
+}
+
 function gld() {
     (
         local git_color_args="--color=always"
@@ -99,3 +103,6 @@ function gld() {
 download() {
     python3 /usr/local/bin/youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$1"
 }
+
+export PATH="~/.local/scripts:$PATH"
+export ESCDELAY=0
