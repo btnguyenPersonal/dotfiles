@@ -100,6 +100,7 @@ function gld() {
     ) | less -R
 }
 
+alias say='espeak'
 download() {
     python3 /usr/local/bin/youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" "$1"
 }
