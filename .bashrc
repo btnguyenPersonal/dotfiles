@@ -31,6 +31,7 @@ alias rmcarrot="sed -ie 's/\^//' package.json && rm package.jsone"
 alias vi='nvim'
 alias ls='ls --color=auto'
 alias gl='git log --all --graph --decorate --oneline'
+alias open='xdg-open'
 
 PROMPT_COMMAND=__prompt_command    # Function to generate PS1 after CMDs
 __prompt_command() {
@@ -55,6 +56,9 @@ __prompt_command() {
 }
 function ga () {
     git add :/
+}
+function gh () {
+    git checkout "$@"
 }
 function gc () {
     git commit -am "$1"
