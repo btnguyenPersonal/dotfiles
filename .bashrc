@@ -30,7 +30,7 @@ __git_files () {
 alias rmcarrot="sed -ie 's/\^//' package.json && rm package.jsone"
 alias vi='nvim'
 alias ls='ls --color=auto'
-alias gl='git log --all --graph --decorate --oneline'
+alias glog='git log --all --graph --decorate --oneline'
 alias open='xdg-open'
 
 PROMPT_COMMAND=__prompt_command    # Function to generate PS1 after CMDs
@@ -52,7 +52,7 @@ __prompt_command() {
     PS1+="\n${Gre}\u${RCol}"
     fi
 
-    PS1+="${RCol}@${BBlu}\h:${BYel}\w\n${Pur}$ ${RCol}"
+    PS1+="${RCol}@${BBlu}\h:${BYel}\w ${RCol}($(date -u +'%Y-%m-%dT%H:%M:%SZ'))\n${Pur}$ ${RCol}"
 }
 function ga () {
     git add :/

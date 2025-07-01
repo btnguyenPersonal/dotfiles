@@ -1,6 +1,6 @@
 # ================  IMAP ====================
 set imap_user = ben706519@gmail.com
-set imap_pass = "Password"
+set imap_pass = "ajzb hyti ozof irnb"
 set spoolfile = imaps://imap.gmail.com/INBOX
 set folder = imaps://imap.gmail.com/
 set record="imaps://imap.gmail.com/[Gmail]/Sent Mail"
