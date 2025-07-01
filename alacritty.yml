@@ -5,6 +5,7 @@ font:
   normal:
     family: Monospace
     style: Light
+  size: 8
   opacity: 1.0
 
 custom_cursor_colors: false
