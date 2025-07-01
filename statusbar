@@ -2,7 +2,6 @@ battery() {
   battery='/sys/class/power_supply/BAT0'
 
   if [ -d "$battery" ]; then
-    echo -n '🔋:'
     if [ $(cat "$battery/capacity") -le 20 ]; then
       echo -n 'LOW BATTERY '
     fi
@@ -22,8 +21,8 @@ audio() {
 }
 
 brightness() {
-  echo -n '🔆:'
-  echo $(( ($(brightnessctl g) * 100) / $(brightnessctl m) ))%
+  echo -n 'B:'
+  echo $(( $(brightnessctl g) * 100 / $(brightnessctl m) ))
 }
 
 statusbar() {
