@@ -17,7 +17,7 @@ battery() {
 }
 
 audio() {
-  amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }'
+  amixer get Master | awk -F'[][]' 'END{ print $(NF-1)":"$2 }'
 }
 
 brightness() {
