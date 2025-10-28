@@ -1,5 +1,5 @@
 KEYTIMEOUT=5
-export FZF_DEFAULT_COMMAND="git ls-files --cached --others --exclude-standard"
+export FZF_DEFAULT_COMMAND="git ls-files --cached --others --exclude-standard --reverse"
 export FZF_CTRL_T_COMMAND="git ls-files --cached --others --exclude-standard"
 export FZF_ALT_C_COMMAND="git ls-files --cached --others --exclude-standard"
 export LS_COLORS='no=00;37:fi=00:di=00;36:ln=04;36:pi=40;33:so=01;35:bd=40;33;01:'
