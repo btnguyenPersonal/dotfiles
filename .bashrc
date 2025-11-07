@@ -3,6 +3,7 @@ shopt -s histappend
 export ESCDELAY=0
 export PATH="~/.local/scripts:$PATH"
 KEYTIMEOUT=5
+alias ls='ls --color=auto'
 export FZF_DEFAULT_COMMAND="git ls-files --cached --others --exclude-standard --reverse"
 export FZF_CTRL_T_COMMAND="git ls-files --cached --others --exclude-standard"
 export FZF_ALT_C_COMMAND="git ls-files --cached --others --exclude-standard"
@@ -59,7 +60,7 @@ function gd () {
     git diff
 }
 function ll () {
-    ls -al "$@"
+    ls -alF "$@"
 }
 
 if [ -e ".venv/bin/activate" ]; then
