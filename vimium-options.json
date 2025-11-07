@@ -1,9 +1,0 @@
-{
-  "hideHud": true,
-  "keyMappings": "unmapAll\nmap j scrollDown\nmap k scrollUp\nmap u scrollPageUp\nmap d scrollPageDown\nmap r reload\nmap gg scrollToTop\nmap G scrollToBottom\nmap t createTab\nmap X closeOtherTabs\nmap h goBack\nmap l goForward\nmap i enterInsertMode",
-  "smoothScroll": false,
-  "searchEngines": "",
-  "settingsVersion": "2.2.1",
-  "userDefinedLinkHintCss": "",
-  "exclusionRules": []
-}
