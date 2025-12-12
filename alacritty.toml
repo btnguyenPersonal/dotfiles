@@ -29,11 +29,14 @@ decorations = "None"
 # background = '#000000'
 # text = '#ffffff'
 
+[colors.cursor]
+cursor = '#FFFFFF'
+text = '#000000'
 [colors.primary]
 background = '#2C001E'
 foreground = '#FFFFFF'
 [colors.normal]
-black = '#555753'
+black = '#000000'
 red = '#EF2929'
 green = '#8AE234'
 yellow = '#FCE94F'
