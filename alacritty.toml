@@ -8,39 +8,24 @@ italic = { family = "Liberation Mono", style = "Italic" }
 size = 12
 
 [window]
-decorations = "None"
+decorations = "Full"
+title = "terminal"
 
-# [colors.primary]
-# background = '#000000'
-# foreground = '#ffffff'
-# [colors.cursor]
-# cursor = '#ffffff'
-# text = '#000000'
-# [colors.normal]
-# black = '#000000'
-# blue = '#0000ff'
-# cyan = '#00ffff'
-# green = '#00ff00'
-# magenta = '#ff00ff'
-# red = '#ff0000'
-# white = '#ffffff'
-# yellow = '#ffff00'
-# [colors.selection]
-# background = '#000000'
-# text = '#ffffff'
-
-[colors.cursor]
-cursor = '#FFFFFF'
-text = '#000000'
 [colors.primary]
-background = '#2C001E'
-foreground = '#FFFFFF'
+background = '#000000'
+foreground = '#ffffff'
+[colors.cursor]
+cursor = '#ffffff'
+text = '#000000'
 [colors.normal]
 black = '#000000'
-red = '#EF2929'
-green = '#8AE234'
-yellow = '#FCE94F'
-blue = '#729FCF'
-magenta = '#AD7FA8'
-cyan = '#34E2E2'
-white = '#FFFFFF'
+blue = '#0000ff'
+cyan = '#00ffff'
+green = '#00ff00'
+magenta = '#ff00ff'
+red = '#ff0000'
+white = '#ffffff'
+yellow = '#ffff00'
+[colors.selection]
+background = '#000000'
+text = '#ffffff'
