@@ -40,5 +40,5 @@ yellow = '#ffff55'
 white = '#ffffff'
 
 [colors.selection]
-background = '#aaaaaa'
+background = '#ffffff'
 text = '#000000'
