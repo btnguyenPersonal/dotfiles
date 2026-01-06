@@ -13,19 +13,32 @@ title = "terminal"
 
 [colors.primary]
 background = '#000000'
-foreground = '#ffffff'
+foreground = '#aaaaaa'
+
 [colors.cursor]
-cursor = '#ffffff'
+cursor = '#00aa00'
 text = '#000000'
+
 [colors.normal]
 black = '#000000'
-blue = '#0000ff'
-cyan = '#00ffff'
-green = '#00ff00'
-magenta = '#ff00ff'
-red = '#ff0000'
+blue = '#0000aa'
+cyan = '#00aaaa'
+green = '#00aa00'
+red = '#aa0000'
+magenta = '#aa00aa'
+yellow = '#aa5500'
+white = '#aaaaaa'
+
+[colors.bright]
+black = '#555555'
+blue = '#5555ff'
+green = '#55ff55'
+cyan = '#55ffff'
+red = '#ff5555'
+magenta = '#ff55ff'
+yellow = '#ffff55'
 white = '#ffffff'
-yellow = '#ffff00'
+
 [colors.selection]
-background = '#000000'
-text = '#ffffff'
+background = '#aaaaaa'
+text = '#000000'
