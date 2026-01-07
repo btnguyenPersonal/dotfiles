@@ -1,5 +1,5 @@
 {
-  "keyMappings": "unmapAll\nmap gg scrollToTop\nmap G scrollToBottom\nmap k scrollUp\nmap j scrollDown\nmap d scrollPageDown\nmap u scrollPageUp\nmap r reload",
+  "keyMappings": "unmapAll\nmap g scrollToTop\nmap G scrollToBottom\nmap k scrollUp\nmap j scrollDown\nmap d scrollPageDown\nmap u scrollPageUp\nmap r reload",
   "smoothScroll": false,
   "searchEngines": "",
   "settingsVersion": "2.3.1",
