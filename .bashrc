@@ -16,7 +16,7 @@ __prompt_command() {
     local Red='\[\e[0;31m\]'
     local Gre='\[\e[0;32m\]'
     local BYel='\[\e[1;33m\]'
-    local BBlu='\[\e[1;34m\]'
+    local BBlu='\[\e[1;36m\]'
     local Pur='\[\e[0;35m\]'
 
     if [ $EXIT != 0 ]; then
